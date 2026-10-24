@@ -21,7 +21,8 @@ appjail can read it instead of fetching the whole AM repository:
    shrinks by more than 10% against the committed one (an AM layout change must not publish a gutted catalog);
 4. leaves `catalog.json` untouched when the apps are unchanged, so only real changes make a commit.
 
-Options: `--report FILE` (apps whose source changed owner), `--tree DIR` (an already fetched AM tree), `--commit SHA` (a specific AM commit), `--min-apps N`.
+Options: `--report FILE` (apps whose source changed owner), `--tree DIR` (an already fetched AM tree),
+`--commit SHA` (a specific AM commit), `--min-apps N`.
 
 `catalog.py`, `amsource.py` and `textsafe.py` are copies of appjail's modules of the same name (without the jail);
 keep them in step with appjail when its format changes.
@@ -35,8 +36,9 @@ whose source moved to a different owner are listed in the commit message, so a r
 (appjail also shows such changes at `index update`). Requirements:
 
 - Settings → Actions → General → Workflow permissions: *Read and write*.
-- The default branch must accept pushes from `GITHUB_TOKEN` (no branch protection requiring PRs).
-- Protect `main` (ruleset: only you and the bot may push) and enable two-factor authentication: `catalog.json` is not signed, its integrity rests on HTTPS and on who can write to this repository.
+- `main` may be protected (and should be: enable two-factor authentication and restrict who can push), but the ruleset
+  must let the workflow push directly, i.e. allow bypass for GitHub Actions and no required pull requests.
+  `catalog.json` is not signed: its integrity rests on HTTPS and on who can write to this repository.
 - GitHub pauses scheduled workflows after 60 days without repository activity; run the workflow manually to resume.
 
 ## Development
