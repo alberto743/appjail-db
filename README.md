@@ -1,7 +1,7 @@
 # appjail-db
 
 The reference catalog of AppImages for [appjail](https://github.com/alberto743/appjail), rebuilt weekly from the
-index of [ivan-hc/AM](https://github.com/ivan-hc/AM).
+index of [ivan-hc/AM](https://github.com/ivan-hc/AM) and the feed of [AppImageHub](https://appimage.github.io).
 
 `catalog.json` is an `appjail-catalog` (version 1) document: for each app a name, a description and, where AM knows
 it, a kind-prefixed `source` (`github:owner/repo`, `gitlab:...`, `forgejo:...`) or a `note` saying why there is none
@@ -18,11 +18,22 @@ appjail reads it, pinned to a commit, instead of fetching the whole AM repositor
 2. reads the list (`◆ name : description`) and each app's install script as plain text; a regex finds the first
    `SITE=` (and `SITE2=`, noted as repackager) and keeps only the first 100 characters of each description (see
    Licensing). Nothing from AM is ever executed or sourced;
-3. validates the result with the same rules appjail applies, and refuses it if it has fewer than 5000 apps or
+3. downloads AppImageHub's `https://appimage.github.io/feed.json` (https only, same-host redirects only, at most
+   16 MB) and merges it, without duplicates (see below). If the feed cannot be had the build fails and the catalog
+   stays as it is;
+4. validates the result with the same rules appjail applies, and refuses it if it has fewer than 5000 apps or
    shrinks by more than 10% against the committed one (an AM layout change must not publish a gutted catalog);
-4. leaves `catalog.json` untouched when the apps are unchanged, so only real changes make a commit.
+5. leaves `catalog.json` untouched when the apps are unchanged, so only real changes make a commit.
 
-Options: `--report FILE` (apps whose source changed owner), `--tree DIR` (an already fetched AM tree),
+Merge rules (`merge.py`): an app is the same in both when its repository is the same and holds only that app on
+both sides (a repository may publish several apps), or else when the name is the same ignoring case. The merged app
+keeps AM's name and takes AppImageHub's description and source. When the name is the same but the repositories differ,
+the app has no `source` and its `note` says `resolve manually: AM owner/repo; AppImageHub owner/repo`: which one is
+right is for the user to decide at `appjail add`. Apps in only one of the two are kept as they are, except that an app with no `source` and no pointer in its `note`
+(only "no source in the index" or "no install script in the index") is dropped, whichever catalog it came from:
+there is nothing to do with it.
+
+Options: `--hub-feed FILE` (a feed already downloaded), `--no-hub` (AM only), `--report FILE` (apps whose source changed owner), `--tree DIR` (an already fetched AM tree),
 `--commit SHA` (a specific AM commit), `--min-apps N`.
 
 `catalog.py` and `textsafe.py` are copies of appjail's modules of the same name; keep them in step with appjail when
@@ -55,5 +66,6 @@ whose source moved to a different owner are listed in the commit message, so a r
   AM's index; to the extent any rights exist in the compilation they are dedicated to the public domain. No claim is made over the
   content itself: descriptions originate from AM and, mostly verbatim, from the upstream projects' own GitHub
   texts. They are therefore cut to 100 characters, as a label and not a copy of the text.
-  AM is GPL-3.0 (see its `LICENSE`); no AM code is included.
+  AM is GPL-3.0 (see its `LICENSE`); no AM code is included. The same goes for AppImageHub's feed (names, descriptions
+  cut to 100 characters, repository links); no code or data files of that repository are included.
 - If you hold rights in something published here and want it changed or removed, open an issue.

@@ -78,13 +78,13 @@ def test_a_broken_tree_is_refused_and_leaves_no_file(tmp_path):
 
 
 def test_main_reports_problems_with_exit_status_1(tmp_path, capsys):
-    assert cli.main(["build", "-o", str(tmp_path / "c.json"), "--tree", str(tmp_path)]) == 1
+    assert cli.main(["build", "-o", str(tmp_path / "c.json"), "--tree", str(tmp_path), "--no-hub"]) == 1
     assert "appjail-db:" in capsys.readouterr().err
 
 
 def test_main_success(tmp_path, capsys):
     tree = make_tree(tmp_path / "t")
-    assert cli.main(["build", "-o", str(tmp_path / "c.json"), "--tree", str(tree), "--min-apps", "10"]) == 0
+    assert cli.main(["build", "-o", str(tmp_path / "c.json"), "--tree", str(tree), "--min-apps", "10", "--no-hub"]) == 0
     assert capsys.readouterr().out.strip() == "updated"
 
 
@@ -121,6 +121,47 @@ def test_build_writes_the_owner_report(tmp_path):
 
 def test_main_passes_the_report_option(tmp_path):
     out, report = tmp_path / "c.json", tmp_path / "r.txt"
-    args = ["build", "-o", str(out), "--min-apps", "10", "--report", str(report)]
+    args = ["build", "-o", str(out), "--min-apps", "10", "--report", str(report), "--no-hub"]
     cli.main([*args, "--tree", str(make_tree(tmp_path / "t"))])
     assert report.exists()
+
+
+def feed(*items):
+    return json.dumps({"items": list(items)})
+
+
+def test_build_merges_the_hub_feed(tmp_path):
+    out = tmp_path / "catalog.json"
+    hub = feed({"name": "App0", "description": "from the hub", "links": [{"type": "GitHub", "url": "owner/app0"}]},
+               {"name": "Only-Hub", "links": [{"type": "GitHub", "url": "h/only"}]})
+    assert cli.build(str(out), make_tree(tmp_path / "t"), C1, 10, hub_feed=hub) == "updated"
+    data = json.loads(out.read_text())
+    apps = {a["name"]: a for a in data["apps"]}
+    assert len(apps) == 21 and "App0" not in apps and apps["app0"]["description"] == "from the hub"
+    assert apps["Only-Hub"]["source"] == "github:h/only"
+    assert data["revision"].startswith(f"AM {C1}; AppImageHub sha256:")
+
+
+def test_main_reads_a_hub_feed_file(tmp_path):
+    out, feed_file = tmp_path / "c.json", tmp_path / "feed.json"
+    feed_file.write_text(feed({"name": "Hub", "links": [{"type": "GitHub", "url": "h/hub"}]}))
+    args = ["build", "-o", str(out), "--min-apps", "10", "--tree", str(make_tree(tmp_path / "t"))]
+    assert cli.main([*args, "--hub-feed", str(feed_file)]) == 0
+    assert "Hub" in {a["name"] for a in json.loads(out.read_text())["apps"]}
+    assert cli.main([*args, "--hub-feed", str(tmp_path / "missing.json")]) == 1
+
+
+def test_a_broken_hub_feed_refuses_the_build_and_keeps_the_old_file(tmp_path):
+    out = tmp_path / "catalog.json"
+    run(out, make_tree(tmp_path / "t"), C1)
+    before = out.read_text()
+    with pytest.raises(IndexProblem, match="not valid JSON"):
+        cli.build(str(out), make_tree(tmp_path / "u"), "2" * 40, 10, hub_feed="not json")
+    assert out.read_text() == before
+
+
+def test_unpointed_apps_are_not_published(tmp_path):
+    out = tmp_path / "catalog.json"
+    hub = feed({"name": "Lost"}, {"name": "Found", "links": [{"type": "GitHub", "url": "h/found"}]})
+    cli.build(str(out), make_tree(tmp_path / "t"), C1, 10, hub_feed=hub)
+    assert {"Found"} <= {a["name"] for a in json.loads(out.read_text())["apps"]} and "Lost" not in out.read_text()

@@ -35,7 +35,7 @@ jobs:
           persist-credentials: false
 
       # Refuses a catalog that is too small or shrinks by more than 10%; leaves the file alone when the apps are unchanged.
-      - name: Build the catalog from ivan-hc/AM
+      - name: Build the catalog from ivan-hc/AM and AppImageHub
         run: PYTHONPATH=src python3 -m appjail_db build -o catalog.json --report "$RUNNER_TEMP/owners.txt"
 
       # Apps whose source moved to another owner are listed in the commit message.
@@ -48,9 +48,9 @@ jobs:
             echo "catalog unchanged"
             exit 0
           fi
-          rev=$(python3 -c "import json; print(json.load(open('catalog.json'))['revision'][:8])")
+          rev=$(python3 -c "import json; print(json.load(open('catalog.json'))['revision'].split()[1][:8])")
           {
-            echo "catalog: update from AM $rev"
+            echo "catalog: update from AM $rev and AppImageHub"
             if [ -s "$RUNNER_TEMP/owners.txt" ]; then
               printf '\nSource owner changes:\n'
               cat "$RUNNER_TEMP/owners.txt"

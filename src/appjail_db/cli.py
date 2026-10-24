@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2026 Alberto P
 # SPDX-License-Identifier: MPL-2.0
 
-"""`python -m appjail_db build`: regenerate catalog.json from ivan-hc/AM.
+"""`python -m appjail_db build`: regenerate catalog.json from ivan-hc/AM and AppImageHub (appimage.github.io).
 
 The output is only replaced by a catalog that parses under appjail's own rules and is not suspiciously smaller than
 the one it replaces. Apps whose source moved to a different owner are reported (`--report`), so the weekly commit
@@ -15,7 +15,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from . import amsource, catalog, fetch
+from . import amsource, catalog, fetch, hubsource, merge
 from .catalog import IndexProblem
 
 MIN_APPS = 5000
@@ -54,14 +54,18 @@ def report_lines(changes):
     return lines
 
 
-def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS, report=None):
-    """Write the catalog to out; return "updated" or "unchanged". With report, the owner changes go there (one per line)."""
+def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS, report=None, *, hub_feed=None):
+    """Write the catalog to out; return "updated" or "unchanged". With report, the owner changes go there (one per line).
+    With hub_feed (the text of the AppImageHub feed) its apps are merged into AM's."""
     if tree is not None:
         cat = amsource.convert(tree, commit if commit != "HEAD" else "")
     else:
         with tempfile.TemporaryDirectory(prefix="appjail-db-") as work:
             fetched = fetch.fetch(work, commit)
             cat = amsource.convert(fetched.tree, fetched.commit)
+    if hub_feed is not None:
+        cat = merge.merge(cat, hubsource.convert(hub_feed))
+    cat = merge.drop_unpointed(cat)
     text = catalog.dumps(cat)
     cat = catalog.parse(text)  # what is written is what appjail will read (apps sorted by name)
     old = load(out)
@@ -80,15 +84,24 @@ def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS, report=None):
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="appjail-db", description=__doc__.split("\n\n")[0])
     sub = parser.add_subparsers(dest="command", required=True)
-    b = sub.add_parser("build", help="fetch AM and write the catalog")
+    b = sub.add_parser("build", help="fetch AM and AppImageHub and write the catalog")
     b.add_argument("-o", "--output", default="catalog.json")
     b.add_argument("--commit", default="HEAD", help="AM commit (40 hex digits) or HEAD")
     b.add_argument("--tree", help="use an already fetched AM tree (containing programs/) instead of fetching")
+    b.add_argument("--hub-feed", help="use this AppImageHub feed.json file instead of fetching it")
+    b.add_argument("--no-hub", action="store_true", help="AM only: do not merge AppImageHub")
     b.add_argument("--report", help="write the apps whose source changed owner to this file")
     b.add_argument("--min-apps", type=int, default=MIN_APPS)
     args = parser.parse_args(argv)
     try:
-        print(build(args.output, args.tree, args.commit, args.min_apps, args.report))
+        hub_feed = None
+        if args.hub_feed:
+            hub_feed = amsource.read_text(args.hub_feed, hubsource.MAX_FEED_BYTES)
+            if hub_feed is None:
+                raise IndexProblem("cannot read the AppImageHub feed file")
+        elif not args.no_hub:
+            hub_feed = hubsource.fetch_feed()
+        print(build(args.output, args.tree, args.commit, args.min_apps, args.report, hub_feed=hub_feed))
     except IndexProblem as e:
         print(f"appjail-db: {e}", file=sys.stderr)
         return 1
