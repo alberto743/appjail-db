@@ -1347,7 +1347,7 @@
   },
   {
    "name": "Tag_Editor",
-   "description": "<p>​A tag editor with Qt GUI and command-line interface.</p> <p>Supports:</p> <ul>…",
+   "description": "<p>A tag editor with Qt GUI and command-line interface.</p> <p>Supports:</p> <ul>…",
    "note": "resolve manually: https://download.opensuse.org/repositories/home:/mkittler:/appimage/AppImage/tageditor-latest-x86_6…"
   },
   {
@@ -4185,7 +4185,7 @@
   },
   {
    "name": "autoremesher",
-   "description": "<p>​      Automatic quad remeshing tool. ​</p>",
+   "description": "<p>      Automatic quad remeshing tool. </p>",
    "source": "github:huxingyi/autoremesher"
   },
   {
@@ -9235,7 +9235,7 @@
   },
   {
    "name": "cursor-claw",
-   "description": "Transform Cursor into a 24/7 digital employee—command the AI ​​to work anytime, anywhere via Lark…",
+   "description": "Transform Cursor into a 24/7 digital employee—command the AI to work anytime, anywhere via Lark…",
    "source": "github:lk-eternal/cursor-claw"
   },
   {
@@ -11240,7 +11240,7 @@
   },
   {
    "name": "dust3d",
-   "description": "<p>​      Dust3D is a brand new 3D modeling software. It helps you create a 3D watertight base…",
+   "description": "<p>      Dust3D is a brand new 3D modeling software. It helps you create a 3D watertight base…",
    "source": "github:huxingyi/dust3d"
   },
   {
@@ -19538,7 +19538,7 @@
   },
   {
    "name": "ksnip",
-   "description": "<p>​       Ksnip is a Qt based Linux screenshot tool that provides many annotation features for…",
+   "description": "<p>       Ksnip is a Qt based Linux screenshot tool that provides many annotation features for…",
    "source": "github:DamirPorobic/ksnip"
   },
   {

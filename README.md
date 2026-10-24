@@ -33,8 +33,13 @@ owner/repo`: which one is right is for the user to decide at `appjail add`. Apps
 they are, except that an app with no `source` and no pointer in its `note` (only "no source in the index" or "no
 install script in the index") is dropped, whichever catalog it came from: there is nothing to do with it.
 
+Texts are then sanitized (`sanitize.py`, on top of appjail's `textsafe.py`): invisible and formatting characters
+(Unicode categories Cf, Zl, Zp, Co, Cs, Cn and the tag block) are stripped from descriptions and notes; zero-width
+joiner and non-joiner and variation selectors stay, as emoji and some scripts need them. This never stops the
+build: what was stripped is listed in the `--report` file and so in the commit message.
+
 Options: `--hub-feed FILE` (a feed already downloaded), `--no-hub` (AM only), `--report FILE` (apps whose source
-changed owner), `--tree DIR` (an already fetched AM tree), `--commit SHA` (a specific AM commit), `--min-apps N`.
+changed owner, texts that were sanitized), `--tree DIR` (an already fetched AM tree), `--commit SHA` (a specific AM commit), `--min-apps N`.
 
 `catalog.py` and `textsafe.py` are copies of appjail's modules of the same name; keep them in step with appjail when
 its format changes. `amsource.py`, `hubsource.py` and `merge.py` exist only here: appjail no longer reads AM, it asks the GitHub API for the latest

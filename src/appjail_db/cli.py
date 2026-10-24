@@ -15,7 +15,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from . import amsource, catalog, fetch, hubsource, merge
+from . import amsource, catalog, fetch, hubsource, merge, sanitize
 from .catalog import IndexProblem
 
 MIN_APPS = 5000
@@ -47,15 +47,19 @@ def owner_changes(old, new):
             if before.get(a.name) and a.source and catalog.identity(before[a.name]) != catalog.identity(a.source)]
 
 
-def report_lines(changes):
-    lines = [f"{name}: {x} -> {y}" for name, x, y in changes[:MAX_REPORTED]]
-    if len(changes) > MAX_REPORTED:
-        lines.append(f"... and {len(changes) - MAX_REPORTED} more")
+def capped(lines):
+    if len(lines) > MAX_REPORTED:
+        return [*lines[:MAX_REPORTED], f"... and {len(lines) - MAX_REPORTED} more"]
     return lines
 
 
+def report_lines(changes):
+    return capped([f"{name}: {x} -> {y}" for name, x, y in changes])
+
+
 def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS, report=None, *, hub_feed=None):
-    """Write the catalog to out; return "updated" or "unchanged". With report, the owner changes go there (one per line).
+    """Write the catalog to out; return "updated" or "unchanged". With report, the owner changes and the characters stripped
+    from texts go there (one per line).
     With hub_feed (the text of the AppImageHub feed) its apps are merged into AM's."""
     if tree is not None:
         cat = amsource.convert(tree, commit if commit != "HEAD" else "")
@@ -66,6 +70,7 @@ def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS, report=None, *, hub_
     if hub_feed is not None:
         cat = merge.merge(cat, hubsource.convert(hub_feed))
     cat = merge.drop_unpointed(cat)
+    cat, stripped = sanitize.sanitize(cat)
     text = catalog.dumps(cat)
     cat = catalog.parse(text)  # what is written is what appjail will read (apps sorted by name)
     old = load(out)
@@ -73,6 +78,7 @@ def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS, report=None, *, hub_
     if old is not None and old.apps == cat.apps:
         return "unchanged"
     lines = report_lines(owner_changes(old, cat)) if old is not None else []
+    lines += capped(stripped)
     if report is not None:
         Path(report).write_text("".join(f"{line}\n" for line in lines), encoding="utf-8")
     tmp = f"{out}.tmp"

@@ -38,7 +38,7 @@ jobs:
       - name: Build the catalog from ivan-hc/AM and AppImageHub
         run: PYTHONPATH=src python3 -m appjail_db build -o catalog.json --report "$RUNNER_TEMP/owners.txt"
 
-      # Apps whose source moved to another owner are listed in the commit message.
+      # Apps whose source moved to another owner, and texts that had invisible characters stripped, are listed in the commit message.
       - name: Commit and push if the catalog changed
         env:
           TOKEN: ${{ github.token }}
@@ -52,7 +52,7 @@ jobs:
           {
             echo "catalog: update from AM $rev and AppImageHub"
             if [ -s "$RUNNER_TEMP/owners.txt" ]; then
-              printf '\nSource owner changes:\n'
+              printf '\nChanges to review (source owner, stripped characters):\n'
               cat "$RUNNER_TEMP/owners.txt"
             fi
           } > "$RUNNER_TEMP/message.txt"

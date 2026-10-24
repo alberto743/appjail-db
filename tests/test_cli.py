@@ -165,3 +165,14 @@ def test_unpointed_apps_are_not_published(tmp_path):
     hub = feed({"name": "Lost"}, {"name": "Found", "links": [{"type": "GitHub", "url": "h/found"}]})
     cli.build(str(out), make_tree(tmp_path / "t"), C1, 10, hub_feed=hub)
     assert {"Found"} <= {a["name"] for a in json.loads(out.read_text())["apps"]} and "Lost" not in out.read_text()
+
+
+def test_invisible_characters_are_stripped_reported_and_do_not_stop_the_build(tmp_path):
+    out, report = tmp_path / "catalog.json", tmp_path / "owners.txt"
+    hub = feed({"name": "Hub", "description": "va\u200blue\U000e0041", "links": [{"type": "GitHub", "url": "h/hub"}]})
+    assert cli.build(str(out), make_tree(tmp_path / "t"), C1, 10, str(report), hub_feed=hub) == "updated"
+    assert {a["name"]: a for a in json.loads(out.read_text())["apps"]}["Hub"]["description"] == "value"
+    assert report.read_text() == "Hub: description: stripped U+200B, U+E0041\n"  # reported even without a previous catalog
+    hub2 = feed({"name": "Hub", "description": "va\u200blue2\U000e0041", "links": [{"type": "GitHub", "url": "h/hub"}]})
+    cli.build(str(out), make_tree(tmp_path / "t2"), "2" * 40, 10, str(report), hub_feed=hub2)
+    assert report.read_text() == "Hub: description: stripped U+200B, U+E0041\n"
