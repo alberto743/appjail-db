@@ -2,7 +2,7 @@
  "format": "appjail-catalog",
  "version": 1,
  "origin": "https://github.com/ivan-hc/AM",
- "revision": "ba0fcf36bc1cae448eb4e45a7510de2e9e1bcae0",
+ "revision": "663fdc559beabcabb0408587bd2f3e81ce4ab070",
  "apps": [
   {
    "name": "0ad",
@@ -7078,6 +7078,11 @@
    "name": "constrict",
    "description": "Unofficial. Simple video compressor built with GTK4 and Libadwaita.",
    "source": "github:pkgforge-dev/constrict-appimage"
+  },
+  {
+   "name": "container-desktop",
+   "description": "(Podman desktop companion) Podman command line interface.",
+   "source": "github:iongion/container-desktop"
   },
   {
    "name": "containerlab-app",
@@ -28324,11 +28329,6 @@
    "name": "podlogs",
    "description": "A modern, lightweight Kubernetes pod log viewer desktop app built with Tauri, React & Rust…",
    "source": "github:andrisasuke/podlogs"
-  },
-  {
-   "name": "podman-desktop-companion",
-   "description": "Podman command line interface.",
-   "note": "no install script in the index"
   },
   {
    "name": "podscape",
