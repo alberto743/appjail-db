@@ -62,10 +62,23 @@ whose source moved to a different owner are listed in the commit message, so a r
 ## Licensing
 
 - **Code:** MPL-2.0 (see `LICENSES/`).
-- **`catalog.json`:** CC0-1.0. It is a mechanical compilation of facts (app names and where they come from) taken from
-  AM's index and AppImageHub's feed; to the extent any rights exist in the compilation they are dedicated to the public domain. No claim is made over the
-  content itself: descriptions originate from AM and AppImageHub and, mostly verbatim, from the upstream projects' own GitHub
-  texts. They are therefore cut to 100 characters, as a label and not a copy of the text.
-  AM is GPL-3.0 (see its `LICENSE`); no AM code is included. The same goes for AppImageHub's feed (names, descriptions
-  cut to 100 characters, repository links); no code or data files of that repository are included.
-- If you hold rights in something published here and want it changed or removed, open an issue.
+- **`catalog.json`:** CC0-1.0. It is a mechanical compilation of facts (app names, and where each app comes from).
+  To the extent any rights exist in the compilation, they are dedicated to the public domain.
+
+### What the catalog contains
+
+- Names and repository links, which are facts.
+- Descriptions, cut to 100 characters, as a label and not a copy of the text. They originate from the upstream
+  projects' own texts (their GitHub description, `.desktop` comment or AppStream summary), which reach us through the
+  two sources below. No claim is made over them.
+
+### Sources
+
+| Source | Its license | What is taken |
+|---|---|---|
+| [ivan-hc/AM](https://github.com/ivan-hc/AM) | GPL-3.0 | App list, `SITE=` values, short descriptions. No AM code is included. |
+| [AppImageHub](https://appimage.github.io) | MIT, © Simon Peter and contributors | Names, repository links, short descriptions from its `feed.json`. No code or data files of that repository are included. |
+
+### Removal
+
+If you hold rights in something published here and want it changed or removed, open an issue.
