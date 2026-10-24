@@ -1,6 +1,6 @@
 version: 2
 updates:
-  # The workflow actions are pinned to a version tag (not a SHA); Dependabot proposes the newer versions.
+  # The workflow actions are pinned to a commit SHA, with the version in a comment; Dependabot proposes the newer ones.
   - package-ecosystem: github-actions
     directory: /
     schedule:
