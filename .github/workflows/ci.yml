@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Install the test tools
+        run: python3 -m pip install --quiet pytest ruff
+      - name: Run the tests
+        run: python3 -m pytest -q
+      - name: Check that the committed catalog is valid
+        run: python3 -c "from appjail_db import catalog; catalog.parse(open('catalog.json').read())"
+        env:
+          PYTHONPATH: src
