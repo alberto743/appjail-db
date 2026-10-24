@@ -203,3 +203,21 @@ def test_fetch_refuses_an_unreasonably_large_work_directory(tmp_path, monkeypatc
     monkeypatch.setattr(fetch, "MAX_WORK_BYTES", 10)
     with pytest.raises(IndexProblem, match="unreasonably large"):
         fetch.check_size(tmp_path)
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("Short one.", "Short one."),
+    ("x" * 100, "x" * 100),
+    ("word " * 30, "word " * 18 + "word…"),
+    ("y" * 150, "y" * 99 + "…"),
+    ("alpha beta gamma, " * 10, "alpha beta gamma, " * 4 + "alpha beta gamma, alpha…"),
+])
+def test_shorten_cuts_at_a_word_boundary(text, expected):
+    got = amsource.shorten(text)
+    assert got == expected and len(got) <= amsource.DESCRIPTION_CAP
+
+
+def test_convert_keeps_only_a_short_description(tree):
+    (tree / "programs/x86_64-appimages").write_text(f"{BULLET} cura : " + "long text " * 40 + "\n")
+    found = apps(tree)
+    assert len(found["cura"].description) <= amsource.DESCRIPTION_CAP and found["cura"].description.endswith("…")

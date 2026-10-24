@@ -16,7 +16,8 @@ appjail can read it instead of fetching the whole AM repository:
 
 1. fetches `programs/x86_64-appimages` and `programs/x86_64/` of AM with a sparse, blobless, hardened `git` fetch;
 2. reads the list (`◆ name : description`) and each app's install script as plain text; a regex finds the first
-   `SITE=` (and `SITE2=`, noted as repackager). Nothing from AM is ever executed or sourced;
+   `SITE=` (and `SITE2=`, noted as repackager) and keeps only the first 100 characters of each description (see
+   Licensing). Nothing from AM is ever executed or sourced;
 3. validates the result with the same rules appjail applies, and refuses it if it has fewer than 5000 apps or
    shrinks by more than 10% against the committed one (an AM layout change must not publish a gutted catalog);
 4. leaves `catalog.json` untouched when the apps are unchanged, so only real changes make a commit.
@@ -46,5 +47,12 @@ whose source moved to a different owner are listed in the commit message, so a r
     python3 -m pip install pytest ruff
     python3 -m pytest
 
-Code: MPL-2.0 (see `LICENSES/`). No AM code is included, but `catalog.json` is derived from AM's app list (names and
-short descriptions), and AM is GPL-3.0; see its `LICENSE`.
+## Licensing
+
+- **Code:** MPL-2.0 (see `LICENSES/`).
+- **`catalog.json`:** CC0-1.0. It is a mechanical compilation of facts (app names and where they come from) taken from
+  AM's index; to the extent any rights exist in the compilation they are dedicated to the public domain. No claim is made over the
+  content itself: descriptions originate from AM and, mostly verbatim, from the upstream projects' own GitHub
+  texts. They are therefore cut to 100 characters, as a label and not a copy of the text.
+  AM is GPL-3.0 (see its `LICENSE`); no AM code is included.
+- If you hold rights in something published here and want it changed or removed, open an issue.

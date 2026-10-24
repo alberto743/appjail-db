@@ -19,6 +19,8 @@ LIST_FILE = os.path.join("programs", "x86_64-appimages")
 SCRIPT_DIR = os.path.join("programs", "x86_64")
 MAX_LIST_BYTES = 8 * 1024 * 1024
 MAX_SCRIPT_BYTES = 256 * 1024
+# Descriptions are mostly the upstream projects' own texts: only a short label is kept (see README, "Licensing").
+DESCRIPTION_CAP = 100
 
 # "◆ name : description" (the bullet, and anything before the name, is ignored)
 LIST_RE = re.compile(r"^[^\w\s]{0,2}\s*([A-Za-z0-9][A-Za-z0-9._+-]{0,80}) : (.*)$")
@@ -96,6 +98,17 @@ def app_from_script(name, description, script):
     return catalog.App(name, description, source, note)
 
 
+def shorten(text, limit=DESCRIPTION_CAP):
+    """text cut to at most limit characters at a word boundary, with an ellipsis when something was dropped."""
+    if len(text) <= limit:
+        return text
+    cut = text[: limit - 1]
+    head, sep, _ = cut.rpartition(" ")
+    if sep and len(head) >= limit // 2:
+        cut = head
+    return cut.rstrip(" ,;:.-–—|/(") + "…"
+
+
 def _directory(path, what):
     try:
         st = os.lstat(path)
@@ -120,7 +133,7 @@ def convert(tree, revision=""):
             continue
         seen.add(name)
         script = read_text(os.path.join(tree, SCRIPT_DIR, name), MAX_SCRIPT_BYTES)
-        apps.append(app_from_script(name, textsafe.clean(description, catalog.DESCRIPTION_MAX), script))
+        apps.append(app_from_script(name, shorten(textsafe.clean(description, catalog.DESCRIPTION_MAX)), script))
     if not apps:
         raise IndexProblem("the fetched list contains no apps")
     return catalog.Catalog(tuple(apps), AM_URL, revision)
