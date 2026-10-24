@@ -91,3 +91,36 @@ def test_main_success(tmp_path, capsys):
 def test_the_committed_catalog_is_valid():
     path = Path(__file__).resolve().parent.parent / "catalog.json"
     assert len(catalog.parse(path.read_text(encoding="utf-8")).apps) >= cli.MIN_APPS
+
+
+def cat(**sources):
+    return catalog.Catalog(tuple(catalog.App(n, "", s) for n, s in sources.items()))
+
+
+def test_owner_changes_ignore_renames_additions_and_missing_sources():
+    old = cat(a="github:o/a", b="github:o/b", c="", d="github:o/d", e="github:o/e")
+    new = cat(a="github:o/renamed", b="github:evil/b", c="github:x/c", d="", e="gitlab:gitlab.com/o/e", f="github:z/f")
+    assert cli.owner_changes(old, new) == [("b", "github:o/b", "github:evil/b"),
+                                           ("e", "github:o/e", "gitlab:gitlab.com/o/e")]
+
+
+def test_report_is_capped():
+    lines = cli.report_lines([(f"a{i}", "github:o/x", "github:p/x") for i in range(cli.MAX_REPORTED + 3)])
+    assert len(lines) == cli.MAX_REPORTED + 1 and lines[-1] == "... and 3 more"
+
+
+def test_build_writes_the_owner_report(tmp_path):
+    out, report = tmp_path / "catalog.json", tmp_path / "owners.txt"
+    cli.build(str(out), make_tree(tmp_path / "t"), C1, 10, str(report))
+    assert report.read_text() == ""
+    tree = make_tree(tmp_path / "u")
+    (tree / "programs/x86_64/app3").write_text('SITE="evil/app3"\n')
+    cli.build(str(out), tree, "2" * 40, 10, str(report))
+    assert report.read_text() == "app3: github:owner/app3 -> github:evil/app3\n"
+
+
+def test_main_passes_the_report_option(tmp_path):
+    out, report = tmp_path / "c.json", tmp_path / "r.txt"
+    args = ["build", "-o", str(out), "--min-apps", "10", "--report", str(report)]
+    cli.main([*args, "--tree", str(make_tree(tmp_path / "t"))])
+    assert report.exists()

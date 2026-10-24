@@ -96,6 +96,18 @@ def parse_source(value):
     return kind, target
 
 
+def identity(source):
+    """Who stands behind a normalized source, for spotting a change of owner: kind, host and owner, lowercase
+    (`github:cli`, `gitlab:gitlab.com/group`, `forgejo:codeberg.org/user`, `url:example.org`)."""
+    kind, _, target = source.partition(":")
+    if kind == "url":
+        return f"url:{(urlsplit(target).hostname or '').lower()}"
+    if kind == "github":
+        return f"github:{target.split('/', 1)[0].lower()}"
+    host, _, path = target.partition("/")
+    return f"{kind}:{host}/{path.split('/', 1)[0].lower()}"
+
+
 @dataclass(frozen=True)
 class App:
     name: str

@@ -4,7 +4,8 @@
 """`python -m appjail_db build`: regenerate catalog.json from ivan-hc/AM.
 
 The output is only replaced by a catalog that parses under appjail's own rules and is not suspiciously smaller than
-the one it replaces. When the apps are unchanged the file is left alone, so a new AM commit that touches neither the
+the one it replaces. Apps whose source moved to a different owner are reported (`--report`), so the weekly commit
+message shows them. When the apps are unchanged the file is left alone, so a new AM commit that touches neither the
 list nor the scripts makes no diff (and no commit in the weekly workflow).
 """
 
@@ -19,6 +20,7 @@ from .catalog import IndexProblem
 
 MIN_APPS = 5000
 MAX_SHRINK = 0.10
+MAX_REPORTED = 50
 
 
 def load(path):
@@ -38,8 +40,22 @@ def check(new, old, min_apps):
                            f"a drop of more than {MAX_SHRINK:.0%}")
 
 
-def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS):
-    """Write the catalog to out; return "updated" or "unchanged"."""
+def owner_changes(old, new):
+    """(name, old source, new source) of the apps whose source has a different kind, host or owner."""
+    before = {a.name: a.source for a in old.apps}
+    return [(a.name, before[a.name], a.source) for a in new.apps
+            if before.get(a.name) and a.source and catalog.identity(before[a.name]) != catalog.identity(a.source)]
+
+
+def report_lines(changes):
+    lines = [f"{name}: {x} -> {y}" for name, x, y in changes[:MAX_REPORTED]]
+    if len(changes) > MAX_REPORTED:
+        lines.append(f"... and {len(changes) - MAX_REPORTED} more")
+    return lines
+
+
+def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS, report=None):
+    """Write the catalog to out; return "updated" or "unchanged". With report, the owner changes go there (one per line)."""
     if tree is not None:
         cat = amsource.convert(tree, commit if commit != "HEAD" else "")
     else:
@@ -52,6 +68,9 @@ def build(out, tree=None, commit="HEAD", min_apps=MIN_APPS):
     check(cat, old, min_apps)
     if old is not None and old.apps == cat.apps:
         return "unchanged"
+    lines = report_lines(owner_changes(old, cat)) if old is not None else []
+    if report is not None:
+        Path(report).write_text("".join(f"{line}\n" for line in lines), encoding="utf-8")
     tmp = f"{out}.tmp"
     Path(tmp).write_text(text, encoding="utf-8")
     os.replace(tmp, out)
@@ -65,10 +84,11 @@ def main(argv=None):
     b.add_argument("-o", "--output", default="catalog.json")
     b.add_argument("--commit", default="HEAD", help="AM commit (40 hex digits) or HEAD")
     b.add_argument("--tree", help="use an already fetched AM tree (containing programs/) instead of fetching")
+    b.add_argument("--report", help="write the apps whose source changed owner to this file")
     b.add_argument("--min-apps", type=int, default=MIN_APPS)
     args = parser.parse_args(argv)
     try:
-        print(build(args.output, args.tree, args.commit, args.min_apps))
+        print(build(args.output, args.tree, args.commit, args.min_apps, args.report))
     except IndexProblem as e:
         print(f"appjail-db: {e}", file=sys.stderr)
         return 1

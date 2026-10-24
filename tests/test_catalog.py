@@ -104,3 +104,13 @@ def test_every_kind_of_source_parses_and_is_normalized(given, normalized):
     cat = catalog.parse(doc(apps=[{"name": "x", "source": given}]))
     assert cat.apps[0].source == normalized
     assert catalog.parse(catalog.dumps(cat)) == cat
+
+
+@pytest.mark.parametrize("source,who", [
+    ("github:Cli/cli", "github:cli"),
+    ("forgejo:codeberg.org/User/tool", "forgejo:codeberg.org/user"),
+    ("gitlab:gitlab.example.org/Group/sub/tool", "gitlab:gitlab.example.org/group"),
+    ("url:https://Example.COM/dl/a.AppImage", "url:example.com"),
+])
+def test_identity_names_kind_host_and_owner(source, who):
+    assert catalog.identity(source) == who

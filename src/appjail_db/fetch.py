@@ -18,6 +18,8 @@ from .catalog import IndexProblem
 from .textsafe import clean
 
 COMMIT_RE = re.compile(r"[0-9a-f]{40}")
+MAX_WORK_BYTES = 1536 * 1024 ** 2  # no jail watches the work directory, so it is checked afterwards
+MAX_WORK_ENTRIES = 300_000
 
 GIT_SCRIPT = r"""set -eu
 G="git -c core.hooksPath=/dev/null -c core.fsmonitor=false -c core.attributesFile=/dev/null \
@@ -43,6 +45,16 @@ class Fetched:
     tree: Path  # directory containing programs/...
 
 
+def check_size(workdir):
+    """Refuse a work directory with an absurd number of entries or bytes."""
+    total = entries = 0
+    for root, dirs, files in os.walk(workdir):
+        entries += len(dirs) + len(files)
+        total += sum(os.lstat(os.path.join(root, f)).st_size for f in files)
+        if entries > MAX_WORK_ENTRIES or total > MAX_WORK_BYTES:
+            raise IndexProblem("the fetched tree is unreasonably large")
+
+
 def fetch(workdir, commit="HEAD", url=AM_URL, timeout=1800):
     """Fetch the requested commit (or the remote HEAD) into workdir."""
     if commit != "HEAD" and not COMMIT_RE.fullmatch(commit):
@@ -58,4 +70,5 @@ def fetch(workdir, commit="HEAD", url=AM_URL, timeout=1800):
     out = dict(line.split(" ", 1) for line in proc.stdout.splitlines() if " " in line)
     if not COMMIT_RE.fullmatch(out.get("commit", "")):
         raise IndexProblem("could not determine the fetched commit")
+    check_size(workdir)
     return Fetched(out["commit"], Path(workdir) / "repo")

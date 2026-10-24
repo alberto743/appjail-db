@@ -6,37 +6,58 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: update-catalog
   cancel-in-progress: false
 
 jobs:
-  update:
+  # The only job that installs third-party packages; it cannot write to the repository.
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7.0.1
+      - run: python3 -m pip install --quiet pytest ruff
+      - run: python3 -m pytest -q
 
-      - name: Run the tests
-        run: |
-          python3 -m pip install --quiet pytest
-          python3 -m pytest -q
+  # Standard library only. The token is not stored by checkout and reaches only the final push step.
+  update:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
 
       # Refuses a catalog that is too small or shrinks by more than 10%; leaves the file alone when the apps are unchanged.
       - name: Build the catalog from ivan-hc/AM
-        run: PYTHONPATH=src python3 -m appjail_db build -o catalog.json
+        run: PYTHONPATH=src python3 -m appjail_db build -o catalog.json --report "$RUNNER_TEMP/owners.txt"
 
+      # Apps whose source moved to another owner are listed in the commit message.
       - name: Commit and push if the catalog changed
+        env:
+          TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
         run: |
           if git diff --quiet -- catalog.json; then
             echo "catalog unchanged"
             exit 0
           fi
           rev=$(python3 -c "import json; print(json.load(open('catalog.json'))['revision'][:8])")
+          {
+            echo "catalog: update from AM $rev"
+            if [ -s "$RUNNER_TEMP/owners.txt" ]; then
+              printf '\nSource owner changes:\n'
+              cat "$RUNNER_TEMP/owners.txt"
+            fi
+          } > "$RUNNER_TEMP/message.txt"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add catalog.json
-          git commit -m "catalog: update from AM $rev"
-          git push
+          git commit -q -F "$RUNNER_TEMP/message.txt"
+          git push "https://x-access-token:${TOKEN}@github.com/${REPOSITORY}.git" HEAD

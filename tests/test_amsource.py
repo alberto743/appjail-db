@@ -195,3 +195,11 @@ def test_fetch_reports_git_failures_cleanly(tmp_path, monkeypatch):
                         lambda a, **k: fetch.subprocess.CompletedProcess(a, 128, "", "fatal: \x1b[31mboom\x1b[0m"))
     with pytest.raises(IndexProblem, match="git failed: fatal: boom"):
         fetch.fetch(tmp_path)
+
+
+def test_fetch_refuses_an_unreasonably_large_work_directory(tmp_path, monkeypatch):
+    (tmp_path / "repo").mkdir()
+    (tmp_path / "repo/big").write_bytes(b"x" * 100)
+    monkeypatch.setattr(fetch, "MAX_WORK_BYTES", 10)
+    with pytest.raises(IndexProblem, match="unreasonably large"):
+        fetch.check_size(tmp_path)

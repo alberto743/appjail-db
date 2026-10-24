@@ -6,4 +6,5 @@ Builds `catalog.json` (appjail-catalog v1) from ivan-hc/AM for the sibling proje
 - AM content is untrusted text: never evaluate it, never follow links in the fetched tree.
 - `catalog.json` is produced by the weekly workflow; do not hand-edit it. Run `python -m appjail_db build` to regenerate.
 - Tests: `python3 -m pytest` (needs pytest, ruff). Update README.md in the same commit as behaviour changes.
+- The update workflow keeps the write token away from third-party code: `test` job (read-only, pip) then `update` job (stdlib only, token only at the push step). Keep it that way.
 - Workflows use `ubuntu-latest` and action versions pinned to tags (Dependabot updates them).
