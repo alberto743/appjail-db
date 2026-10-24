@@ -6,7 +6,7 @@ index of [ivan-hc/AM](https://github.com/ivan-hc/AM).
 `catalog.json` is an `appjail-catalog` (version 1) document: for each app a name, a description and, where AM knows
 it, a kind-prefixed `source` (`github:owner/repo`, `gitlab:...`, `forgejo:...`) or a `note` saying why there is none
 (`resolve manually: ...`, `repackager ...`). It only suggests; `appjail add` still verifies the repository.
-appjail can read it instead of fetching the whole AM repository:
+appjail reads it, pinned to a commit, instead of fetching the whole AM repository:
 
     https://raw.githubusercontent.com/alberto743/appjail-db/main/catalog.json
 
@@ -25,8 +25,9 @@ appjail can read it instead of fetching the whole AM repository:
 Options: `--report FILE` (apps whose source changed owner), `--tree DIR` (an already fetched AM tree),
 `--commit SHA` (a specific AM commit), `--min-apps N`.
 
-`catalog.py`, `amsource.py` and `textsafe.py` are copies of appjail's modules of the same name (without the jail);
-keep them in step with appjail when its format changes.
+`catalog.py` and `textsafe.py` are copies of appjail's modules of the same name; keep them in step with appjail when
+its format changes. `amsource.py` exists only here: appjail no longer reads AM, it asks the GitHub API for the latest
+commit of this repository and downloads `catalog.json` at that commit (`appjail index update`, or `--commit SHA`).
 
 ## Weekly update
 
