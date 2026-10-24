@@ -3,10 +3,10 @@
 The reference catalog of AppImages for [appjail](https://github.com/alberto743/appjail), rebuilt weekly from the
 index of [ivan-hc/AM](https://github.com/ivan-hc/AM) and the feed of [AppImageHub](https://appimage.github.io).
 
-`catalog.json` is an `appjail-catalog` (version 1) document: for each app a name, a description and, where AM knows
-it, a kind-prefixed `source` (`github:owner/repo`, `gitlab:...`, `forgejo:...`) or a `note` saying why there is none
+`catalog.json` is an `appjail-catalog` (version 1) document: for each app a name, a description and, where AM or AppImageHub
+know it, a kind-prefixed `source` (`github:owner/repo`, `gitlab:...`, `forgejo:...`) or a `note` saying why there is none
 (`resolve manually: ...`, `repackager ...`). It only suggests; `appjail add` still verifies the repository.
-appjail reads it, pinned to a commit, instead of fetching the whole AM repository:
+appjail reads it, pinned to a commit, instead of fetching AM or AppImageHub itself:
 
     https://raw.githubusercontent.com/alberto743/appjail-db/main/catalog.json
 
@@ -25,20 +25,19 @@ appjail reads it, pinned to a commit, instead of fetching the whole AM repositor
    shrinks by more than 10% against the committed one (an AM layout change must not publish a gutted catalog);
 5. leaves `catalog.json` untouched when the apps are unchanged, so only real changes make a commit.
 
-Merge rules (`merge.py`): an app is the same in both when its repository is the same and holds only that app on
-both sides (a repository may publish several apps), or else when the name is the same ignoring case. The merged app
-keeps AM's name and takes AppImageHub's description and source. When the name is the same but the repositories differ,
-the app has no `source` and its `note` says `resolve manually: AM owner/repo; AppImageHub owner/repo`: which one is
-right is for the user to decide at `appjail add`. Apps in only one of the two are kept as they are, except that an
-app with no `source` and no pointer in its `note` (only "no source in the index" or "no install script in the index")
-is dropped, whichever catalog it came from: there is nothing to do with it.
+Merge rules (`merge.py`): an app is the same in both when its repository is the same and holds only that app on both
+sides (a repository may publish several apps), or else when the name is the same ignoring case. The merged app keeps
+AM's name and takes AppImageHub's description and source (AM's where the feed has none). When the name is the same but
+the repositories differ, the app has no `source` and its `note` says `resolve manually: AM owner/repo; AppImageHub
+owner/repo`: which one is right is for the user to decide at `appjail add`. Apps in only one of the two are kept as
+they are, except that an app with no `source` and no pointer in its `note` (only "no source in the index" or "no
+install script in the index") is dropped, whichever catalog it came from: there is nothing to do with it.
 
 Options: `--hub-feed FILE` (a feed already downloaded), `--no-hub` (AM only), `--report FILE` (apps whose source
-changed owner), `--tree DIR` (an already fetched AM tree),
-`--commit SHA` (a specific AM commit), `--min-apps N`.
+changed owner), `--tree DIR` (an already fetched AM tree), `--commit SHA` (a specific AM commit), `--min-apps N`.
 
 `catalog.py` and `textsafe.py` are copies of appjail's modules of the same name; keep them in step with appjail when
-its format changes. `amsource.py` exists only here: appjail no longer reads AM, it asks the GitHub API for the latest
+its format changes. `amsource.py`, `hubsource.py` and `merge.py` exist only here: appjail no longer reads AM, it asks the GitHub API for the latest
 commit of this repository and downloads `catalog.json` at that commit (`appjail index update`, or `--commit SHA`).
 
 ## Weekly update
@@ -47,7 +46,7 @@ commit of this repository and downloads `catalog.json` at that commit (`appjail 
 installs packages (pytest, ruff). `update` uses the standard library only, builds the catalog and, if it changed, commits
 and pushes it as `github-actions[bot]`; the write token is not stored by checkout and reaches only the push step. Apps
 whose source moved to a different owner are listed in the commit message, so a repointed app is visible in the history
-(appjail also shows such changes at `index update`). Requirements:
+(appjail also shows such changes at `index update`); the subject names the AM commit and AppImageHub. Requirements:
 
 - Settings → Actions → General → Workflow permissions: *Read and write*.
 - `main` may be protected (and should be: enable two-factor authentication and restrict who can push), but the ruleset
@@ -64,8 +63,8 @@ whose source moved to a different owner are listed in the commit message, so a r
 
 - **Code:** MPL-2.0 (see `LICENSES/`).
 - **`catalog.json`:** CC0-1.0. It is a mechanical compilation of facts (app names and where they come from) taken from
-  AM's index; to the extent any rights exist in the compilation they are dedicated to the public domain. No claim is made over the
-  content itself: descriptions originate from AM and, mostly verbatim, from the upstream projects' own GitHub
+  AM's index and AppImageHub's feed; to the extent any rights exist in the compilation they are dedicated to the public domain. No claim is made over the
+  content itself: descriptions originate from AM and AppImageHub and, mostly verbatim, from the upstream projects' own GitHub
   texts. They are therefore cut to 100 characters, as a label and not a copy of the text.
   AM is GPL-3.0 (see its `LICENSE`); no AM code is included. The same goes for AppImageHub's feed (names, descriptions
   cut to 100 characters, repository links); no code or data files of that repository are included.
