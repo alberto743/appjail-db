@@ -109,6 +109,11 @@ def shorten(text, limit=DESCRIPTION_CAP):
     return cut.rstrip(" ,;:.-–—|/(") + "…"
 
 
+def label(text):
+    """A description as the catalog keeps it: cleaned and cut to DESCRIPTION_CAP."""
+    return shorten(textsafe.clean(text, catalog.DESCRIPTION_MAX)).strip()
+
+
 def _directory(path, what):
     try:
         st = os.lstat(path)
@@ -133,7 +138,7 @@ def convert(tree, revision=""):
             continue
         seen.add(name)
         script = read_text(os.path.join(tree, SCRIPT_DIR, name), MAX_SCRIPT_BYTES)
-        apps.append(app_from_script(name, shorten(textsafe.clean(description, catalog.DESCRIPTION_MAX)), script))
+        apps.append(app_from_script(name, label(description), script))
     if not apps:
         raise IndexProblem("the fetched list contains no apps")
     return catalog.Catalog(tuple(apps), AM_URL, revision)

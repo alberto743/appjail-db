@@ -29,11 +29,12 @@ Merge rules (`merge.py`): an app is the same in both when its repository is the 
 both sides (a repository may publish several apps), or else when the name is the same ignoring case. The merged app
 keeps AM's name and takes AppImageHub's description and source. When the name is the same but the repositories differ,
 the app has no `source` and its `note` says `resolve manually: AM owner/repo; AppImageHub owner/repo`: which one is
-right is for the user to decide at `appjail add`. Apps in only one of the two are kept as they are, except that an app with no `source` and no pointer in its `note`
-(only "no source in the index" or "no install script in the index") is dropped, whichever catalog it came from:
-there is nothing to do with it.
+right is for the user to decide at `appjail add`. Apps in only one of the two are kept as they are, except that an
+app with no `source` and no pointer in its `note` (only "no source in the index" or "no install script in the index")
+is dropped, whichever catalog it came from: there is nothing to do with it.
 
-Options: `--hub-feed FILE` (a feed already downloaded), `--no-hub` (AM only), `--report FILE` (apps whose source changed owner), `--tree DIR` (an already fetched AM tree),
+Options: `--hub-feed FILE` (a feed already downloaded), `--no-hub` (AM only), `--report FILE` (apps whose source
+changed owner), `--tree DIR` (an already fetched AM tree),
 `--commit SHA` (a specific AM commit), `--min-apps N`.
 
 `catalog.py` and `textsafe.py` are copies of appjail's modules of the same name; keep them in step with appjail when

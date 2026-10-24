@@ -42,8 +42,6 @@ def fetch_feed(url=FEED_URL, timeout=FEED_TIMEOUT):
     try:
         with opener.open(urllib.request.Request(url, headers={"User-Agent": "appjail-db"}), timeout=timeout) as r:
             data = r.read(MAX_FEED_BYTES + 1)
-    except IndexProblem:
-        raise
     except (OSError, urllib.error.URLError) as e:
         raise IndexProblem("could not fetch the AppImageHub feed: " + textsafe.clean(e, 200)) from None
     if len(data) > MAX_FEED_BYTES:
@@ -59,19 +57,17 @@ def _links(item):
 def source_of(item):
     """(catalog source, note) of a feed item: the repository link of the feed, else what AM's classifier makes of
     the download link (a github.com release page, say), else a note."""
-    links = _links(item)
+    links = [(link.get("type"), link["url"].strip()) for link in _links(item) if isinstance(link.get("url"), str)]
     for kind, prefix in LINK_PREFIXES:
-        for link in links:
-            value = link.get("url")
-            if link.get("type") == kind and isinstance(value, str):
+        for link_kind, url in links:
+            if link_kind == kind:
                 try:
-                    return "{}:{}".format(*catalog.parse_source(prefix + value.strip())), ""
+                    return "{}:{}".format(*catalog.parse_source(prefix + url)), ""
                 except ValueError:
                     continue
-    for link in links:
-        value = link.get("url")
-        if link.get("type") in ("Download", "Install") and isinstance(value, str):
-            source, note = amsource.classify(value.strip())
+    for link_kind, url in links:
+        if link_kind in ("Download", "Install"):
+            source, note = amsource.classify(url)
             if source or note:
                 return source, note
     return "", "no source in the index"
@@ -95,10 +91,9 @@ def convert(text):
             continue
         seen.add(item["name"].lower())
         description = item.get("description")
-        description = amsource.shorten(textsafe.clean(description, catalog.DESCRIPTION_MAX)) \
-            if isinstance(description, str) else ""
         source, note = source_of(item)
-        apps.append(catalog.App(item["name"], description.strip(), source, note))
+        apps.append(catalog.App(item["name"], amsource.label(description) if isinstance(description, str) else "",
+                                source, note))
     if not apps:
         raise IndexProblem("the AppImageHub feed contains no usable apps")
     return catalog.Catalog(tuple(apps), HUB_URL, "sha256:" + hashlib.sha256(text.encode()).hexdigest()[:12])
