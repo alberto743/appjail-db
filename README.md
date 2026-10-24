@@ -46,4 +46,5 @@ whose source moved to a different owner are listed in the commit message, so a r
     python3 -m pip install pytest ruff
     python3 -m pytest
 
-Licensed under MPL-2.0 (see `LICENSES/`).
+Code: MPL-2.0 (see `LICENSES/`). No AM code is included, but `catalog.json` is derived from AM's app list (names and
+short descriptions), and AM is GPL-3.0; see its `LICENSE`.
