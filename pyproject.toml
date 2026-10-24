@@ -1,22 +1,13 @@
-[build-system]
-requires = ["hatchling>=1.27"]
-build-backend = "hatchling.build"
-
 [project]
 name = "appjail-db"
 version = "0.1.0"
 description = "Weekly appjail-catalog built from the ivan-hc/AM AppImage index"
-readme = "README.md"
 requires-python = ">=3.12"
 license = "MPL-2.0"
-license-files = ["LICENSES/MPL-2.0.txt"]
 dependencies = []  # standard library only, by design
 
 [project.optional-dependencies]
 test = ["pytest", "ruff"]
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/appjail_db"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

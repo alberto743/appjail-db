@@ -2,10 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 import json
+from pathlib import Path
 
 import pytest
 
-from appjail_db import cli
+from appjail_db import catalog, cli
 from appjail_db.catalog import IndexProblem
 
 C1 = "1" * 40
@@ -85,3 +86,8 @@ def test_main_success(tmp_path, capsys):
     tree = make_tree(tmp_path / "t")
     assert cli.main(["build", "-o", str(tmp_path / "c.json"), "--tree", str(tree), "--min-apps", "10"]) == 0
     assert capsys.readouterr().out.strip() == "updated"
+
+
+def test_the_committed_catalog_is_valid():
+    path = Path(__file__).resolve().parent.parent / "catalog.json"
+    assert len(catalog.parse(path.read_text(encoding="utf-8")).apps) >= cli.MIN_APPS

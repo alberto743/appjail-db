@@ -26,9 +26,7 @@ jobs:
 
       # Refuses a catalog that is too small or shrinks by more than 10%; leaves the file alone when the apps are unchanged.
       - name: Build the catalog from ivan-hc/AM
-        run: python3 -m appjail_db build -o catalog.json
-        env:
-          PYTHONPATH: src
+        run: PYTHONPATH=src python3 -m appjail_db build -o catalog.json
 
       - name: Commit and push if the catalog changed
         run: |

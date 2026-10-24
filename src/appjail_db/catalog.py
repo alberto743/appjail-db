@@ -1,14 +1,13 @@
 # SPDX-FileCopyrightText: 2026 Alberto P
 # SPDX-License-Identifier: MPL-2.0
 
-"""The appjail-catalog format, as appjail's `search` reads it. This is a self-contained copy of appjail's `catalog.py`;
-the validator is kept identical so that what is published here is accepted there.
+"""The appjail-catalog format. A copy of appjail's `catalog.py`, kept identical in behaviour so that what is published
+here is accepted there.
 
-A catalog is one JSON document listing apps and, where known, where they come from: a kind-prefixed `source` that
-follows appjail's manifest grammar (`github:owner/repo`, `gitlab:HOST/group/project`, `forgejo:HOST/owner/repo`,
-`codeberg:owner/repo`, `url:https://...`). Only GitHub and URL sources can be installed today; the others are
-suggestions for a later resolver. A catalog is untrusted data: parsing is strict and bounded, every text is
-stripped of terminal escape sequences, and nothing in it is ever executed. A catalog only suggests; `appjail add` still asks for the repository.
+A catalog is one JSON document listing apps and, where known, where they come from: a kind-prefixed `source`
+(`github:owner/repo`, `gitlab:HOST/group/project`, `forgejo:HOST/owner/repo`, `codeberg:owner/repo`, `url:https://...`).
+A catalog is untrusted data: parsing is strict and bounded, every text is stripped of terminal escape sequences,
+and nothing in it is ever executed.
 """
 
 import json
@@ -43,7 +42,6 @@ HOST_RE = re.compile(r"(?=.{4,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[
 SEGMENT_RE = re.compile(r"(?!\.{1,2}$)[A-Za-z0-9_.-]{1,100}")
 CODEBERG_HOST = "codeberg.org"
 KINDS = ("github", "gitlab", "forgejo", "codeberg", "url")
-INSTALLABLE = ("github", "url")  # the kinds `appjail add` can resolve today
 
 
 def _forge_path(target, minimum, maximum):

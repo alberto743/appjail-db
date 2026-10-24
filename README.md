@@ -38,6 +38,6 @@ changed, commits and pushes it as `github-actions[bot]`. Requirements:
 ## Development
 
     python3 -m pip install pytest ruff
-    PYTHONPATH=src python3 -m pytest
+    python3 -m pytest
 
 Licensed under MPL-2.0 (see `LICENSES/`).

@@ -22,7 +22,3 @@ jobs:
         run: python3 -m pip install --quiet pytest ruff
       - name: Run the tests
         run: python3 -m pytest -q
-      - name: Check that the committed catalog is valid
-        run: python3 -c "from appjail_db import catalog; catalog.parse(open('catalog.json').read())"
-        env:
-          PYTHONPATH: src
