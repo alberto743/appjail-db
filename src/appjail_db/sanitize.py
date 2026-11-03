@@ -11,6 +11,7 @@ The categories decide, not a list of code points, so what Unicode adds later is 
 build; what was stripped is reported.
 """
 
+import re
 import unicodedata
 from collections import Counter
 
@@ -19,6 +20,7 @@ from . import catalog
 KEEP = {"‌", "‍", *map(chr, range(0xFE00, 0xFE10))}
 CATEGORIES = {"Cf", "Zl", "Zp", "Co", "Cs", "Cn"}
 FIELDS = ("description", "note")
+NOTICE = re.compile(r"\s*(copyright\b|\(c\)|©)", re.IGNORECASE)
 
 
 def unwanted(ch):
@@ -43,5 +45,8 @@ def sanitize(cat):
             if found:
                 chars = ", ".join(f"U+{ord(c):04X}" + (f" x{n}" if n > 1 else "") for c, n in sorted(found.items()))
                 lines.append(f"{app.name}: {field}: stripped {chars}")
+        if NOTICE.match(values["description"]):
+            values["description"] = ""
+            lines.append(f"{app.name}: description: dropped copyright notice")
         apps.append(catalog.App(app.name, values["description"].strip(), app.source, values["note"].strip()))
     return catalog.Catalog(tuple(apps), cat.origin, cat.revision), lines

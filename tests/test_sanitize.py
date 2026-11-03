@@ -36,3 +36,16 @@ def test_sanitize_cleans_description_and_note_and_reports_each():
 def test_a_description_that_was_only_invisible_becomes_empty():
     clean, _ = sanitize.sanitize(catalog.Catalog((App("a", "\u200b \u200b", "github:o/a"),)))
     assert clean.apps[0].description == ""
+
+
+def test_a_description_that_is_a_copyright_notice_is_dropped_and_reported():
+    cat = catalog.Catalog((App("a", "Copyright \u00a9 2018 X", "github:o/a"), App("b", "(c) 2020 Y", "github:o/b")))
+    clean, lines = sanitize.sanitize(cat)
+    assert [a.description for a in clean.apps] == ["", ""]
+    assert lines == ["a: description: dropped copyright notice", "b: description: dropped copyright notice"]
+
+
+def test_a_description_that_only_mentions_copyright_is_kept():
+    text = "Tool to check copyright headers"
+    clean, lines = sanitize.sanitize(catalog.Catalog((App("a", text, "github:o/a"),)))
+    assert clean.apps[0].description == text and lines == []

@@ -3,10 +3,10 @@
 The reference catalog of AppImages for [appjail](https://github.com/alberto743/appjail), rebuilt weekly from the
 index of [ivan-hc/AM](https://github.com/ivan-hc/AM) and the feed of [AppImageHub](https://appimage.github.io).
 
-`catalog.json` is an `appjail-catalog` (version 1) document: for each app a name, a description and, where AM or AppImageHub
-know it, a kind-prefixed `source` (`github:owner/repo`, `gitlab:...`, `forgejo:...`) or a `note` saying why there is none
-(`resolve manually: ...`, `repackager ...`). It only suggests; `appjail add` still verifies the repository.
-appjail reads it, pinned to a commit, instead of fetching AM or AppImageHub itself:
+`catalog.json` is an `appjail-catalog` (version 1) document: for each app a name, a description and, where AM or
+AppImageHub know it, a kind-prefixed `source` (`github:owner/repo`, `gitlab:...`, `forgejo:...`) or a `note` saying why
+there is none (`resolve manually: ...`, `repackager ...`). It only suggests; `appjail add` still verifies the
+repository. appjail reads it, pinned to a commit, instead of fetching AM or AppImageHub itself:
 
     https://raw.githubusercontent.com/alberto743/appjail-db/main/catalog.json
 
@@ -35,23 +35,27 @@ install script in the index") is dropped, whichever catalog it came from: there 
 
 Texts are then sanitized (`sanitize.py`, on top of appjail's `textsafe.py`): invisible and formatting characters
 (Unicode categories Cf, Zl, Zp, Co, Cs, Cn and the tag block) are stripped from descriptions and notes; zero-width
-joiner and non-joiner and variation selectors stay, as emoji and some scripts need them. This never stops the
-build: what was stripped is listed in the `--report` file and so in the commit message.
+joiner and non-joiner and variation selectors stay, as emoji and some scripts need them. A description that is only a
+copyright notice (starting with "Copyright", "(c)" or "©") is dropped, as it says nothing about the app. This never
+stops the build: what was stripped is listed in the `--report` file and so in the commit message.
 
-Options: `--hub-feed FILE` (a feed already downloaded), `--no-hub` (AM only), `--report FILE` (apps whose source
-changed owner, texts that were sanitized), `--tree DIR` (an already fetched AM tree), `--commit SHA` (a specific AM commit), `--min-apps N`.
+Options: `--hub-feed FILE` (a feed already downloaded), `--no-hub` (AM only), `--report FILE` (apps whose source changed
+owner, texts that were sanitized), `--tree DIR` (an already fetched AM tree), `--commit SHA` (a specific AM commit),
+`--min-apps N`.
 
-`catalog.py` and `textsafe.py` are copies of appjail's modules of the same name; keep them in step with appjail when
-its format changes. `amsource.py`, `hubsource.py` and `merge.py` exist only here: appjail no longer reads AM, it asks the GitHub API for the latest
-commit of this repository and downloads `catalog.json` at that commit (`appjail index update`, or `--commit SHA`).
+`catalog.py` and `textsafe.py` are copies of appjail's modules of the same name; keep them in step with appjail when its
+format changes. `amsource.py`, `hubsource.py` and `merge.py` exist only here: appjail no longer reads AM, it asks the
+GitHub API for the latest commit of this repository and downloads `catalog.json` at that commit (`appjail index update`,
+or `--commit SHA`).
 
 ## Weekly update
 
 `.github/workflows/update.yml` runs every Monday (and on demand) in two jobs. `test` is read-only and the only one that
-installs packages (pytest, ruff). `update` uses the standard library only, builds the catalog and, if it changed, commits
-and pushes it as `github-actions[bot]`; the write token is not stored by checkout and reaches only the push step. Apps
-whose source moved to a different owner are listed in the commit message, so a repointed app is visible in the history
-(appjail also shows such changes at `index update`); the subject names the AM commit and AppImageHub. Requirements:
+installs packages (pytest, ruff). `update` uses the standard library only, builds the catalog and, if it changed,
+commits and pushes it as `github-actions[bot]`; the write token is not stored by checkout and reaches only the push
+step. Apps whose source moved to a different owner are listed in the commit message, so a repointed app is visible in
+the history (appjail also shows such changes at `index update`); the subject names the AM commit and AppImageHub.
+Requirements:
 
 - Settings → Actions → General → Workflow permissions: *Read and write*.
 - `main` may be protected (and should be: enable two-factor authentication and restrict who can push), but the ruleset

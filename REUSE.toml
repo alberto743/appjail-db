@@ -9,5 +9,8 @@ SPDX-License-Identifier = "MPL-2.0"
 [[annotations]]
 path = "catalog.json"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "Names, sources and short descriptions compiled from the ivan-hc/AM index"
+SPDX-FileCopyrightText = [
+  "ivan-hc/AM index: app names, sources and short descriptions (GPL-3.0 upstream)",
+  "Simon Peter and contributors (AppImageHub feed, MIT upstream)",
+]
 SPDX-License-Identifier = "CC0-1.0"

@@ -22,3 +22,5 @@ jobs:
         run: python3 -m pip install --quiet pytest ruff
       - name: Run the tests
         run: python3 -m pytest -q
+      - name: Check the REUSE licensing
+        uses: fsfe/reuse-action@676e2d560c9a403aa252096d99fcab3e1132b0f5  # v6.0.0
