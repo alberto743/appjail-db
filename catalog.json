@@ -2,7 +2,7 @@
  "format": "appjail-catalog",
  "version": 1,
  "origin": "https://github.com/ivan-hc/AM + https://appimage.github.io",
- "revision": "AM 6e0a71c36b7d2625d55bf548e9e80650f61bca28; AppImageHub sha256:3ea81b223c4d",
+ "revision": "AM 0189937510db78057fe70e0ba382547811ad5a74; AppImageHub sha256:9896241d45b5",
  "apps": [
   {
    "name": "0ad",
@@ -33,6 +33,11 @@
    "name": "0xsynth",
    "description": "Multi-engine synthesizer (subtractive/FM/wavetable) — CLAP/VST3 plugin + standalone. Pure C…",
    "source": "github:averagenative/0xsynth"
+  },
+  {
+   "name": "121gw-open-firmware",
+   "description": "Open replacement firmware for the EEVblog 121GW multimeter in hand-written Thumb-2 assembly, with…",
+   "source": "github:zombu4/121gw-open-firmware"
   },
   {
    "name": "12to11",
@@ -95,18 +100,13 @@
    "source": "github:muphy09/3s-PokeMMO-Tool"
   },
   {
-   "name": "432hz-player",
-   "description": "Because most music is recorded in 440hz, Audio Player.",
-   "source": "github:mysteryx93/NaturalGroundingPlayer"
-  },
-  {
    "name": "4kwall",
    "description": "Browse, download, and auto-change 4K wallpapers",
    "source": "github:rishabh3354/4KWALL"
   },
   {
    "name": "4nier-patrimonio",
-   "description": "Controle de investimentos B3 + exterior com rentabilidade auditável, 100% local e gratuito.",
+   "description": "Investment tracking for B3 and international markets with auditable returns, 100% local and free.",
    "source": "github:4nier-app/patrimonio"
   },
   {
@@ -145,6 +145,15 @@
    "source": "github:agnt-gg/agnt"
   },
   {
+   "name": "Adventura",
+   "description": "Adventura lays out screenplays, TV episodes, stage plays, comic scripts, books, essays, blog…",
+   "note": "resolve manually: https://writeadventura.com/download/appimage"
+  },
+  {
+   "name": "Agent_Companion",
+   "source": "github:DanWahlin/agent-companion"
+  },
+  {
    "name": "AiyoPerps",
    "description": "<p>AiyoPerps is a desktop terminal for perpetual futures trading across centralized and…",
    "source": "github:phidiassj/AiyoPerps"
@@ -168,6 +177,16 @@
    "name": "App_Outlet",
    "description": "An Universal linux app store",
    "source": "github:app-outlet/app-outlet"
+  },
+  {
+   "name": "Archive_Manager_7z",
+   "description": "Manage 7z, ZIP and other archives in a classic file manager",
+   "note": "resolve manually: https://devside.nl/archive-manager/downloads/ArchiveManager-beta-x86_64.AppImage"
+  },
+  {
+   "name": "Arkdraw",
+   "description": "Native, offline diagramming",
+   "source": "github:gabe-santana/arkdraw"
   },
   {
    "name": "Arynwood_MCP",
@@ -219,6 +238,11 @@
    "source": "github:benkuper/BenTo"
   },
   {
+   "name": "Bernie",
+   "description": "Prepare and run laser engraving and cutting jobs",
+   "source": "github:beber666/bernie-releases"
+  },
+  {
    "name": "BetterSource2Viewer",
    "description": "Browse, view and export Source 2 resources",
    "source": "github:J0nathan550/BetterSource2Viewer"
@@ -256,6 +280,11 @@
    "name": "Blink1Control2",
    "description": "Blink1Control2 GUI app for blink(1) devices",
    "source": "github:todbot/Blink1Control2"
+  },
+  {
+   "name": "BluetoothDeviceControl",
+   "description": "<p>Lists your Bluetooth devices and lets you remove and re-pair them with     a click from the…",
+   "source": "github:thedevnull/BluetoothDeviceControl"
   },
   {
    "name": "Brackets",
@@ -371,6 +400,11 @@
    "source": "github:janithcooray/claude-desktop"
   },
   {
+   "name": "Claude_Multi",
+   "description": "Run Claude Code with multiple accounts and auto-switch when one hits its usage limit.",
+   "source": "github:Chamanrajragu/claude-multi"
+  },
+  {
    "name": "Code_OSS",
    "description": "Visual Studio Code OSS Edition",
    "source": "github:zilti/code-oss.AppImage"
@@ -384,6 +418,11 @@
    "name": "CoreBox",
    "description": "A bunch of common desktop app with bookmark support",
    "source": "github:rahmanshaber/corebox"
+  },
+  {
+   "name": "CryptoBot_Pro",
+   "description": "Professional cryptocurrency trading bot with GUI",
+   "source": "github:patampatoum/cryptobot-pro-releases"
   },
   {
    "name": "CubicSDR",
@@ -414,6 +453,16 @@
    "name": "Deckboy",
    "description": "Cue deck for live video",
    "source": "github:Utopian-Academy/Deckboy"
+  },
+  {
+   "name": "DeepSeek_Bot",
+   "description": "DeepSeek Bot desktop app: the ds-bot team on its own pinned DeepSeek Harness.",
+   "source": "github:Fei2411/DeepSeek-Bot"
+  },
+  {
+   "name": "DeepSeek_Harness",
+   "description": "Electron desktop shell for a bundled dsh runtime and external plugins",
+   "source": "github:butterpurse-dot/deepseek-harness-linux"
   },
   {
    "name": "DeepVibe",
@@ -451,14 +500,34 @@
    "source": "github:DokiDokiModManager/Mod-Manager"
   },
   {
+   "name": "Donut_Browser",
+   "description": "<p>Donut Browser manages any number of isolated browser profiles. Each profile       keeps its own…",
+   "source": "github:donutbrowser/donutbrowser"
+  },
+  {
+   "name": "DotMorph",
+   "description": "<p>DotMorph is a file converter for Linux with an animated radial menu. Select files, open…",
+   "source": "github:kareem2099/DotMorph"
+  },
+  {
    "name": "DoubleCommander",
    "description": "Double Commander is a cross platform open source file manager with two panels side by side.",
    "note": "resolve manually: https://download.opensuse.org/repositories/home:/Alexx2000/AppImage/doublecmd-gtk-latest-x86_64.App…"
   },
   {
+   "name": "Dpro-Agent",
+   "description": "Dpro desktop app",
+   "source": "github:9mtm/Dpro-Agent"
+  },
+  {
    "name": "Dragoman",
    "description": "GUI for polyglot",
    "source": "github:improbable-eng/Dragoman"
+  },
+  {
+   "name": "DuoDesk",
+   "description": "DuoDesk for Linux: share mouse, keyboard, clipboard, files, sound and screens with a Mac, a PC or…",
+   "note": "resolve manually: https://getduodesk.vercel.app/api/download?os=linux"
   },
   {
    "name": "Eaon_Desktop",
@@ -474,6 +543,20 @@
    "name": "EmeraldWallet",
    "description": "Emerald - Cryptocurrency Wallet",
    "source": "github:ethereumproject/emerald-wallet"
+  },
+  {
+   "name": "Escanor",
+   "description": "The complete Escanor app, with your computer as the server.",
+   "source": "github:escanorlabs-source/escanor-releases"
+  },
+  {
+   "name": "EthicalVPN",
+   "description": "Free VPN access with clear consent and simple desktop controls.",
+   "source": "github:PiotrWarzachowski/ethicalvpn-downloads"
+  },
+  {
+   "name": "Euphony",
+   "source": "github:MohammedNihadv/Euphony"
   },
   {
    "name": "FS-PDF-Compressor",
@@ -494,6 +577,16 @@
    "name": "Ferdi",
    "description": "Ferdi is your messaging app / former Emperor of Austria and combines chat & messaging services…",
    "source": "github:getferdi/ferdi"
+  },
+  {
+   "name": "Ferry",
+   "description": "<p>Ferry puts sticky notes on your desktop and in widgets on your phone&apos;s home screen, and…",
+   "note": "resolve manually: https://download.ferrynotes.com/linux/Ferry-x86_64.AppImage"
+  },
+  {
+   "name": "Files.fm_Sync",
+   "description": "Files.fm Sync 2027 desktop synchronization client",
+   "source": "github:filesfm/Sync"
   },
   {
    "name": "Filey",
@@ -534,6 +627,11 @@
    "name": "Flyx-main",
    "description": "Flyx Electron desktop shell — embedded server + LAN sharing",
    "source": "github:Vynx-Velvet/Flyx-main"
+  },
+  {
+   "name": "Fox_VPN",
+   "description": "Independent VPN client built on Mozilla’s Firefox VPN infrastructure",
+   "source": "github:erfan-tahvilian/FoxVPN"
   },
   {
    "name": "Framewright",
@@ -615,6 +713,11 @@
    "source": "github:ecmu/gnucash.AppImage"
   },
   {
+   "name": "GoTodo",
+   "description": "A simple command-line Todo List application written in Go",
+   "source": "github:callmekriztal/Go_Todo"
+  },
+  {
    "name": "Godot_Hub",
    "description": "<p>Godot Hub keeps your Godot Engine editors and projects together in one place. Install…",
    "source": "github:ismailivanov/godot-hub"
@@ -623,6 +726,11 @@
    "name": "Gong",
    "description": "XMPP Client",
    "source": "github:gongchat/gong"
+  },
+  {
+   "name": "GospelPdfViewer",
+   "description": "<p>A fast pdf viewer based on Poppler or MuPdf.</p>",
+   "source": "github:ksharindam/gospel-pdf-viewer"
   },
   {
    "name": "GradeStats",
@@ -664,6 +772,11 @@
    "source": "github:cpvrlab/ImagePlay"
   },
   {
+   "name": "Imagine",
+   "description": "PNG/JPEG optimization",
+   "source": "github:meowtec/Imagine"
+  },
+  {
    "name": "ImgConvert",
    "description": "Local-first batch image converter",
    "source": "github:web-casa/ImgConvert"
@@ -694,6 +807,11 @@
    "source": "github:jonelo/jacksum"
   },
   {
+   "name": "JayJay",
+   "description": "Native desktop client for Jujutsu version control",
+   "source": "github:hewigovens/jayjay"
+  },
+  {
    "name": "Jorvik",
    "description": "Jorvik Desktop Client",
    "source": "github:jorvikapp/jorvik"
@@ -711,6 +829,11 @@
    "name": "KawAnime",
    "description": "Desktop app for anime fans",
    "source": "github:Kylart/KawAnime"
+  },
+  {
+   "name": "Kilowallet",
+   "description": "Bitcoin BLAKE2b (XBT) wallet — desktop beta",
+   "source": "github:Kilombino/kilowallet-desktop"
   },
   {
    "name": "KittehPlayer",
@@ -732,14 +855,29 @@
    "source": "github:kbterm/kubeterm"
   },
   {
+   "name": "LRDP",
+   "description": "Remote desktop client",
+   "source": "github:lucinhu/LRDP"
+  },
+  {
    "name": "LaTeX_Editor",
    "description": "<p>LaTeX Editor is a lightweight desktop editor that compiles your document       and shows the…",
    "source": "github:s-balli/latex-editor"
   },
   {
+   "name": "Lab_Ledger",
+   "description": "Desktop app for a dental lab: works, patients, shipping, material costs from real pack prices…",
+   "source": "github:vladpereverzyev/lab-ledger"
+  },
+  {
    "name": "Ladha",
    "description": "Simple music player",
    "source": "github:jestrux/ladha"
+  },
+  {
+   "name": "Lansy",
+   "description": "Lansy records your meetings (system audio and microphone), recognises participants and uploads the…",
+   "note": "resolve manually: https://app.lansy.ai/desk/lansy/linux/Lansy-latest.AppImage"
   },
   {
    "name": "Latte",
@@ -793,9 +931,19 @@
    "source": "github:tyleruploads/mdez"
   },
   {
+   "name": "MailMover",
+   "description": "Check, fix and move Thunderbird profiles",
+   "note": "resolve manually: https://ita.demicons.it/download_mailmover/linux/MailMover-x86_64.AppImage"
+  },
+  {
    "name": "ManagerServer",
    "description": "Accounting software",
    "source": "github:Manager-io/Manager.AppImage"
+  },
+  {
+   "name": "Manul",
+   "description": "Drop in a video, say what you want, and Manul does the edit.",
+   "source": "github:hormuz-labs/manul"
   },
   {
    "name": "Marginalia",
@@ -861,6 +1009,11 @@
    "source": "github:DroicheadNua/MirrorShard"
   },
   {
+   "name": "Mnema",
+   "description": "Your memory for every AI",
+   "source": "github:Pumpetee/Mnema"
+  },
+  {
    "name": "Monghoul",
    "description": "<p>Monghoul is a desktop MongoDB client with schema-aware autocomplete,       a visual aggregation…",
    "source": "github:Kontsedal/monghoul-public"
@@ -876,9 +1029,18 @@
    "source": "github:shpala/MooerLooperManager"
   },
   {
+   "name": "MovieCat",
+   "description": "Browse your movie and TV files with posters, ratings and summaries",
+   "source": "github:FredrikBorgstrom/moviecat"
+  },
+  {
    "name": "MyVPN",
    "description": "MyVPN - Create your own personal VPN server",
    "source": "github:my0419/myvpn-desktop"
+  },
+  {
+   "name": "NODAYSIDLE_Cascade",
+   "source": "github:nodaysidle/nodaysidle-cascade-v3"
   },
   {
    "name": "NX_Software_Center",
@@ -890,14 +1052,29 @@
    "source": "github:diginatu/nagome-electron"
   },
   {
+   "name": "NameDaemon",
+   "description": "Check .com names in bulk, keep a watchlist",
+   "source": "github:namedaemon/namedaemon-desktop"
+  },
+  {
    "name": "Negibox",
    "description": "Best cross-platform downloader ever",
    "source": "github:hugetiny/negibox"
   },
   {
+   "name": "NetSonar",
+   "description": "<p>NetSonar is a network diagnostics and monitoring tool for probing hosts and services with ICMP…",
+   "source": "github:sn4k3/NetSonar"
+  },
+  {
    "name": "NetworkClient",
    "description": "四川大学无线网络客户端",
    "source": "github:Mannix1994/NetworkClient"
+  },
+  {
+   "name": "Network_Monitor",
+   "description": "Per-application network monitor with blocking",
+   "source": "github:AsemShahen/NetworkMonitor"
   },
   {
    "name": "Neuron",
@@ -913,6 +1090,16 @@
    "name": "Nostlan",
    "description": "Nostlan is a front-end launcher for retro and current gen video game emulators!",
    "source": "github:quinton-ashley/nostlan"
+  },
+  {
+   "name": "Numa",
+   "description": "Develop raw photographs",
+   "source": "github:simmmmm/Numa"
+  },
+  {
+   "name": "OBS_Studio_Rust",
+   "description": "Free and Open Source Streaming/Recording Software",
+   "source": "github:obs-rust/obs-studio"
   },
   {
    "name": "OCVvid2fulldome.txt",
@@ -954,13 +1141,33 @@
    "source": "github:getodm/open-download-manager"
   },
   {
+   "name": "Open_Media_Converter",
+   "description": "<p>Open Media Converter is a native Linux desktop application with a GTK 4 interface       for…",
+   "source": "github:get-omc/open-media-converter"
+  },
+  {
    "name": "OptiBurn",
    "description": "OptiBurn 图形前端",
    "source": "github:ouyangjiahong26/optiburn"
   },
   {
+   "name": "Orchestrator",
+   "description": "Electron + TypeScript frontend for the agent-orchestrator rewrite",
+   "source": "github:OrchestratorInc/agent-orchestrator"
+  },
+  {
+   "name": "Orivon_Browser",
+   "description": "Orivon reaches the network and filesystem under user-granted, per-app capabilities, so that…",
+   "source": "github:OrivonBrowser/orivon-mvp"
+  },
+  {
    "name": "OwlPlug",
    "source": "github:DropSnorz/OwlPlug"
+  },
+  {
+   "name": "PDF-Equilibrist",
+   "description": "Éditer, annoter, convertir et protéger des PDF localement, sans télémétrie",
+   "source": "github:Bit-Scripts/PDF-Equilibrist"
   },
   {
    "name": "PG_Orbit",
@@ -1002,6 +1209,11 @@
    "source": "github:EdelmarSchneider/permark"
   },
   {
+   "name": "Personal_Jarvis",
+   "description": "Turn your computer into an AI agent",
+   "source": "github:PersonalJarvis/PersonalJarvis"
+  },
+  {
    "name": "Phoneboard",
    "source": "github:Phoneboard/Phoneboard"
   },
@@ -1018,6 +1230,11 @@
   {
    "name": "Picocrypt",
    "source": "github:HACKERALERT/Picocrypt"
+  },
+  {
+   "name": "Piko",
+   "description": "Third-party PikPak client for browsing, streaming and transferring files",
+   "source": "github:NihilDigit/piko"
   },
   {
    "name": "PlayWeld",
@@ -1080,6 +1297,11 @@
    "source": "github:patrickelectric/qhot"
   },
   {
+   "name": "QLog",
+   "description": "Amateur Radio Logbook",
+   "source": "github:foldynl/QLog"
+  },
+  {
    "name": "QTaskWarrior",
    "description": "Qt interface for taskwarrior",
    "note": "resolve manually: https://download.opensuse.org/repositories/home:/jaimeMF:/qtaskwarrior/AppImage/qtaskwarrior-latest…"
@@ -1114,6 +1336,11 @@
    "note": "resolve manually: https://download.opensuse.org/repositories/home:/ppisa/AppImage/QtMips-latest-x86_64.AppImage.mirro…"
   },
   {
+   "name": "Quillwright",
+   "description": "Write novels and long-form fiction in plain Markdown, alongside AI agents",
+   "source": "github:fabiocmazzo/quillwright"
+  },
+  {
    "name": "QymCAD",
    "description": "Parametric associative B-rep CAD/CAM",
    "source": "github:QymIs-Tech/QymCAD"
@@ -1144,6 +1371,11 @@
    "source": "github:ujiro99/RedmineTimeTracker"
   },
   {
+   "name": "Redoubt",
+   "description": "Encrypted peer-to-peer messaging",
+   "source": "github:FreyFlyy/Redoubt"
+  },
+  {
    "name": "ReliefValve",
    "description": "Helps manage the Steam client application.",
    "source": "github:l3laze/ReliefValve"
@@ -1162,6 +1394,11 @@
    "name": "Rufus",
    "description": "Logiciel de gestion de cabinet d'Ophtalmologie",
    "source": "github:ukinoki/Rufus"
+  },
+  {
+   "name": "SF_Tube",
+   "description": "<p>Youtube client made using flutter</p> <p>Features:</p> <ul>   <li>Beautiful user interface</li>…",
+   "source": "github:prateekmedia/sftube"
   },
   {
    "name": "SMathStudio",
@@ -1232,6 +1469,11 @@
    "name": "ShuffleStudy",
    "description": "A modern note-taking app for college students",
    "source": "github:MrDrProfX/ShuffleStudyBuilds"
+  },
+  {
+   "name": "ShuttleSCP",
+   "description": "Graphical SFTP and FTP client, inspired by WinSCP",
+   "source": "github:dsalvado/shuttlescp"
   },
   {
    "name": "SilentDragonLite",
@@ -1337,6 +1579,11 @@
    "source": "github:zibo-chen/SubnetDesk"
   },
   {
+   "name": "Superset",
+   "description": "The last developer tool you’ll ever need",
+   "source": "github:superset-sh/superset"
+  },
+  {
    "name": "Syncthing_Tray",
    "description": "<ul>   <li>Qt 5-based tray application for Syncthing</li>   <li>Provides quick access to most…",
    "note": "resolve manually: https://download.opensuse.org/repositories/home:/mkittler:/appimage/AppImage/syncthingtray-latest-x…"
@@ -1413,6 +1660,11 @@
    "name": "TorReaderPDF",
    "description": "Fast offline PDF reader, editor and merger",
    "source": "github:FelixNgH/TorreaderPDF"
+  },
+  {
+   "name": "TraceScope",
+   "description": "Inspect, filter, visualize, and export structured telemetry logs",
+   "source": "github:w-cook/tracescope-qt-log-inspector"
   },
   {
    "name": "TrebleShot",
@@ -1536,6 +1788,11 @@
    "source": "github:neopostmodern/wohnungsbot"
   },
   {
+   "name": "WorkTime",
+   "description": "A Qt6/QML desktop time-tracking app",
+   "source": "github:filesfm/WorkTime"
+  },
+  {
    "name": "WriteReallyFree",
    "description": "<p>WriteReallyFree is a desktop utility designed to backup and organize document files directly…",
    "source": "github:egoebelbecker/writereallyfree"
@@ -1544,6 +1801,11 @@
    "name": "YARC-Launcher",
    "description": "The YARC (Yet Another Rhythm Company) launcher.",
    "source": "github:YARC-Official/YARC-Launcher"
+  },
+  {
+   "name": "YLR-Auto",
+   "description": "Rip discs with MakeMKV and file them into Jellyfin",
+   "source": "github:cpntodd/YLR-Auto"
   },
   {
    "name": "Yai",
@@ -1569,6 +1831,11 @@
    "name": "YouTubeGO",
    "description": "YouTube video downloader",
    "source": "github:Efeckc17/YoutubeGO"
+  },
+  {
+   "name": "ZYRN_Workstation",
+   "description": "Offline topographic maps, 3D terrain and team tools for the field",
+   "note": "resolve manually: https://pois.zyrntopo.com/downloads/zyrngis-latest-linux-x86_64.AppImage"
   },
   {
    "name": "Zap",
@@ -1681,7 +1948,7 @@
   },
   {
    "name": "acestream",
-   "description": "Створення бінарника AppImage з AceStream Media.",
+   "description": "Builds an AppImage binary of AceStream Media.",
    "source": "github:bro2020/acestream-appimage"
   },
   {
@@ -1711,7 +1978,7 @@
   },
   {
    "name": "actioneer-gtk",
-   "description": "A native GNOME desktop client for GitHub Actions.",
+   "description": "<p>Actioneer lets you browse GitHub repositories, inspect workflow runs, check job logs, and…",
    "source": "github:makoni/actioneer-gtk"
   },
   {
@@ -1722,7 +1989,7 @@
   {
    "name": "actone-screenplay",
    "description": "A professional screenplay writing software for Windows and Linux. Built for writers by a writer.",
-   "source": "github:beetlebot/actone-screenplay"
+   "source": "github:BeetleBot/ActOne-Screenplay"
   },
   {
    "name": "actual",
@@ -1736,7 +2003,7 @@
   },
   {
    "name": "adawat",
-   "description": "Convert, compress and edit any file while you drag it. A free macOS menu bar app in Arabic and…",
+   "description": "Convert, compress and edit any file while you drag it",
    "source": "github:motalim-ai/adawat"
   },
   {
@@ -1807,11 +2074,6 @@
    "name": "aegis",
    "description": "Aegis Desktop Application",
    "source": "github:DylanDDeng/Aegis"
-  },
-  {
-   "name": "aegis-vault-v7",
-   "description": "Kalderashield — Zero-knowledge, offline-first password manager. AEAD-authenticated AES-256-GCM…",
-   "source": "github:hafgit99/aegis-vault-v7"
   },
   {
    "name": "aegisub",
@@ -1934,11 +2196,6 @@
    "source": "github:jochenyang/agent-comm-hub"
   },
   {
-   "name": "agent-companion",
-   "description": "An agent buddy that can run on an ESP32 device or on your desktop!.",
-   "source": "github:DanWahlin/agent-companion"
-  },
-  {
    "name": "agent-console",
    "description": "Minimalist AI-native console for directing agents inside a repository. Tauri + React + Claude CLI.",
    "source": "github:cyl-castillo/agent-console"
@@ -1979,11 +2236,6 @@
    "source": "github:desirecore/agent-os"
   },
   {
-   "name": "agent-player",
-   "description": "Open-source AI desktop assistant — run local or remote LLMs with privacy-first design and zero…",
-   "source": "github:9mtm/agent-player"
-  },
-  {
    "name": "agent-pulse",
    "description": "Know what your agents are doing.",
    "source": "github:Dipen-Dedania/agent-pulse"
@@ -2005,7 +2257,7 @@
   },
   {
    "name": "agent-speed",
-   "description": "Agent Speed — A lightweight, real-time token speed monitor for Codex and Claude Code. Track tokens…",
+   "description": "Live token speed of your AI coding agents",
    "source": "github:zoefix/agent-speed"
   },
   {
@@ -2057,6 +2309,11 @@
    "name": "agentica",
    "description": "One person, a team of agents. Multi-session CLI that collaborates across terminals; /goal keeps…",
    "source": "github:shibing624/agentica"
+  },
+  {
+   "name": "agenticos",
+   "description": "Open-source, self-hosted AI agent platform for your company's AI teammates. Build, run and govern…",
+   "source": "github:vstorm-co/agenticos"
   },
   {
    "name": "agentkib",
@@ -2216,12 +2473,12 @@
   {
    "name": "ai-devhouse",
    "description": "Releases, screenshots and issue tracker for AI Devhouse: a desktop app that runs your Claude Code…",
-   "source": "github:vapulab/ai-devhouse-releases"
+   "source": "github:Vapulab/ai-devhouse-releases"
   },
   {
    "name": "ai-dock",
    "description": "Side dock for Claude, Codex, Cursor and Antigravity usage, plus Obsidian prompts. Windows 11…",
-   "source": "github:nyckdragon/ai-dock"
+   "source": "github:NyckDragon/ai-dock"
   },
   {
    "name": "ai-engineering-hub",
@@ -2330,7 +2587,7 @@
   },
   {
    "name": "aic-audio-intelligence-companion",
-   "description": "AIC (Audio Intelligence Companion) est un assistant musical local fonctionnant 100 % hors-ligne…",
+   "description": "AIC (Audio Intelligence Companion) is a local music assistant that works 100% offline. It analyzes…",
    "source": "github:flex1-tech/aic-audio-intelligence-companion"
   },
   {
@@ -2440,7 +2697,7 @@
   },
   {
    "name": "aioffice",
-   "description": "O escritório dos agentes de IA.",
+   "description": "The office of AI agents.",
    "source": "github:iapro-community/aioffice"
   },
   {
@@ -2520,7 +2777,7 @@
   },
   {
    "name": "aitracker",
-   "description": "Open-source, local-first AI workspace that tracks tokens & spend across Claude Code, Codex, Cursor…",
+   "description": "Local-first dashboard for AI token usage, cost, skills and memory.",
    "source": "github:estelwalks/aitracker"
   },
   {
@@ -2645,8 +2902,8 @@
   },
   {
    "name": "almojarife",
-   "description": "Open-source sea-trading game on the Iberian and Mediterranean coast, 15th-16th c. Desktop browser…",
-   "source": "github:halcondeoro/almojarife-game"
+   "description": "Desktop shell for El Almojarife (Electron). The game itself lives at the repository root.",
+   "source": "github:HALCONDEORO/almojarife-game"
   },
   {
    "name": "aloe",
@@ -2670,13 +2927,8 @@
   },
   {
    "name": "alr2appimage",
-   "description": "Tool for building an AppImage from an Alire crate.",
+   "description": "Tool to create an AppImage, Debian or RPM package from an Alire crate",
    "source": "github:mgrojo/alr2appimage"
-  },
-  {
-   "name": "alt-sendme",
-   "description": "Share files and directories anywhere - Local or Global",
-   "source": "github:tonyantony300/alt-sendme"
   },
   {
    "name": "altair",
@@ -2685,7 +2937,7 @@
   },
   {
    "name": "altaqwaa-desktop",
-   "description": "التقوى | تطبيق إسلامي لسطح المكتب يعمل على انظمة التشغيل ويندوز ولينكس.",
+   "description": "Altaqwa | An Islamic desktop application for Windows and Linux.",
    "source": "github:rn0x/altaqwaa-desktop"
   },
   {
@@ -2855,7 +3107,7 @@
   },
   {
    "name": "android-rapid-transfer",
-   "description": "Native, notarized Android File Transfer for macOS and Linux — a from-scratch Swift MTP engine. No…",
+   "description": "Copy photos, videos and files between an Android phone and this computer over USB",
    "source": "github:sameh0/android-rapid-transfer"
   },
   {
@@ -3010,7 +3262,7 @@
   },
   {
    "name": "anixapp",
-   "description": "Быстрый клиент AnixApp для просмотра аниме на базе Anixart API. Anixart на пк.",
+   "description": "Fast AnixApp client for watching anime, based on the Anixart API. Anixart on PC.",
    "source": "github:maks1mio/anixapp"
   },
   {
@@ -3070,17 +3322,17 @@
   },
   {
    "name": "anonimator",
-   "description": "App desktop per pseudoanonimizzazione offline di documenti legali italiani.",
+   "description": "Desktop app for offline pseudonymization of Italian legal documents.",
    "source": "github:avvocati-e-mac/anonimator"
   },
   {
    "name": "anonyfiles",
-   "description": "Anonyfiles est un outil open source d’anonymisation de fichiers .txt, .csv, .json, .docx et .xlsx…",
+   "description": "Anonyfiles is an open source tool for anonymizing .txt, .csv, .json, .docx and .xlsx files, based…",
    "source": "github:simongrossi/anonyfiles"
   },
   {
    "name": "anonymcp",
-   "description": "Server MCP locale che pseudonimizza documenti legali italiani prima di esporli a un LLM (privacy…",
+   "description": "Local MCP server that pseudonymizes Italian legal documents before exposing them to an LLM…",
    "source": "github:avvocati-e-mac/anonymcp"
   },
   {
@@ -3117,6 +3369,11 @@
    "name": "ant-downloader",
    "description": "BitTorrent Client developed by golang, angular, electron.",
    "source": "github:anatasluo/ant"
+  },
+  {
+   "name": "ant-renamer-qt",
+   "description": "Ant Renamer Qt: cross-platform batch file renamer in C++20/Qt 6 for Windows and Linux. Regular…",
+   "source": "github:morfredus/ant-renamer-qt"
   },
   {
    "name": "antares",
@@ -3249,9 +3506,14 @@
    "source": "github:wedesoft/anymeal"
   },
   {
+   "name": "anymodel_bot",
+   "description": "anymodel bot：任意模型的个人 AI 助手（飞书 + 微信 iLink），内置 magpie 模型网关",
+   "source": "github:modelflare-ai/AnyModelBot"
+  },
+  {
    "name": "anymodelbot",
-   "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots…",
-   "source": "github:modelflare-ai/anymodelbot"
+   "description": "anymodel bot：任意模型的个人 AI 助手（飞书 + 微信 iLink），内置 magpie 模型网关",
+   "source": "github:modelflare-ai/AnyModelBot"
   },
   {
    "name": "anyscp",
@@ -3395,8 +3657,8 @@
   },
   {
    "name": "apparition",
-   "description": "Sideloading that runs on the device itself: install, sign and refresh apps on Apple Vision Pro…",
-   "source": "github:illixion/apparition"
+   "description": "Puts Apparition on your Apple devices, and is its companion",
+   "source": "github:illixion/Apparition"
   },
   {
    "name": "appflowy",
@@ -3405,18 +3667,13 @@
   },
   {
    "name": "appglider",
-   "description": "Install, update and launch AppImages from any GitHub repository. Checksum-verified downloads…",
-   "source": "github:vyrnexis/appglider"
+   "description": "<p>AppGlider installs, updates and launches AppImage apps from GitHub, from one window.       Add…",
+   "source": "github:Vyrnexis/AppGlider"
   },
   {
    "name": "appherder",
    "description": "A shepherd for your AppImages",
    "source": "github:alyraffauf/appherder"
-  },
-  {
-   "name": "apphub",
-   "description": "App that simplifies installation/management of .appImage packages.",
-   "source": "github:francesco-gaglione/AppHub"
   },
   {
    "name": "appify",
@@ -3466,7 +3723,7 @@
   {
    "name": "appimageupdatetool",
    "description": "Tool to update an AppImage using embedded information.",
-   "note": "no source in the index; repackager github:AppImage/AppImageUpdate"
+   "note": "resolve manually: REPLACETHIS; repackager github:AppImage/AppImageUpdate"
   },
   {
    "name": "appium-desktop",
@@ -3644,11 +3901,6 @@
    "source": "github:bmsuseluda/ares-emu-appimage"
   },
   {
-   "name": "ares-emu",
-   "description": "Unofficial. Open-source, accuracy-focused multi-system emulator.",
-   "source": "github:pkgforge-dev/ares-emu-appimage"
-  },
-  {
    "name": "argus",
    "description": "A self-evolving multi-agent system for autonomous research, operating 24/7 to explore, learn, and…",
    "source": "github:lbx154/argus"
@@ -3674,11 +3926,6 @@
    "source": "github:son-link/arkaway"
   },
   {
-   "name": "arkdraw",
-   "description": "Arkdraw is an open-source diagramming app for creating flowcharts, UML, ER diagrams, network maps…",
-   "source": "github:gabe-santana/arkdraw"
-  },
-  {
    "name": "arma3-unix-launcher",
    "description": "ArmA 3 Unix Launcher, game.",
    "source": "github:muttleyxd/arma3-unix-launcher"
@@ -3692,11 +3939,6 @@
    "name": "armagetronad",
    "description": "<p>In Armagetron Advanced, you ride a bizarre vehicle that can never stop and leaves a deadly…",
    "source": "github:ArmagetronAd/armagetronad"
-  },
-  {
-   "name": "armcord",
-   "description": "Custom client designed to enhance your Discord experience.",
-   "source": "github:ArmCord/ArmCord"
   },
   {
    "name": "armgba",
@@ -3835,7 +4077,7 @@
   },
   {
    "name": "ascii-art-studio",
-   "description": "ASCII Art Studio — это современное десктоп-приложение на Rust (Tauri) + React для конвертации…",
+   "description": "ASCII Art Studio is a modern desktop application built with Rust (Tauri) + React that converts…",
    "source": "github:sosulacka/ascii-art-studio"
   },
   {
@@ -3892,11 +4134,6 @@
    "name": "asphyxia-core",
    "description": "Unofficial. Arcade network server emulator for rhythm and Bemani games.",
    "source": "github:pkgforge-dev/asphyxia-core-appimage"
-  },
-  {
-   "name": "asrpro",
-   "description": "AI powered desktop transcription app with real time speech recognition, file transcription, global…",
-   "source": "github:surajmandalcell/asrpro"
   },
   {
    "name": "assella",
@@ -4025,7 +4262,7 @@
   },
   {
    "name": "atech-atelier",
-   "description": "Atech AI CAD (formerly Atech Atelier) — describe a part, an agent builds it as a real, measured…",
+   "description": "Parametric CAD with a built-in design agent",
    "source": "github:atechdotdev/atech-atelier"
   },
   {
@@ -4109,6 +4346,11 @@
    "source": "github:MishaSok/audex-player"
   },
   {
+   "name": "audio-forge",
+   "description": "Windows microphone processor: local noise suppression, EQ, and dynamics for calls, streaming, and…",
+   "source": "github:fueledbyredbull/audio-forge"
+  },
+  {
    "name": "audio-sharing",
    "description": "Unofficial. Share audio from the desktop on local network using RTSP protocol.",
    "source": "github:pkgforge-dev/Audio-Sharing-AppImage"
@@ -4175,8 +4417,8 @@
   },
   {
    "name": "audionaut",
-   "description": "Audionaut professional audio editing and audio recording.",
-   "source": "github:kvoltmer/audionaut"
+   "description": "Audio editing application for multitrack recordings",
+   "source": "github:kvoltmer/Audionaut"
   },
   {
    "name": "audiorestorationvst",
@@ -4305,8 +4547,13 @@
   },
   {
    "name": "autocheckin-engineering",
-   "description": "AutoCheckin_Engineering: An engineering project used to simplify the automatic check-in process…",
-   "source": "github:runa-asahi/autocheckin_engineering"
+   "description": "扫码即用的自动签到桌面应用",
+   "source": "github:Runa-Asahi/AutoCheckin_Engineering"
+  },
+  {
+   "name": "autodock",
+   "description": "Coloque qualquer projeto no Docker em poucos cliques: assistente guiado que cria Dockerfile…",
+   "source": "github:joaopanucci/autodock"
   },
   {
    "name": "autoedit2",
@@ -4584,6 +4831,11 @@
    "source": "github:debojitsantra/backlogtracker"
   },
   {
+   "name": "backplane",
+   "description": "Agentic hardware development with lawful, deterministic KiCad/STEP viewers, written in Bend.",
+   "source": "github:backplaneworks/backplane"
+  },
+  {
    "name": "backplane-bend",
    "description": "Backplane rewritten in Bend: agentic hardware development with lawful, deterministic KiCad/STEP…",
    "source": "github:i2cjak/backplane-bend"
@@ -4600,7 +4852,7 @@
   },
   {
    "name": "backtickle",
-   "description": "Free, open-source Markdown editor and viewer for macOS, Windows and Linux. GitHub, Obsidian…",
+   "description": "A Markdown reader and writer for Linux",
    "source": "github:masud90/backtickle"
   },
   {
@@ -4625,7 +4877,7 @@
   },
   {
    "name": "bailandosolo",
-   "description": "Pagar $12 USD al mes para que un día te borren canciones por \"problemas de licencia\" es ridículo.",
+   "description": "Paying $12 USD a month just to have songs deleted one day over \"licensing issues\" is ridiculous.",
    "source": "github:hachimaki-dev/bailandosolo"
   },
   {
@@ -4829,6 +5081,11 @@
    "source": "github:vinifmor/bauh"
   },
   {
+   "name": "baum",
+   "description": "Keep up with what your coding agents build",
+   "source": "github:baum-ai/baum"
+  },
+  {
    "name": "bava",
    "description": "Physics enabled music visualiser using bevy+cavacore+avian2d.",
    "source": "github:dekuraan/bava"
@@ -4955,8 +5212,8 @@
   },
   {
    "name": "beardgit",
-   "description": "Your whole repo in one window — graph, PRs/MRs, issues, CI/CD, releases, terminals, AI agents, an…",
-   "source": "github:the3eard/beardgit"
+   "description": "<p>The graph, your pull and merge requests, CI, issues, releases, terminals, AI runs,       your…",
+   "source": "github:The3eard/BeardGit"
   },
   {
    "name": "bearings",
@@ -5194,11 +5451,6 @@
    "source": "github:beyond-all-reason/BYAR-Chobby"
   },
   {
-   "name": "beyondtranslate-ce",
-   "description": "BeyondTranslate (formerly Biyi) is a fast, native-experience translation app for macOS, Windows…",
-   "source": "github:beyondtranslate/beyondtranslate-ce"
-  },
-  {
    "name": "bezique",
    "description": "Plays bezique against the AI",
    "source": "github:Sriep/Bezique"
@@ -5234,6 +5486,11 @@
    "source": "github:Johnbatey/bible-song-pro-studio"
   },
   {
+   "name": "biblemultithelife",
+   "description": "Bible multi languages, free, offline, no advertising.",
+   "source": "github:hotlittlewhitedog/BibleMultiTheLife-AppImage"
+  },
+  {
    "name": "biblemultithesonofman",
    "description": "Offline Bible for Terminal.",
    "note": "resolve manually: https://biblemulti.org"
@@ -5260,8 +5517,13 @@
   },
   {
    "name": "bifrost",
-   "description": "Outil d'upload pour Draupnirr : un binaire, une page locale, zéro installation.",
-   "source": "github:mimirdraupnirr/bifrost"
+   "description": "Uploader et cross-seeder sur Draupnirr",
+   "source": "github:MimirDraupnirr/bifrost"
+  },
+  {
+   "name": "big-star-editor",
+   "description": "An editor for NSMB DS.",
+   "source": "github:ndymario/big-star-editor"
   },
   {
    "name": "bigbud",
@@ -5287,6 +5549,11 @@
    "name": "biji2md-tauri",
    "description": "GET notes are imported as markdown, a cross-platform client implemented using tauri..",
    "source": "github:duosl/biji2md_tauri"
+  },
+  {
+   "name": "bili-danmaku",
+   "description": "A bilibili live broadcast room barrage viewing program on Linux..",
+   "source": "github:lidag523/bili-danmaku"
   },
   {
    "name": "bili-liveluckdraw",
@@ -5345,7 +5612,7 @@
   },
   {
    "name": "bimcraft",
-   "description": "BimCraft: BIM authoring. Parametric walls, doors and windows on levels and grids, with views…",
+   "description": "BIM authoring",
    "source": "github:getcadcraft/bimcraft"
   },
   {
@@ -5575,7 +5842,6 @@
   },
   {
    "name": "block-dx",
-   "description": "Copyright © 2018 Blocknet",
    "source": "github:BlocknetDX/blockdx-ui"
   },
   {
@@ -5651,7 +5917,12 @@
   {
    "name": "blueprint",
    "description": "Local studio to plan new products or scan existing repos: agent handoffs and codebase quality…",
-   "source": "github:kingabe1/blueprint"
+   "source": "github:KingAbe1/blueprint"
+  },
+  {
+   "name": "bluewake",
+   "description": "The Legend of Zelda: The Wind Waker Recompiled. Native for MacOS, iOS, Windows, Linux, and Android.",
+   "source": "github:chrissotraidis/bluewake"
   },
   {
    "name": "blurfer",
@@ -5687,6 +5958,11 @@
    "name": "boardown",
    "description": "boardown desktop app — a local-first Markdown task board.",
    "source": "github:grinev/boardown"
+  },
+  {
+   "name": "bobix",
+   "description": "Your Claude Code sessions as pixel pets on your desktop, with a control panel and notifications.",
+   "source": "github:baonguyen-agilityio/bobix"
   },
   {
    "name": "bodacious",
@@ -5735,7 +6011,7 @@
   },
   {
    "name": "boo-chat-tw",
-   "description": "Twitch, Kick, YouTube e TikTok numa só janela — transparente, no OBS e na live.",
+   "description": "Twitch, Kick, YouTube and TikTok in a single window — transparent, in OBS and on stream.",
    "source": "github:0rogerinho/boo-chat-tw"
   },
   {
@@ -5819,6 +6095,11 @@
    "source": "github:microsoft/BotFramework-Emulator"
   },
   {
+   "name": "botloft",
+   "description": "Your AI agents, always on, working together. Claude Code, Antigravity and Codex on your own…",
+   "source": "github:httpsphl/botloft"
+  },
+  {
    "name": "botroster",
    "description": "Open Source Alternative to Grok Bot.",
    "source": "github:mandarwagh9/botroster"
@@ -5844,6 +6125,11 @@
    "source": "github:gaozhangmin/boxplayer"
   },
   {
+   "name": "boxshelf-beta",
+   "description": "Boxshelf public beta for Windows, Android (AYN Thor) and Linux, Steam Deck: a TV-style 3D box-art…",
+   "source": "github:sassiestrhihno/boxshelf-beta"
+  },
+  {
    "name": "bpmninja",
    "description": "Lean BPMN 2.0 workflow engine in Rust — token-based execution, NATS JetStream persistence, Axum…",
    "source": "github:maatini/bpmninja"
@@ -5851,7 +6137,7 @@
   {
    "name": "brain-in-a-box",
    "description": "A personal second brain for Claude Code — and a shared memory layer for mixed AI + human teams…",
-   "source": "github:braininbox/brain-in-a-box"
+   "source": "github:BrainInBox/brain-in-a-box"
   },
   {
    "name": "braincue",
@@ -6024,11 +6310,6 @@
    "source": "github:tattvaorg/bubble"
   },
   {
-   "name": "bubble-cowork",
-   "description": "A desktop workspace for coding agents, project files, and real development work.",
-   "source": "github:dylanddeng/bubble-cowork"
-  },
-  {
    "name": "bucketcat",
    "description": "A simple, beautiful object storage client for macOS, Windows, and Linux..",
    "source": "github:finch-xu/bucketcat"
@@ -6187,6 +6468,11 @@
    "name": "byan",
    "description": "BYAN Electron desktop app — main + preload + renderer (TypeScript). F1 app shell, F2 IPC contract.",
    "source": "github:Yan-Acadenice/BYAN"
+  },
+  {
+   "name": "bydlo",
+   "description": "One app. Every protocol.",
+   "source": "github:endercodezz/BYDLO"
   },
   {
    "name": "byedpi-gtk",
@@ -6364,6 +6650,11 @@
    "source": "github:calliopeai/calliope-ai-desktop-releases"
   },
   {
+   "name": "callmeclaude",
+   "description": "CallMeClaude in the system tray: sessions, approvals, and voice calls with Claude on this computer.",
+   "source": "github:wutlu/callmeclaude"
+  },
+  {
    "name": "calm-circles",
    "description": "Calm down and draw something, in Lisp.",
    "source": "github:VitoVan/calm"
@@ -6424,11 +6715,6 @@
    "source": "github:emidhun/canopod"
   },
   {
-   "name": "canopy",
-   "description": "Canopy - menu-bar git-worktree + dev-service manager. Every branch checked out, provisioned, and…",
-   "source": "github:emidhun/canopy"
-  },
-  {
    "name": "canopy-desktop",
    "description": "Developer terminal workstation with integrated Claude Code AI, Git management, and multi-pane…",
    "source": "github:itsoltech/canopy-desktop"
@@ -6449,11 +6735,6 @@
    "source": "github:howdeploy/CanvasTTY"
   },
   {
-   "name": "caogit",
-   "description": "A modern, cross-platform Git GUI client.",
-   "source": "github:wnluo/caogit"
-  },
-  {
    "name": "capacitytester",
    "description": "A simple tool that attempts to determine if a drive is a fake or not.",
    "source": "github:c0xc/CapacityTester"
@@ -6467,6 +6748,11 @@
    "name": "capptivo",
    "description": "Create stunning screen recordings in seconds, not hours. Smart follow-cursor zoom, click-based…",
    "source": "github:sechak-ag/capptivo"
+  },
+  {
+   "name": "capri-desktop",
+   "description": "A quiet, unofficial Capri companion for your Windows desktop.",
+   "source": "github:lachydotmcg/capri-desktop"
   },
   {
    "name": "caprine",
@@ -6719,6 +7005,11 @@
    "source": "github:cavoke-project/cavoke"
   },
   {
+   "name": "cawget",
+   "description": "A fast segmented download manager for Linux (Rust, Tauri).",
+   "source": "github:mahziyarng98/cawget"
+  },
+  {
    "name": "cbetar2",
    "description": "CBETA 電子佛典閱讀器2(非官方)，使用 CBETA API 存取電子佛經。",
    "source": "github:MrMYHuang/cbetar2"
@@ -6925,8 +7216,8 @@
   },
   {
    "name": "celpix",
-   "description": "CelPix is a cross-platform graphics viewer and editor for romhacking and research.",
-   "source": "github:yorikv/celpix"
+   "description": "<p>celPix finds, views and edits the graphics inside retro-game ROMs and       dumps. It reads a…",
+   "source": "github:YoriKv/celpix"
   },
   {
    "name": "cemu",
@@ -7064,11 +7355,6 @@
    "source": "github:purpleneutral/chatalot"
   },
   {
-   "name": "chatbox",
-   "description": "Chatbox is a desktop app for GPT-4 / GPT-3.5, OpenAI API.",
-   "source": "github:Bin-Huang/chatbox"
-  },
-  {
    "name": "chatboxai",
    "description": "A desktop client for multiple cutting-edge AI models",
    "source": "github:chatboxai/chatbox"
@@ -7125,11 +7411,6 @@
   },
   {
    "name": "chatterino2",
-   "description": "Second installment of the Twitch chat client.",
-   "source": "github:Chatterino/chatterino2"
-  },
-  {
-   "name": "chatterino2-nightly",
    "description": "Second installment of the Twitch chat client.",
    "source": "github:Chatterino/chatterino2"
   },
@@ -7215,7 +7496,7 @@
   },
   {
    "name": "chimaera",
-   "description": "Your agent workbench.",
+   "description": "Agent-native IDE for local and HPC work",
    "source": "github:martinappberg/chimaera"
   },
   {
@@ -7344,6 +7625,11 @@
    "source": "github:keyboardio/Chrysalis"
   },
   {
+   "name": "chupathingyce",
+   "description": "Halo CE: Ported for Everyone. Windows, Mac, Linux, Steam Deck, Android and FreeBSD, with online…",
+   "source": "github:chupathingyce/chupathingyce"
+  },
+  {
    "name": "ciaa-suite",
    "description": "Makefile based IDE for embedded systems",
    "source": "github:martinribelotta/embedded-ide-builder"
@@ -7440,8 +7726,8 @@
   },
   {
    "name": "circuitrf",
-   "description": "Full featured RF circuit + electromagnetic simulator.  DC, S-parameters, harmonic balance…",
-   "source": "github:potatobeanradio/circuitrf"
+   "description": "RF circuit simulation — DC, S-parameters, harmonic balance, loadpull, layout and 2.5D EM",
+   "source": "github:potatobeanradio/circuitRF"
   },
   {
    "name": "citadel",
@@ -7470,7 +7756,7 @@
   },
   {
    "name": "civilcraft",
-   "description": "CivilCraft: Civil & site design. Surfaces from points and breaklines, alignments, profiles…",
+   "description": "Civil & site design",
    "source": "github:getcadcraft/civilcraft"
   },
   {
@@ -7669,11 +7955,6 @@
    "source": "github:lizhipay/claude-mcp-server"
   },
   {
-   "name": "claude-multi",
-   "description": "Run Claude Code with multiple accounts and auto-switch when one hits its usage limit.",
-   "source": "github:Chamanrajragu/claude-multi"
-  },
-  {
    "name": "claude-ojousama",
    "description": "🌻 Pixel-art AI desktop companion for Windows that sees your screen, helps on her own and remembers…",
    "source": "github:silasvanceneo/claude-ojousama"
@@ -7690,7 +7971,7 @@
   },
   {
    "name": "claude-swarm",
-   "description": "Мини-пульт для нескольких сессий Claude Code сразу: дашборд вместо прыганья по вкладкам терминала…",
+   "description": "A mini control panel for several Claude Code sessions at once: a dashboard instead of jumping…",
    "source": "github:raul-cortez/claude-swarm"
   },
   {
@@ -8045,8 +8326,8 @@
   },
   {
    "name": "cloaker",
-   "description": "Simple, drag-and-drop, password-based file encryption.",
-   "source": "github:spieglt/cloaker"
+   "description": "Encrypt and decrypt files with a password",
+   "source": "github:spieglt/Cloaker"
   },
   {
    "name": "cloakframe",
@@ -8100,7 +8381,7 @@
   },
   {
    "name": "cloudmus",
-   "description": "A multi-source music player built on a front/backend.",
+   "description": "A multi-source music player",
    "source": "github:cloudmus/cloudmus"
   },
   {
@@ -8365,8 +8646,8 @@
   },
   {
    "name": "codex-manager",
-   "description": "A Codex cli account management and switching tool. Provide local gateway forwarding for Codex cli…",
-   "source": "github:qxcnm/codex-manager"
+   "description": "A Tauri App",
+   "source": "github:qxcnm/Codex-Manager"
   },
   {
    "name": "codex-mobile-bridge",
@@ -8392,11 +8673,6 @@
    "name": "codex-slides",
    "description": "🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas…",
    "source": "github:nexu-io/codex-slides"
-  },
-  {
-   "name": "codex-switch",
-   "description": "Remote AI: An AI programming workbench based on Codex CLI that supports graphical dialogue…",
-   "source": "github:piperhex/codex-switch"
   },
   {
    "name": "codex-switcher",
@@ -8554,6 +8830,11 @@
    "source": "github:ZackaryShen/ColorYourModel"
   },
   {
+   "name": "colosseum-launcher",
+   "description": "Desktop setup, build, update, and play launcher for the Pokémon Colosseum PC port",
+   "source": "github:chasem-dev/colosseum-launcher"
+  },
+  {
    "name": "comail",
    "description": "Blazing fast email client with keyboard shortcuts.",
    "source": "github:nextosp/comail"
@@ -8680,8 +8961,8 @@
   },
   {
    "name": "comparecraft",
-   "description": "An OpenSource Compare Tool.",
-   "source": "github:antebios/comparecraft"
+   "description": "Compare, merge and synchronize files and folders",
+   "source": "github:Antebios/comparecraft"
   },
   {
    "name": "compass",
@@ -8815,7 +9096,7 @@
   },
   {
    "name": "constructcad",
-   "description": "ConstructCAD — open source BIM authoring (Rust, egui, wgpu).",
+   "description": "Free and open source Building Information Modeling (BIM)",
    "source": "github:francisreboucas/constructcad"
   },
   {
@@ -8871,7 +9152,7 @@
   {
    "name": "converter432hz",
    "description": "Converts and re-encodes music to 432Hz",
-   "note": "resolve manually: AM mysteryx93/NaturalGroundingPlayer; AppImageHub mysteryx93/HanumanInstituteApps"
+   "source": "github:mysteryx93/HanumanInstituteApps"
   },
   {
    "name": "converternow",
@@ -8999,6 +9280,11 @@
    "note": "resolve manually: https://cubocore.org"
   },
   {
+   "name": "coreops",
+   "description": "A deeply customized fork of Reach SSH client, tailored for Chinese-speaking DevOps engineers.",
+   "source": "github:daniel-king-8/coreops"
+  },
+  {
    "name": "coresound",
    "description": "Desktop Bluetooth audio controller",
    "source": "github:CriticalRange/CoreSound"
@@ -9015,7 +9301,7 @@
   },
   {
    "name": "corkscrew",
-   "description": "A mod manager for CrossOver and Wine/Proton games on macOS and Linux.",
+   "description": "Mod manager for CrossOver/Wine games",
    "source": "github:cashcon57/corkscrew"
   },
   {
@@ -9075,8 +9361,8 @@
   },
   {
    "name": "cosmou",
-   "description": "CosmoU – The most beautiful way to play Wii U games on PC.  A free Cemu frontend with Liquid Glass…",
-   "source": "github:eryski/cosmou"
+   "description": "CosmoU is a Wii U style launcher for the Cemu emulator: your games as covers, a grid or the Wii U…",
+   "source": "github:Eryski/CosmoU"
   },
   {
    "name": "cotect",
@@ -9092,6 +9378,11 @@
    "name": "couchcode",
    "description": "Code From Your Couch - Control Your Terminal From Anywhere",
    "source": "github:ahmedkaram2/couchcode"
+  },
+  {
+   "name": "couchtunes",
+   "description": "An Apple Music-style player for your Navidrome server, built for TVs and big screens",
+   "source": "github:CaptechOmar/Couchtunes"
   },
   {
    "name": "coucou",
@@ -9279,11 +9570,6 @@
    "source": "github:ARPA-SIMC/CRITERIA1D"
   },
   {
-   "name": "cro-chain-desktop-bin",
-   "description": "Crypto.com DeFi Desktop Wallet, AppImage version.",
-   "source": "github:crypto-com/chain-desktop-wallet"
-  },
-  {
    "name": "croc-desktop",
    "description": "Unofficial desktop GUI for croc — end-to-end encrypted, peer-to-peer file & text transfer. Linux…",
    "source": "github:sihanteng/croc-desktop"
@@ -9355,7 +9641,7 @@
   },
   {
    "name": "crossmacro",
-   "description": "A modern mouse and keyboard macro recording and playback application.",
+   "description": "Record, edit, and replay mouse and keyboard macros with hotkeys and schedules",
    "source": "github:alper-han/CrossMacro"
   },
   {
@@ -9387,6 +9673,11 @@
    "name": "crow-translate",
    "description": "Translate and speak text using Google, Yandex, Bing and more.",
    "note": "resolve manually: https://download.kde.org/stable/crow-translate"
+  },
+  {
+   "name": "crowbar",
+   "description": "Crowbar is a launcher for PS4RT runtimes. It finds your PS4 game dumps, installs and updates the…",
+   "source": "github:diamonddogz/crowbar"
   },
   {
    "name": "crucible",
@@ -9495,7 +9786,7 @@
   },
   {
    "name": "cubiclauncher",
-   "description": "Nuevo CubicLauncher en Rust para más eficiencia y más personalizado y de código abierto.",
+   "description": "New CubicLauncher in Rust: more efficient, more customizable and open source.",
    "source": "github:cubiclauncherdevs/cubiclauncher"
   },
   {
@@ -9520,7 +9811,7 @@
   },
   {
    "name": "culprit-sql-studio",
-   "description": "Find what's slowing your database down: a free desktop app, CLI and MCP server for SQL Server…",
+   "description": "Find what is slowing your database down",
    "source": "github:cristipufu/culprit-sql-studio"
   },
   {
@@ -9636,7 +9927,7 @@
   {
    "name": "cve-intel",
    "description": "Local security intelligence for CVE triage - 40 data sources and 41 tools, risk scores and an MCP…",
-   "source": "github:fazmin/cve-intel"
+   "source": "github:Fazmin/cve-intel"
   },
   {
    "name": "cvease",
@@ -9709,6 +10000,11 @@
    "source": "github:pkgforge-dev/D1X-Rebirth-AppImage"
   },
   {
+   "name": "d2-web",
+   "description": "Play Diablo II: Lord of Destruction in your browser — the 1.13c engine reimplemented in C++ and…",
+   "source": "github:virtastic/d2-web"
+  },
+  {
    "name": "d2d",
    "description": "This cross platform project is a data conversion utility for industrial automation and engineers.",
    "source": "github:inowio/d2d"
@@ -9740,11 +10036,6 @@
   },
   {
    "name": "daggerfall-js",
-   "description": "Daggerfall JavaScript: a 1:1 port of The Elder Scrolls II: Daggerfall game to the browser…",
-   "source": "github:lattymoy/daggerfall-js-source"
-  },
-  {
-   "name": "daggerfall-js-source",
    "description": "Daggerfall Online - the downloadable desktop shell. Loads the same dist/ the website deploys",
    "source": "github:Lattymoy/daggerfall-js-source"
   },
@@ -9856,7 +10147,7 @@
   {
    "name": "datamine-explorer",
    "description": "A viewer for Halo & Destiny logging, events, datamine.",
-   "source": "github:craftycodie/datamine-explorer"
+   "source": "github:craftycodie/Datamine-Explorer"
   },
   {
    "name": "datapanel",
@@ -9904,11 +10195,6 @@
    "source": "github:echo-matt/dawn-installer"
   },
   {
-   "name": "dawn-installer",
-   "description": "An launcher for Dawn.",
-   "source": "github:echo-matt/dawn-installer"
-  },
-  {
    "name": "dawn-science",
    "description": "An open-source, local-first AI workbench where multiple agents collaborate with you on R and…",
    "source": "github:Jiawang1209/DAWN-Science"
@@ -9932,11 +10218,6 @@
    "name": "daylo",
    "description": "Simple Activity Tracker - Track your daily habits with a beautiful heatmap calendar.",
    "source": "github:henfrydls/daylo"
-  },
-  {
-   "name": "daymon",
-   "description": "Daymon puts your favorite AI to work 24/7. It schedules, remembers, and orchestrates your own…",
-   "source": "github:daymonio/daymon"
   },
   {
    "name": "dayon",
@@ -10000,7 +10281,7 @@
   },
   {
    "name": "dbeaver-ce",
-   "description": "Unofficial. DBeaver Community is a free cross-platform database tool for developers, database…",
+   "description": "Universal Database Manager and SQL Client.",
    "source": "github:valicm/dbeaver-ce-appimage"
   },
   {
@@ -10035,7 +10316,7 @@
   },
   {
    "name": "dbine",
-   "description": "DBine database manager: a free desktop app for 130 SQL and NoSQL engines, with profiler, schema &…",
+   "description": "Gestor de bases de datos multimotor",
    "source": "github:addlayer-io/dbine"
   },
   {
@@ -10045,7 +10326,7 @@
   },
   {
    "name": "dbv-md-reader",
-   "description": "Lector nativo de Markdown (.md) para Windows, Linux y macOS, ultra-ligero  de lectura y edición…",
+   "description": "Native Markdown (.md) reader for Windows, Linux and macOS, ultra-light for reading and editing…",
    "source": "github:davidbuenov/dbv-md-reader"
   },
   {
@@ -10062,11 +10343,6 @@
    "name": "dcf77-soundwave",
    "description": "Emulator of DCF77 time signal through audiochannel.",
    "source": "github:raydac/dcf77-soundwave"
-  },
-  {
-   "name": "ddalab",
-   "description": "DDALAB is a software platform for analyzing physiological time-series data using Delay…",
-   "source": "github:sdraeger/DDALAB"
   },
   {
    "name": "ddev-manager",
@@ -10160,8 +10436,8 @@
   },
   {
    "name": "deckle",
-   "description": "A morning newspaper for your Kindle, built on your own computer, and store-quality Kindle books…",
-   "source": "github:casavargas/deckle"
+   "description": "Turn EPUBs into store-quality Kindle books",
+   "source": "github:CasaVargas/deckle"
   },
   {
    "name": "deckwerk",
@@ -10180,8 +10456,8 @@
   },
   {
    "name": "decomp-buddy",
-   "description": "Decomp Buddy: set up fan-made PC ports and decomps of your games from your own game files. Free…",
-   "source": "github:tanookistudios/decomp-buddy"
+   "description": "Point it at a decomp/recomp repo",
+   "source": "github:TanookiStudios/decomp-buddy"
   },
   {
    "name": "dectalkmini",
@@ -10259,13 +10535,8 @@
    "source": "github:ronglecat/deepseek-app"
   },
   {
-   "name": "deepseek-bot",
-   "description": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
-   "source": "github:fei2411/deepseek-bot"
-  },
-  {
    "name": "deepseek-desktop",
-   "description": "Tauri desktop app with Harness and official DeepSeek Chat modes. 基于 Tauri 重做，支持独立 Chat…",
+   "description": "Tauri desktop app with Harness and official DeepSeek Chat modes.",
    "source": "github:zcx960/deepseek-desktop"
   },
   {
@@ -10429,6 +10700,11 @@
    "source": "github:bokhodirurinboev/deskarcade"
   },
   {
+   "name": "deskfleet",
+   "description": "Connect your team's computers, keep using the agents you love, and step in whenever you're needed.",
+   "source": "github:yet-another-ai/deskfleet"
+  },
+  {
    "name": "deskly",
    "description": "VTOPCC App for Desktop.",
    "source": "github:vishal-770/deskly"
@@ -10480,7 +10756,7 @@
   },
   {
    "name": "desktop-yandex-home-app",
-   "description": "Приложение для ПК, которое позволяет управлять Умным домом Яндекс: запуск сценариев…",
+   "description": "PC application to control Yandex Smart Home: run scenarios, switch devices on and off.",
    "source": "github:onegamerstory/desktop-yandex.home-app"
   },
   {
@@ -10495,7 +10771,7 @@
   },
   {
    "name": "detailcraft",
-   "description": "DetailCraft: Steel & rebar detailing. Structural steel members and connections, rebar placement…",
+   "description": "Steel & rebar detailing",
    "source": "github:getcadcraft/detailcraft"
   },
   {
@@ -10710,8 +10986,8 @@
   },
   {
    "name": "digdug-native",
-   "description": "Native Windows and Linux port of Namco's Dig Dug arcade game (bring your own ROMs). Controller…",
-   "source": "github:tekrantgaming/digdug-native"
+   "description": "Native port of the 1982 arcade game (requires your own ROM files)",
+   "source": "github:TekRantGaming/digdug-native"
   },
   {
    "name": "digicamwm",
@@ -10735,7 +11011,7 @@
   },
   {
    "name": "dilo-tauri",
-   "description": "Dictado por voz offline, en español. Deja de tipear tus prompts: Dilo.",
+   "description": "Offline voice dictation, in Spanish. Stop typing your prompts: Dilo.",
    "source": "github:aacontn/dilo-tauri"
   },
   {
@@ -11000,7 +11276,7 @@
   },
   {
    "name": "documentaai",
-   "description": "Ferramenta de documentação pessoal offline-first estilo Notion — editor de blocos, daily notes…",
+   "description": "Offline-first personal documentation tool in the style of Notion — block editor, daily notes…",
    "source": "github:gabrielsyphan/documentaai"
   },
   {
@@ -11015,7 +11291,7 @@
   },
   {
    "name": "dofuemu",
-   "description": "Client desktop non officiel pour Dofus Touch.",
+   "description": "Unofficial desktop client for Dofus Touch.",
    "source": "github:angine67/dofuemu"
   },
   {
@@ -11105,8 +11381,8 @@
   },
   {
    "name": "doorman",
-   "description": "Doorman — local-first monitor and guard for AI coding agents (desktop app).",
-   "source": "github:pinatacloud/doorman"
+   "description": "Doorman watches the AI coding agents on this machine — what they spend, what they touch and what…",
+   "source": "github:PinataCloud/doorman"
   },
   {
    "name": "dopamine-preview",
@@ -11132,6 +11408,11 @@
    "name": "dorion",
    "description": "Tiny alternative Discord client with a smaller footprint, snappier startup, themes, plugins and…",
    "source": "github:SpikeHD/Dorion"
+  },
+  {
+   "name": "doriterm",
+   "description": "Doriterm desktop shell",
+   "source": "github:sisyphuslabs/doriterm"
   },
   {
    "name": "dosbox-automation",
@@ -11259,11 +11540,6 @@
    "source": "github:ron537/dplex"
   },
   {
-   "name": "dpro-agent",
-   "description": "Dpro desktop app",
-   "source": "github:9mtm/Dpro-Agent"
-  },
-  {
    "name": "dr-robotniks-ring-racers",
    "description": "Unofficial. Kart racing video game originally based on SRB2Kart.",
    "source": "github:pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage"
@@ -11275,8 +11551,8 @@
   },
   {
    "name": "drag-shift",
-   "description": "Drag, Shift, drop — transform and edit files with the wheel that pops up as you drag. Windows ·…",
-   "source": "github:aytcode/drag-shift"
+   "description": "Drag any file, press Shift, drop it on an action.",
+   "source": "github:aytcode/Drag-Shift"
   },
   {
    "name": "dragdrop",
@@ -11379,6 +11655,11 @@
    "source": "github:yatima1460/Drill"
   },
   {
+   "name": "drivedeck",
+   "description": "The easiest, most complete way to use OneDrive on Linux",
+   "source": "github:sweatshopking/DriveDeck"
+  },
+  {
    "name": "drm-receiver",
    "description": "The drm receiver is - as the name suggests - a sdr software package for decoding DRM, with…",
    "source": "github:jvankatwijk/drm-receiver"
@@ -11395,8 +11676,8 @@
   },
   {
    "name": "droidlens",
-   "description": "Flipper alternative for Android — inspect any app via adb (mirroring, view hierarchy, screen flow…",
-   "source": "github:eseungjun/droidlens"
+   "description": "DroidLens desktop",
+   "source": "github:ESeungJun/droidlens"
   },
   {
    "name": "droidpier",
@@ -11440,8 +11721,8 @@
   },
   {
    "name": "ds-bot",
-   "description": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
-   "source": "github:fei2411/ds-bot"
+   "description": "DeepSeek Bot desktop app: the ds-bot team on its own pinned DeepSeek Harness.",
+   "source": "github:Fei2411/DS-Bot"
   },
   {
    "name": "ds5dongle-oled-edition",
@@ -11464,11 +11745,6 @@
    "source": "github:JochenYang/dsh-app"
   },
   {
-   "name": "dsh-chamber",
-   "description": "The dsh (DeepSeek Harness) desktop connection manager consolidates dsh instances from your local…",
-   "source": "github:panzeyu2013/dsh-chamber"
-  },
-  {
    "name": "dsh-codex-desktop",
    "description": "A ready-to-use cross-platform DeepSeek Harness desktop client with no environment setup.",
    "source": "github:MichengAI/dsh-codex-desktop"
@@ -11482,11 +11758,6 @@
    "name": "dsh-desktop",
    "description": "DeepSeek Harness (dsh) Windows desktop client - bundled Node.js + dsh CLI, one-click launch.",
    "source": "github:myyangyunfan/dsh_desktop"
-  },
-  {
-   "name": "dsh-desktop-eac",
-   "description": "DeepSeek Harness Desktop (dsh-desktop). EAC: Embracing All Creation (揽尽万象). Bundled Node.js…",
-   "source": "github:dsh-eac/dsh-desktop-eac"
   },
   {
    "name": "dsh-desktop-for-linux",
@@ -11660,7 +11931,7 @@
   },
   {
    "name": "duoray",
-   "description": "Свободный клиент Xray.",
+   "description": "Free Xray client.",
    "source": "github:m-a-prod/duoray"
   },
   {
@@ -11705,8 +11976,8 @@
   },
   {
    "name": "dw5xl-recomp",
-   "description": "A native PC port of Dynasty Warriors 5: Xtreme Legends for the PlayStation 2, built with…",
-   "source": "github:theslackbringer/dw5xl-recomp"
+   "description": "Build and play using your own PAL disc image",
+   "source": "github:TheSlackbringer/dw5xl-recomp"
   },
   {
    "name": "dwarf-fortress",
@@ -11722,11 +11993,6 @@
    "name": "dwarf-therapist",
    "description": "Dwarf Viewer and Manager for Dwarf Fortress",
    "source": "github:Dwarf-Therapist/Dwarf-Therapist"
-  },
-  {
-   "name": "dwarffortress",
-   "description": "A Dwarf Fortress game. Build a fortress and try to help your dwarves survive against a deeply…",
-   "source": "github:McArcady/lnp-forge"
   },
   {
    "name": "dwarflab-viewer",
@@ -11820,7 +12086,7 @@
   },
   {
    "name": "easy-dataset",
-   "description": "A powerful tool for creating datasets for LLM fine-tuning 、RAG and Eval..",
+   "description": "A powerful tool for creating datasets for LLM fine-tuning, RAG and Eval.",
    "source": "github:conardli/easy-dataset"
   },
   {
@@ -12090,13 +12356,18 @@
   },
   {
    "name": "efd-unpacker",
-   "description": "EFD Unpacker — кроссплатформенное приложение для распаковки файлов EFD (Enterprise File…",
+   "description": "EFD Unpacker — a cross-platform application for unpacking EFD (Enterprise File Distribution) files.",
    "source": "github:ingvarconsulting/efd_unpacker"
   },
   {
    "name": "effectcraft",
    "description": "Open-source motion graphics and visual effects, built in pure Rust.",
    "source": "github:storytold/effectcraft"
+  },
+  {
+   "name": "eglantine",
+   "description": "VERY experimental Nintendo Switch 2 emulator.",
+   "source": "github:djihads80/eglantine"
   },
   {
    "name": "ehdev-shell",
@@ -12130,7 +12401,7 @@
   },
   {
    "name": "ekstre-desktop",
-   "description": "Menu-bar desktop app (macOS/Windows) that tracks credit-card statements from Turkish banks — reads…",
+   "description": "Ekstre — Turkish credit-card statement tracker for the desktop",
    "source": "github:atomdeniz/ekstre-desktop"
   },
   {
@@ -12185,7 +12456,7 @@
   },
   {
    "name": "electron-kvm-rdev",
-   "description": "USB KVM客户端 USB KVM client with enhaced low-level keyboard capturing..",
+   "description": "USB KVM client with enhaced low-level keyboard capturing.",
    "source": "github:motorbottle/electron-kvm-rdev"
   },
   {
@@ -12320,8 +12591,8 @@
   },
   {
    "name": "elmerstudio",
-   "description": "COMSOL-style model builder (geometry, physics, mesh, study, results) for the Elmer FEM…",
-   "source": "github:altelmer/elmerstudio"
+   "description": "Model builder for the Elmer FEM multiphysics solver",
+   "source": "github:AltElmer/ElmerStudio"
   },
   {
    "name": "elphyre-walletshell",
@@ -12369,6 +12640,11 @@
    "source": "github:kiyohken2000/5ch-browser-template"
   },
   {
+   "name": "ember-bots",
+   "description": "Agentic work organized visually.",
+   "source": "github:noemit/ember-bots"
+  },
+  {
    "name": "ember-p2p",
    "description": "Modern eMule KAD client built with Rust + Tauri.",
    "source": "github:untaimed18/ember-p2p"
@@ -12377,6 +12653,11 @@
    "name": "emberr",
    "description": "Open-source, offline-first notes and daily reminders",
    "source": "github:emberr-app/Emberr"
+  },
+  {
+   "name": "emc2",
+   "description": "A desktop email client for Windows, macOS, and Linux with AI mail classification.",
+   "source": "github:collection-of-things/emc2"
   },
   {
    "name": "emdash",
@@ -12422,6 +12703,11 @@
    "name": "emudeck",
    "description": "Play all your RetroGames",
    "source": "github:EmuDeck/emudeck-electron"
+  },
+  {
+   "name": "emulebb-rust",
+   "description": "Active eD2K/Kad Rust client. Nightly beta builds are current; Beta 3 is expected after a few more…",
+   "source": "github:emulebb/emulebb-rust"
   },
   {
    "name": "emulsion",
@@ -12505,7 +12791,7 @@
   },
   {
    "name": "enigma2player",
-   "description": "Live-TV, Multiview und Aufnahmen deines Enigma2-Receivers am Computer – für Windows, macOS und Linux",
+   "description": "Live TV, Multiview and recordings from your Enigma2 receiver on your computer – for Windows, macOS…",
    "source": "github:zakomania/enigma2player"
   },
   {
@@ -12675,7 +12961,7 @@
   },
   {
    "name": "ergopti",
-   "description": "Disposition clavier ergonomique Ergopti, optimisée pour l’écriture du français, de l’anglais et du…",
+   "description": "Ergopti ergonomic keyboard layout, optimized for writing French, English and code.",
    "source": "github:adrienm7/ergopti"
   },
   {
@@ -12705,7 +12991,7 @@
   },
   {
    "name": "escriba",
-   "description": "Escriba ✒️ Tu Escriba personal: hablas, él escribe. Dictado por voz con IA, 100% local y gratis…",
+   "description": "Escriba ✒️ Your personal scribe: you speak, it writes. AI voice dictation, 100% local and free…",
    "source": "github:alejandroap9/escriba"
   },
   {
@@ -12820,8 +13106,8 @@
   },
   {
    "name": "etude",
-   "description": "Self-hosted spaced repetition where every card type is a program: AI grading, FSRS-6, exam…",
-   "source": "github:zibhelina/etude"
+   "description": "Spaced-repetition practice with programmable card types and AI grading.",
+   "source": "github:Zibhelina/etude"
   },
   {
    "name": "eudic",
@@ -12964,7 +13250,7 @@
   },
   {
    "name": "executioner",
-   "description": "The agentic pentesting environment that lives on your machine. AI agent teams, visual workflows…",
+   "description": "An agentic development environment for offensive security work",
    "source": "github:dbx0/executioner"
   },
   {
@@ -13051,11 +13337,6 @@
    "name": "exr-converter",
    "description": "Desktop app and CLI for EXR ↔ video workflows — built for VFX dailies, review exports, and plate…",
    "source": "github:derek-rein/exr-converter"
-  },
-  {
-   "name": "exsplode.re",
-   "description": "A Bomberman game made with Godot under BSD3.",
-   "source": "github:AmarOk1412/Eksplode.re"
   },
   {
    "name": "ext",
@@ -13334,7 +13615,7 @@
   },
   {
    "name": "fauxx",
-   "description": "Cross-device companion to Fauxx Android app that generates realistic decoy web activity through…",
+   "description": "Generate realistic decoy web activity to pollute data-broker profiles",
    "source": "github:digital-grease/fauxx-desktop"
   },
   {
@@ -13398,11 +13679,6 @@
    "source": "github:timzatko/feebas"
   },
   {
-   "name": "feed-flow",
-   "description": "A minimalistic RSS Reader available on Android, iOS, macOS, Windows and Linux.",
-   "source": "github:prof18/feed-flow"
-  },
-  {
    "name": "feedflow",
    "description": "Minimal, fast RSS reading without the clutter.It focuses on a clean timeline, flexible reading…",
    "source": "github:prof18/feed-flow"
@@ -13463,6 +13739,11 @@
    "source": "github:mehranTaslimi/Ferrix"
   },
   {
+   "name": "ferrocad",
+   "description": "Modern FreeCAD host for your workbenches.",
+   "source": "github:ferrocad/ferrocad"
+  },
+  {
    "name": "ferrotag",
    "description": "Blazingly fast music metadata manager.",
    "source": "github:sulamiwizard/ferrotag"
@@ -13499,8 +13780,8 @@
   },
   {
    "name": "ffcceot-recomp",
-   "description": "Native PC port of Final Fantasy Crystal Chronicles: Echoes of Time (DS) by static recompilation…",
-   "source": "github:jonathandc64/ffcceot-recomp"
+   "description": "Final Fantasy Crystal Chronicles: Echoes of Time, built from your own copy of the game",
+   "source": "github:JonathanDC64/FFCCEOT-Recomp"
   },
   {
    "name": "fflogs-uploader",
@@ -13514,7 +13795,7 @@
   },
   {
    "name": "ffta-recomp",
-   "description": "Native recompilation of Final Fantasy Tactics Advance built on the mstan/gbarecomp framework.",
+   "description": "Final Fantasy Tactics Advance static recompilation",
    "source": "github:james2doyle/ffta-recomp"
   },
   {
@@ -13584,7 +13865,7 @@
   },
   {
    "name": "fidget",
-   "description": "AI desktop character for rich dilly-dallying... I mean \"productivity enhancement\".",
+   "description": "A desktop companion that lives on your screen",
    "source": "github:omesser/fidget"
   },
   {
@@ -14059,7 +14340,7 @@
   },
   {
    "name": "flov",
-   "description": "Voice-to-text для Windows, macOS (Apple Silicon) и Linux/Wayland. Зажми",
+   "description": "Voice-to-text for Windows, macOS (Apple Silicon) and Linux/Wayland. Hold",
    "source": "github:billyhargroveofficial/flov"
   },
   {
@@ -14225,7 +14506,7 @@
   {
    "name": "flyingcarpet",
    "description": "Cross-platform AirDrop. File transfer between Android, iOS, Linux, macOS, and Windows over ad hoc…",
-   "source": "github:spieglt/flyingcarpet"
+   "source": "github:spieglt/FlyingCarpet"
   },
   {
    "name": "flymd",
@@ -14271,11 +14552,6 @@
    "name": "fnordlauncher",
    "description": "Discover, manage, and play Minecraft instances",
    "source": "github:FnordMC/FnordLauncher"
-  },
-  {
-   "name": "fntv-plus",
-   "description": "Transform Fntv into a private streaming cinema right on your desktop.",
-   "source": "github:ydmy007/fntv-plus"
   },
   {
    "name": "foampilot",
@@ -14448,11 +14724,6 @@
    "source": "github:nandomoreirame/forja"
   },
   {
-   "name": "forktty",
-   "description": "Linux-native workspace for coding agents with embedded Ghostty terminals, git worktrees, local…",
-   "source": "github:lucenx9/forktty"
-  },
-  {
    "name": "formal-ai",
    "description": "Cross-platform desktop wrapper for formal-ai",
    "source": "github:link-assistant/formal-ai"
@@ -14498,19 +14769,14 @@
    "source": "github:wonderingstars/foxsdr"
   },
   {
-   "name": "foxvpn",
-   "description": "Fox VPN - An independent client built on Mozilla's Firefox VPN infrastructure and Fastly edge…",
-   "source": "github:erfan-tahvilian/foxvpn"
-  },
-  {
    "name": "fpm",
    "description": "Faster Project Plus on Linux.",
    "source": "github:jlambert360/FPM-AppImage"
   },
   {
    "name": "fpv-dvr-cleaner",
-   "description": "Free FPV tools.",
-   "source": "github:bratwurstexe/fpv_dvr_cleaner"
+   "description": "Restore analog and HDZero DVR recordings",
+   "source": "github:Bratwurstexe/FPV_DVR_CLEANER"
   },
   {
    "name": "fpvtheplanet",
@@ -14581,6 +14847,11 @@
    "name": "frank-scanlation",
    "description": "Desktop app for reading translated mangá from any website (linux, windows, mac).",
    "source": "github:akitaonrails/frank_scanlation"
+  },
+  {
+   "name": "frankmdfast",
+   "description": "Reimplementation of FrankMD in Rust.",
+   "source": "github:akitaonrails/frankmdfast"
   },
   {
    "name": "franksherlock",
@@ -14719,8 +14990,8 @@
   },
   {
    "name": "freeshape",
-   "description": "Free, offline, Onshape-style parametric CAD — parts, assemblies, drawings (DXF for AutoCAD) and…",
-   "source": "github:richiewillmott/freeshape"
+   "description": "Free, offline, Onshape-style parametric CAD",
+   "source": "github:richiewillmott/FreeShape"
   },
   {
    "name": "freeshow",
@@ -14829,7 +15100,7 @@
   },
   {
    "name": "frogg",
-   "description": "Frogg Development Environment: Tauri desktop client for remote AI coding agents (fork of Paseo).",
+   "description": "Frogg Electron desktop shell",
    "source": "github:frogg-app/frogg"
   },
   {
@@ -15013,9 +15284,19 @@
    "source": "github:jasmeralia/galefling"
   },
   {
+   "name": "gall",
+   "description": "Keyboard-first file manager with instant search and compare",
+   "source": "github:GaMa87/gall"
+  },
+  {
    "name": "game-cheetah",
    "description": "Game memory editor for altering variables in computer games (resources, lifes, etc.).",
    "source": "github:mkrueger/game_cheetah"
+  },
+  {
+   "name": "game-release-tracker",
+   "description": "Local-first desktop app (Electron, React, TypeScript, SQLite): syncs release data from a public…",
+   "source": "github:hachi23/game-release-tracker"
   },
   {
    "name": "gamebasebox",
@@ -15159,12 +15440,12 @@
   },
   {
    "name": "gcap2025",
-   "description": "Appimage não oficial do GCAP2025, declare seus ganhos de capital (Ano-calendário 2025).",
+   "description": "Unofficial AppImage of GCAP2025, declare your capital gains (calendar year 2025).",
    "source": "github:pkgforge-dev/GCAP2025-AppImage"
   },
   {
    "name": "gcap2026",
-   "description": "Appimage não oficial do GCAP2026, declare seus ganhos de capital (Ano-calendário 2026).",
+   "description": "Unofficial AppImage of GCAP2026, declare your capital gains (calendar year 2026).",
    "source": "github:pkgforge-dev/GCAP2026-AppImage"
   },
   {
@@ -15181,11 +15462,6 @@
    "name": "gdevelop",
    "description": "GDevelop 5 IDE running on the Electron runtime",
    "source": "github:4ian/GDevelop"
-  },
-  {
-   "name": "gdiskinfo",
-   "description": "A GTK4 disk health monitor for Linux, built as a QDiskInfo alternative using the GTKX React…",
-   "source": "github:relativemodder/gdiskinfo"
   },
   {
    "name": "gdlauncher",
@@ -15228,11 +15504,6 @@
    "source": "github:pkgforge-dev/Gearlynx-AppImage"
   },
   {
-   "name": "gears3-azura",
-   "description": "Downloads of the Azura Launcher for Gears3-Azura (macOS and Linux). Source…",
-   "source": "github:carolux97/gears3-azura-releases"
-  },
-  {
    "name": "gearsystem",
    "description": "Unofficial. Sega Master System / Game Gear / SG-1000 emulator.",
    "source": "github:pkgforge-dev/Gearsystem-AppImage"
@@ -15269,7 +15540,7 @@
   },
   {
    "name": "geetree",
-   "description": "GeeTree — releases and issues.",
+   "description": "Professional Git client for very large repositories",
    "source": "github:cmzy/geetree"
   },
   {
@@ -15414,7 +15685,7 @@
   },
   {
    "name": "gestioncalificacionesaules",
-   "description": "Script para la gestión del libro de calificaciones de AULES (Moodle) de manera automatizada.",
+   "description": "Script to automate the management of the AULES (Moodle) gradebook.",
    "source": "github:martinezpenya/gestioncalificacionesaules"
   },
   {
@@ -15579,8 +15850,8 @@
   },
   {
    "name": "girru",
-   "description": "Open-source AI desktop assistant — run local or remote LLMs with privacy-first design and zero…",
-   "source": "github:dpro-at/girru"
+   "description": "Dpro desktop app",
+   "source": "github:Dpro-at/Girru"
   },
   {
    "name": "git-account-manager",
@@ -15644,7 +15915,7 @@
   },
   {
    "name": "gitchef",
-   "description": "Open-source visual Git client. Fast, native, and cross-platform.",
+   "description": "Open-source visual Git client",
    "source": "github:jcardonne/gitchef"
   },
   {
@@ -16003,11 +16274,6 @@
    "source": "github:vilsol/go-pob"
   },
   {
-   "name": "go-todo",
-   "description": "A simple command-line Todo List application written in Go",
-   "source": "github:callmekriztal/Go_Todo"
-  },
-  {
    "name": "go2tv",
    "description": "<p>Go2TV lets you play video, audio, and image files on your Smart TV or Chromecast device…",
    "source": "github:alexballas/go2tv"
@@ -16193,19 +16459,19 @@
    "source": "github:ketetefid/gorzray"
   },
   {
-   "name": "gospel",
-   "description": "<p>A fast pdf viewer based on Poppler or MuPdf.</p>",
-   "source": "github:ksharindam/gospel-pdf-viewer"
-  },
-  {
    "name": "gostman",
-   "description": "Free, open source API client for REST, GraphQL, gRPC and WebSocket. Desktop, web and CLI. No…",
+   "description": "An API client for REST, GraphQL, gRPC and WebSocket",
    "source": "github:kunalgoesbyken/gostman"
   },
   {
    "name": "goverlay",
    "description": "An opensource project that aims to create a Graphical UI to help manage Linux overlays.",
    "source": "github:benjamimgois/goverlay"
+  },
+  {
+   "name": "gow-pc-port",
+   "description": "Unofficial native PC port of God of War (2005, PS2) for Windows, with experimental Linux support…",
+   "source": "github:danielalves96/gow-pc-port"
   },
   {
    "name": "goxel",
@@ -16224,7 +16490,7 @@
   },
   {
    "name": "gpodofus3",
-   "description": "Sert de guide dans la progression Dofus. Basé sur le spreadsheet de Skyzio.",
+   "description": "Serves as a guide for progressing in Dofus. Based on Skyzio's spreadsheet.",
    "source": "github:anthob-dev/gpodofus3"
   },
   {
@@ -16344,7 +16610,7 @@
   },
   {
    "name": "grapi",
-   "description": "Analizador de seguidores/seguidos de Instagram con descarga de galerías e historias.",
+   "description": "Instagram followers/following analyzer with gallery and story downloads.",
    "source": "github:luserv/grapi"
   },
   {
@@ -16399,7 +16665,7 @@
   },
   {
    "name": "gridea",
-   "description": "A static blog writing client, 一个静态博客写作客户端.",
+   "description": "A static blog writing client.",
    "source": "github:getgridea/gridea"
   },
   {
@@ -16504,7 +16770,7 @@
   },
   {
    "name": "gsb-wifi-autologin",
-   "description": "Bu uygulama, GSB yurtlarında kullanılan internete otomatik giriş yapılmasını sağlar. Login…",
+   "description": "This application logs in automatically to the internet used in GSB dormitories. You do not need to…",
    "source": "github:toxpox/gsb-wifi-autologin"
   },
   {
@@ -16588,6 +16854,11 @@
    "source": "github:pumf/gugufly"
   },
   {
+   "name": "gui-for-cli",
+   "description": "Make data driven webapps for your CLI tools.",
+   "source": "github:wgsextract/gui-for-cli"
+  },
+  {
    "name": "guide-studio",
    "description": "Record your screen, polish it in the editor, and let AI do the tedious parts — all on your own…",
    "source": "github:3gensolution/Guide-Studio"
@@ -16634,8 +16905,8 @@
   },
   {
    "name": "gutterberg",
-   "description": "Turn print-and-play PDFs and card scans into cut-ready print sheets. Exact sizes, gutters, cut…",
-   "source": "github:joaquinarruiz/gutterberg"
+   "description": "Gutterberg turns print-and-play PDFs and card scans into cut-ready sheets: exact card sizes, clean…",
+   "source": "github:JoaquinArruiz/Gutterberg"
   },
   {
    "name": "guya",
@@ -16696,6 +16967,11 @@
    "name": "haejeokrisuai",
    "description": "Even if bugs occur, I prioritize memory optimization (low memory) and speed optimization.",
    "source": "github:nevaeh5379/haejeokrisuai"
+  },
+  {
+   "name": "hairharpy",
+   "description": "A program for modeling voluminous, stylized hairstyles with clean topology.",
+   "source": "github:rackta/hairharpy"
   },
   {
    "name": "hakimi-agent",
@@ -16773,7 +17049,7 @@
   },
   {
    "name": "harbor",
-   "description": "Stop configuring your AI stack. Start using it. One command brings a complete pre-wired LLM stack…",
+   "description": "A companion app for Harbor LLM toolkit",
    "source": "github:av/harbor"
   },
   {
@@ -16798,7 +17074,7 @@
   },
   {
    "name": "harness-studio",
-   "description": "Desktop coding agent app for macOS and Linux. Any model, on your code and UI. Built on DeepSeek…",
+   "description": "Harness Studio: an any-model agent app for your code and UI, built on DeepSeek Harness.",
    "source": "github:vigneshv1cky/harness-studio"
   },
   {
@@ -16820,6 +17096,11 @@
    "name": "haruna",
    "description": "Unofficial. An open source media player built with Qt/QML and libmpv.",
    "source": "github:pkgforge-dev/Haruna-AppImage"
+  },
+  {
+   "name": "haruspex",
+   "description": "A privacy focused desktop research and coding agent.",
+   "source": "github:tmac1973/haruspex"
   },
   {
    "name": "hash-gui",
@@ -16864,7 +17145,7 @@
   {
    "name": "hatoba",
    "description": "Open-source desktop SSH client with an AI assistant and end-to-end encrypted sync through your own…",
-   "source": "github:scarletkc/hatoba"
+   "source": "github:scarletkc/Hatoba"
   },
   {
    "name": "hats",
@@ -16955,11 +17236,6 @@
    "name": "health-reminder",
    "description": "This is a high-performance desktop application developed using Rust and Tauri, designed to help…",
    "source": "github:kaima2022/health-reminder"
-  },
-  {
-   "name": "heap",
-   "description": "You write code. heap. keeps track of the rest. Tasks, meetings and notes, handled in a keystroke.",
-   "source": "github:sectapunterx/heap"
   },
   {
    "name": "hearthlight",
@@ -17393,7 +17669,7 @@
   },
   {
    "name": "hopchat",
-   "description": "Encrypted LAN chat that runs your living room. No server, no cloud, just your terminal and a local…",
+   "description": "Offline, end-to-end encrypted terminal chat for your local network",
    "source": "github:bahdotsh/hopchat"
   },
   {
@@ -17415,6 +17691,11 @@
    "name": "hoptodesk",
    "description": "Free remote desktop software for remote support, screen sharing and file transfer.",
    "note": "resolve manually: https://www.hoptodesk.com"
+  },
+  {
+   "name": "hortensia",
+   "description": "Experimental Nintendo Switch 2 emulator for Windows, Linux and macOS: the best of the Eglantine…",
+   "source": "github:justr4mzi/hortensia"
   },
   {
    "name": "hoshiro",
@@ -17607,6 +17888,11 @@
    "source": "github:scrouik/hxlinux"
   },
   {
+   "name": "hybridslicecraft",
+   "description": "A hybrid slicer for filament (FDM) and resin printers.",
+   "source": "github:jorgen-vikinggod/hybridslicecraft"
+  },
+  {
    "name": "hycreator",
    "description": "The desktop editor for Hytale modding. Forms instead of raw JSON, live previews, one-click deploy…",
    "source": "github:lewai1/hycreator-releases"
@@ -17653,7 +17939,7 @@
   },
   {
    "name": "hyperhost",
-   "description": "Công cụ này đóng vai trò như một bảng điều khiển Nginx siêu tốc, giúp bạn tự động định tuyến tên…",
+   "description": "This tool works as a super-fast Nginx control panel, helping you automatically route virtual…",
    "source": "github:ptn1411/hyperhost"
   },
   {
@@ -17828,7 +18114,7 @@
   },
   {
    "name": "idlexp",
-   "description": "Instaladores e atualizações do IdleXP.",
+   "description": "Installers and updates for IdleXP.",
    "source": "github:idlexp-app/idlexp-releases"
   },
   {
@@ -17927,11 +18213,6 @@
    "source": "github:abhaypratap08/imageviewer_usingc"
   },
   {
-   "name": "imagine",
-   "description": "PNG/JPEG optimization",
-   "source": "github:meowtec/Imagine"
-  },
-  {
    "name": "imap-cleanup-tool",
    "description": "Bulk-clean your IMAP mailbox by sender, domain, rules or AI",
    "source": "github:mrpickles007/imap-cleanup-tool"
@@ -17978,7 +18259,7 @@
   },
   {
    "name": "immich-desktop",
-   "description": "Immich native desktop app for linux and windows.",
+   "description": "Unofficial Immich desktop client",
    "source": "github:hdmain/immich-desktop"
   },
   {
@@ -18018,8 +18299,8 @@
   },
   {
    "name": "impulse",
-   "description": "Impulse by Velocity: run AI models on your own computer, on Windows and Linux. Load any GGUF model…",
-   "source": "github:veloresearch/impulse"
+   "description": "Intelligence with longer memory, by Velocity",
+   "source": "github:Veloresearch/impulse"
   },
   {
    "name": "imsg",
@@ -18048,8 +18329,8 @@
   },
   {
    "name": "incarnamind",
-   "description": "From messy files to a checked report. A free, open-source desktop app for macOS, Windows and…",
-   "source": "github:incarnamind/incarnamind"
+   "description": "A local-first notebook that answers Questions from your own Documents.",
+   "source": "github:IncarnaMind/IncarnaMind"
   },
   {
    "name": "incott-driver-desktop",
@@ -18063,7 +18344,7 @@
   },
   {
    "name": "indra",
-   "description": "Готовые сборки Индры. Исходников нет.",
+   "description": "Ready-made builds of Indra. No source code.",
    "source": "github:lightclove/indra-releases"
   },
   {
@@ -18133,7 +18414,7 @@
   },
   {
    "name": "ingepresupuestos",
-   "description": "Software libre de presupuestos de obra civil (GPL-3.0): ACU, Gantt con ruta crítica e ida y vuelta…",
+   "description": "Free software for civil works budgets (GPL-3.0): ACU, Gantt with critical path and round trip with…",
    "source": "github:ingelibre/ingepresupuestos"
   },
   {
@@ -18148,8 +18429,8 @@
   },
   {
    "name": "inkboard",
-   "description": "A fast, free, fully offline infinite whiteboard in Rust — draw.io, Excalidraw, Obsidian Canvas…",
-   "source": "github:victorletirand/inkboard"
+   "description": "Inkboard, an infinite, offline and free whiteboard.",
+   "source": "github:VictorLetirand/inkboard"
   },
   {
    "name": "inkdown",
@@ -18457,6 +18738,11 @@
    "source": "github:sharno/iriunwebcam-appimage"
   },
   {
+   "name": "irodori-table",
+   "description": "Cross-platform Tauri database workbench for querying, browsing, editing, and ER diagrams.",
+   "source": "github:irodori-table/irodori-table"
+  },
+  {
    "name": "iroh-fm",
    "description": "Unstoppable music server over iroh.",
    "source": "github:usagi-coffee/iroh-fm"
@@ -18478,12 +18764,12 @@
   },
   {
    "name": "irpf2025",
-   "description": "Appimage não oficial do IRPF2025, declare seu imposto de renda (Ano-calendário 2024).",
+   "description": "Unofficial AppImage of IRPF2025, declare your income tax (calendar year 2024).",
    "source": "github:pkgforge-dev/IRPF2025-AppImage"
   },
   {
    "name": "irpf2026",
-   "description": "Appimage não oficial do IRPF2026, declare seu imposto de renda (Ano-calendário 2025).",
+   "description": "Unofficial AppImage of IRPF2026, declare your income tax (calendar year 2025).",
    "source": "github:pkgforge-dev/IRPF2026-AppImage"
   },
   {
@@ -18553,12 +18839,12 @@
   },
   {
    "name": "itr2025",
-   "description": "Appimage não oficial do ITR2025, declare seu imposto dos seus imóveis rurais (Ano-calendário 2025).",
+   "description": "Unofficial AppImage of ITR2025, declare tax on your rural properties (calendar year 2025).",
    "source": "github:pkgforge-dev/ITR2025-AppImage"
   },
   {
    "name": "itr2026",
-   "description": "Appimage não oficial do ITR2026. Uma aplicação para preenchimento e gestão da declaração do…",
+   "description": "Unofficial AppImage of ITR2026. An application for filling in and managing the 2026 Rural Land Tax…",
    "source": "github:pkgforge-dev/itr2026-appimage"
   },
   {
@@ -18658,7 +18944,7 @@
   },
   {
    "name": "jarvis",
-   "description": "Голосовой ИИ-ассистент для Linux/macOS: wake word, LLM + bash-агент, Telegram-бот, GUI. Бесплатно…",
+   "description": "Voice AI assistant for Linux/macOS: wake word, LLM + bash agent, Telegram bot, GUI. Free and local.",
    "source": "github:casha-cashu/jarvis"
   },
   {
@@ -18675,11 +18961,6 @@
    "name": "javinizer-go",
    "description": "Javinizer written in Go and Svelte. This is a modern replacement for the original Javinizer…",
    "source": "github:javinizer/javinizer-go"
-  },
-  {
-   "name": "javm",
-   "description": "Jav video management tool, including: scraping, downloading, and playing. ..",
-   "source": "github:ddmoyu/javm"
   },
   {
    "name": "jaxx",
@@ -18795,11 +19076,6 @@
    "name": "jetbrains-toolbox-linux",
    "description": "JetBrains Toolbox for Linux in portable formats.",
    "source": "github:radioactivepb/jetbrains-toolbox-linux"
-  },
-  {
-   "name": "jetforcegemini-recomp",
-   "description": "Jet Force Gemini on the N64 ported to PC & Steam Deck. Supports Mouse & Keyboard, 60+ FPS and HD…",
-   "source": "github:vibintoast/jetforcegemini-recomp"
   },
   {
    "name": "jetforcegemini-recompiled",
@@ -18938,8 +19214,8 @@
   },
   {
    "name": "jotter",
-   "description": "A Markdown notebook with smart editing and optional AI.",
-   "source": "github:gchavez0210/jotter"
+   "description": "Desktop Markdown notes compatible with Obsidian vaults",
+   "source": "github:GChavez0210/Jotter"
   },
   {
    "name": "jottr",
@@ -19037,6 +19313,11 @@
    "note": "resolve manually: https://www.budbrain.de/appimage/jsdevcleaner-x86_64.AppImage"
   },
   {
+   "name": "jsNetMonitor",
+   "description": "<p>jsNetMonitor shows the traffic of every network connection of your computer live — cable…",
+   "note": "resolve manually: https://www.budbrain.de/appimage/jsnetmonitor-x86_64.AppImage"
+  },
+  {
    "name": "jsSodoku",
    "description": "Sudoku from 4×4 to 25×25 — 100 levels, a daily puzzle and an achievements wall",
    "note": "resolve manually: https://www.budbrain.de/appimage/jssodoku-x86_64.AppImage"
@@ -19073,7 +19354,7 @@
   },
   {
    "name": "jsonui",
-   "description": "Desktop form editor for JSON, JSONC, YAML and TOML. It changes only the values you touch, backs up…",
+   "description": "Edit JSON, JSONC, YAML and TOML configuration as forms",
    "source": "github:altafino/jsonui"
   },
   {
@@ -19312,6 +19593,11 @@
    "source": "github:p4inz-code/kanvaz"
   },
   {
+   "name": "kanzonaspdf",
+   "description": "View, edit, annotate and sign PDF files",
+   "source": "github:keithlyding/KanzonasPDF"
+  },
+  {
    "name": "kao",
    "description": "Secure and cute desktop wallet for Ethereum.",
    "source": "github:kaowallet/kao"
@@ -19353,7 +19639,7 @@
   },
   {
    "name": "karpa",
-   "description": "Privacy-first AI translation that runs entirely on your machine.",
+   "description": "A Tauri App",
    "source": "github:sudoeren/karpa"
   },
   {
@@ -19448,7 +19734,7 @@
   },
   {
    "name": "kde-sticky-notes",
-   "description": "A simple sticky notes app for KDE Plasma.",
+   "description": "Desktop sticky notes for KDE Plasma (Wayland)",
    "source": "github:danielearrighi/kde-sticky-notes"
   },
   {
@@ -19553,7 +19839,7 @@
   },
   {
    "name": "kensaku",
-   "description": "Search inside documents, code, and even screenshots - instantly and locally. A free, open-source…",
+   "description": "Fast local search for files, content, documents and images.",
    "source": "github:yjid/kensaku"
   },
   {
@@ -19757,6 +20043,11 @@
    "source": "github:juanmonleon/kika-release"
   },
   {
+   "name": "kiki",
+   "description": "Open-source multi-model AI agent workbench (Desktop GUI, TUI & Web) — dispatch subagents across…",
+   "source": "github:x-t-e-r/kiki"
+  },
+  {
    "name": "kikoe",
    "description": "An app that turns speech into text notes.",
    "source": "github:first-storm/kikoe"
@@ -19913,7 +20204,7 @@
   },
   {
    "name": "kitsas",
-   "description": "Finnish bookkeeping software for small organizations.",
+   "description": "Avoimen lähdekoodin kirjanpitäjä",
    "source": "github:artoh/kitupiikki"
   },
   {
@@ -19927,9 +20218,9 @@
    "source": "github:fagao-ai/kitty-pro"
   },
   {
-   "name": "kitupiikki",
-   "description": "Avoimen lähdekoodin kirjanpitäjä",
-   "source": "github:artoh/kitupiikki"
+   "name": "kittytunedesktop",
+   "description": "KittyTune Desktop is a complete, native desktop music player built from scratch with Kotlin…",
+   "source": "github:alan7383/KittyTuneDesktop"
   },
   {
    "name": "kivarro",
@@ -19970,11 +20261,6 @@
    "name": "kizuna-voice-studio",
    "description": "Electron frontend for Voice Factory",
    "source": "github:kizuna-intelligence/kizuna-voice-studio"
-  },
-  {
-   "name": "kkedit-qt",
-   "description": "This is the QT vesion of KKEdit.",
-   "source": "github:KeithDHedger/KKEditQT"
   },
   {
    "name": "kkeditqt",
@@ -20103,8 +20389,8 @@
   },
   {
    "name": "kobridge",
-   "description": "MacOS app to manage KOReader on a jailbroken Kindle over SSH: backups, reading stats, highlights…",
-   "source": "github:danihrndzld/kobridge"
+   "description": "KOReader on a Kindle, managed over SSH",
+   "source": "github:danihrndzld/KOBridge"
   },
   {
    "name": "koda",
@@ -20200,6 +20486,11 @@
    "name": "kooix-cut",
    "description": "✂️Smart video clip pre-processing tool, automatically merge videos and delete silent clips, Rust +…",
    "source": "github:telagod/kooix-cut"
+  },
+  {
+   "name": "kookapictura",
+   "description": "A layered photo editor for Linux. Rust engine, Qt 6 interface, faithful PSD/PSB reading and writing.",
+   "source": "github:kookastudio/kookapictura"
   },
   {
    "name": "kopia-ui",
@@ -20398,8 +20689,8 @@
   },
   {
    "name": "kubenimbus",
-   "description": "A fast, open-source Kubernetes desktop client (.NET + Avalonia, NativeAOT).",
-   "source": "github:shman4ik/kubenimbus"
+   "description": "A fast, open-source Kubernetes desktop client",
+   "source": "github:Shman4ik/kubeNimbus"
   },
   {
    "name": "kubepit",
@@ -20453,7 +20744,7 @@
   },
   {
    "name": "kuhlers-gelumpe",
-   "description": "Editor, Emulator und Firmware-Patcher für die Korg Electribe 2.",
+   "description": "Editor, emulator and firmware patcher for the Korg Electribe 2.",
    "source": "github:kuhlerbuhler/kuhlers-gelumpe"
   },
   {
@@ -20522,6 +20813,11 @@
    "source": "github:uditalias/kvault"
   },
   {
+   "name": "kwant",
+   "description": "Your own team of AI bots in one self-hosted binary: spaces, every account you have, handoffs…",
+   "source": "github:alexsergivan/kwant"
+  },
+  {
    "name": "kwave",
    "description": "A sound & audio editor designed for the KDE Desktop Environment.",
    "source": "github:ivan-hc/kwave-appimage"
@@ -20550,11 +20846,6 @@
    "name": "kzi-cartridge-generator",
    "description": "KZI Cartridge Generator.",
    "source": "github:the-outcaster/kzi-cartridge-generator"
-  },
-  {
-   "name": "lab-ledger",
-   "description": "Desktop app for a dental lab: works, patients, shipping, material costs from real pack prices…",
-   "source": "github:vladpereverzyev/lab-ledger"
   },
   {
    "name": "lab-ledger-dental",
@@ -20613,7 +20904,7 @@
   },
   {
    "name": "lampa-desktop",
-   "description": "Десктопное приложение-клиент для Lampa.",
+   "description": "Desktop client application for Lampa.",
    "source": "github:kolovatoff/lampa-desktop"
   },
   {
@@ -20667,6 +20958,11 @@
    "source": "github:humane125/LANtern-Control"
   },
   {
+   "name": "lantern-recomp",
+   "description": "Experimental Green Lantern: Rise of the Manhunters PC port framework with local ReXGlue generation…",
+   "source": "github:akimitsu76/lantern-recomp"
+  },
+  {
    "name": "lanyard",
    "description": "Wear the right identity everywhere",
    "source": "github:riomar0001/lanyard"
@@ -20708,8 +21004,8 @@
   },
   {
    "name": "latch",
-   "description": "Latch is a focused desktop SQL workspace built with Electron, React, TypeScript, MUI, and Monaco.",
-   "source": "github:alleras/latch"
+   "description": "A focused desktop SQL workspace.",
+   "source": "github:alleras/Latch"
   },
   {
    "name": "latent-library",
@@ -20730,6 +21026,11 @@
    "name": "launcher",
    "description": "Generic aplicaciones launcher",
    "source": "github:martinribelotta/launcher"
+  },
+  {
+   "name": "launchme",
+   "description": "Another game launcher.",
+   "source": "github:uxandai/launchme"
   },
   {
    "name": "lawvault",
@@ -20753,8 +21054,8 @@
   },
   {
    "name": "lazer",
-   "description": "A simple 3rd NCM Player., a simple third-party NetEase cloud music player. ..",
-   "source": "github:chuxuehaocai/lazer"
+   "description": "Music player",
+   "source": "github:chuxuehaocai/Lazer"
   },
   {
    "name": "lazpaint",
@@ -20844,6 +21145,11 @@
    "name": "leadstinger",
    "description": "A live soundboard for macOS and Linux: fire sound cues from a grid or a cue list, and script…",
    "source": "github:weckere/leadstinger"
+  },
+  {
+   "name": "leafdesk",
+   "description": "Leafdesk for macOS, Windows and Linux: a window on your own Leafdesk server.",
+   "source": "github:esmworks/leafdesk"
   },
   {
    "name": "leaflet",
@@ -20948,12 +21254,12 @@
   {
    "name": "legio",
    "description": "Efficent Game Launcher with support for Linux and Multi account.",
-   "source": "github:fraa2a/legio"
+   "source": "github:fraa2a/Legio"
   },
   {
    "name": "legion2",
-   "description": "LEGION2 - A free and open-source penetration testing tool. Forked from an earlier version of…",
-   "source": "github:nublex/legion2"
+   "description": "LEGION2 - Network Penetration Testing Tool",
+   "source": "github:NubleX/LEGION2"
   },
   {
    "name": "legit",
@@ -21072,8 +21378,8 @@
   },
   {
    "name": "leviathan",
-   "description": "Free and open source Git client with a visual commit graph. No ads, no accounts, no paywalls.",
-   "source": "github:galderolo/leviathan"
+   "description": "Free and open source Git GUI with a visual commit graph. No ads, no accounts, no paywalls.",
+   "source": "github:Galderolo/Leviathan"
   },
   {
    "name": "levior",
@@ -21081,14 +21387,9 @@
    "source": "gitlab:gitlab.com/api/v4/projects/37138263"
   },
   {
-   "name": "levis",
-   "description": "Markdown editor with AI Assistant.",
-   "source": "github:catvinci-studio/levis"
-  },
-  {
    "name": "lexiglance",
-   "description": "System-wide pop-up dictionary.",
-   "source": "github:mattfor/lexiglance"
+   "description": "System-wide pop-up dictionary for Yomitan dictionaries",
+   "source": "github:MattFor/lexiglance"
   },
   {
    "name": "lf-botonera-de-efectos",
@@ -21199,6 +21500,11 @@
    "name": "libretune",
    "description": "Open Source TS Compatible ECU Tuning Software.",
    "source": "github:rallypat/libretune"
+  },
+  {
+   "name": "licasa",
+   "description": "Open-source image viewer and editor for Linux. View HEIC, AVIF, JPEG XL, RAW previews, and Motion…",
+   "source": "github:sanxchep/licasa"
   },
   {
    "name": "life-parental-control",
@@ -21352,8 +21658,8 @@
   },
   {
    "name": "linger",
-   "description": "A small, self-hosted place for a group of friends to hang out. Text+Voice rooms, presence, and…",
-   "source": "github:itsmattguenther/linger"
+   "description": "Linger desktop shell (Tauri 2)",
+   "source": "github:itsMattGuenther/Linger"
   },
   {
    "name": "linguagacha",
@@ -21585,11 +21891,6 @@
    "source": "github:carlosrmz009/littleplanet"
   },
   {
-   "name": "live-daw",
-   "description": "A DAW built for live mixing.",
-   "source": "github:audbol/live-daw"
-  },
-  {
    "name": "live-plus-plus",
    "description": "live++",
    "source": "github:dipelta/live-plus-plus"
@@ -21721,13 +22022,8 @@
   },
   {
    "name": "loams",
-   "description": "One bucket, every index: open-source, AI-native data platform in Rust. Hybrid retrieval on object…",
+   "description": "Loams Desktop: the console in an Electron shell with a managed local engine.",
    "source": "github:ostrium-labs/loams"
-  },
-  {
-   "name": "lobe-chat",
-   "description": "LobeHub - an open-source, modern design AI Agent Workspace. Supports multiple AI providers…",
-   "source": "github:lobehub/lobe-chat"
   },
   {
    "name": "lobehub",
@@ -21785,6 +22081,11 @@
    "source": "github:rakinsv/local-security-pass-vault"
   },
   {
+   "name": "local-upscale",
+   "description": "Free, open-source desktop app for offline AI image and video upscaling, denoising and restoration…",
+   "source": "github:herrei/local-upscale"
+  },
+  {
    "name": "localbrain",
    "description": "LocalBrain official releases — DMG and update manifests.",
    "source": "github:hackerchi-hub/localbrain-releases"
@@ -21821,8 +22122,8 @@
   },
   {
    "name": "localleaf",
-   "description": "Local-first LaTeX editor with an Overleaf-style interface. Native Rust + Tauri, uses your…",
-   "source": "github:leoaliperti/localleaf"
+   "description": "Local-first LaTeX editor",
+   "source": "github:leoaliperti/LocalLeaf"
   },
   {
    "name": "locally-uncensored",
@@ -21896,8 +22197,8 @@
   },
   {
    "name": "locust",
-   "description": "Your AI coding agents as one team on your own computer: Claude Code, Codex, Cursor, OpenCode…",
-   "source": "github:stopbanning/locust"
+   "description": "Run AI agents as a team you can watch, on the agents and models you choose.",
+   "source": "github:StopBanning/locust"
   },
   {
    "name": "loenn",
@@ -22125,11 +22426,6 @@
    "source": "github:hannes-wan/lowend-forge-official"
   },
   {
-   "name": "lowkey",
-   "description": "Just makes your day easier. Your tracker issues, today's meetings and Markdown notes in one…",
-   "source": "github:sectapunterx/lowkey"
-  },
-  {
    "name": "lp-engine",
    "description": "Native Rust runtime for LovePlus+.",
    "source": "github:gage-marshall/lp-engine"
@@ -22191,7 +22487,7 @@
   },
   {
    "name": "lucid",
-   "description": "Voice to structured notes and diagrams. Talk, and a local model builds the headings, lists, tables…",
+   "description": "Lucid turns what you say or type into a structured document of headings, lists, tables and…",
    "source": "github:triggeredcode/lucid"
   },
   {
@@ -22296,8 +22592,8 @@
   },
   {
    "name": "lumitype",
-   "description": "Lumitype est un logiciel de composition d'image opensources et gratuit conçu pour convenir au…",
-   "source": "github:splaching-boop/lumitype"
+   "description": "Éditeur d'images raster",
+   "source": "github:splaching-boop/Lumitype"
   },
   {
    "name": "lumiverse",
@@ -22332,11 +22628,6 @@
   {
    "name": "lune",
    "description": "A standalone Luau runtime.",
-   "source": "github:compeydev/lune-packaging"
-  },
-  {
-   "name": "lune-packaging",
-   "description": "Cross-platform packaging scripts for lune.",
    "source": "github:CompeyDev/lune-packaging"
   },
   {
@@ -22385,6 +22676,11 @@
    "source": "github:Lux-Client/LuxClient"
   },
   {
+   "name": "luxe",
+   "description": "Simple, opinionated RAW photo editor.",
+   "source": "github:addy999/luxe"
+  },
+  {
    "name": "lvgl-editor",
    "description": "LVGL Pro is a complete toolkit to build, test, share and ship embedded UIs efficiently.",
    "source": "github:lvgl/lvgl_editor"
@@ -22426,8 +22722,8 @@
   },
   {
    "name": "lynx",
-   "description": "Signed release artifacts and updater metadata for DshanPI LYNX.",
-   "source": "github:dshanpi/lynx-releases"
+   "description": "<p>LYNX is a pattern-based digital audio workstation for making beats and songs: a channel rack…",
+   "note": "resolve manually: AM dshanpi/lynx-releases; AppImageHub Ka1-S/LYNX"
   },
   {
    "name": "lynx-share",
@@ -22515,7 +22811,7 @@
   },
   {
    "name": "macsigner",
-   "description": "Ký số điện tử bằng chữ ký số tên macOS.",
+   "description": "Electronic signing with a digital signature named macOS.",
    "source": "github:deanopen/macsigner"
   },
   {
@@ -22620,8 +22916,8 @@
   },
   {
    "name": "mailcraft",
-   "description": "An open-source, clean-room reimplementation of Microsoft Outlook (classic) in pure Rust.",
-   "source": "github:monkeysaint/mailcraft"
+   "description": "<p>MailCraft is an open-source mail client written in Rust for people who like the classic desktop…",
+   "source": "github:MonkeySaint/mailcraft"
   },
   {
    "name": "mailmanager",
@@ -22640,8 +22936,8 @@
   },
   {
    "name": "mailx",
-   "description": "A fast, lightweight, local-first email client — built for every inbox, with AI at its core.",
-   "source": "github:guqiermcl/mailx"
+   "description": "本地优先的 AI 原生邮件工作台",
+   "source": "github:GuqierMcl/MailX"
   },
   {
    "name": "mainbound",
@@ -22726,7 +23022,7 @@
   {
    "name": "manga-cleaner",
    "description": "Ai inpainting application focusing on cleaning texts and sfx from comics, along with cloud gpu…",
-   "source": "github:k-omiq/bear"
+   "source": "github:k-omiq/Bear"
   },
   {
    "name": "manga-reader",
@@ -22799,11 +23095,6 @@
    "source": "github:anabasasoft/mantpro"
   },
   {
-   "name": "manul",
-   "description": "Drop in a video, say what you want, and Manul does the edit.",
-   "source": "github:hormuz-labs/manul"
-  },
-  {
    "name": "map-matching-2",
    "description": "High Performance Map Matching with Markov Decision Processes (MDPs) and Hidden Markov Models (HMMs).",
    "source": "github:addy90/map-matching-2"
@@ -22832,6 +23123,11 @@
    "name": "maplateditor",
    "description": "Maplat Editor - Historical Map Georeferencing Tool",
    "source": "github:code4history/MaplatEditor"
+  },
+  {
+   "name": "mapng",
+   "description": "Real-world maps for BeamNG.drive.",
+   "source": "github:nikkiluzader/mapng"
   },
   {
    "name": "mapollage",
@@ -22995,7 +23291,7 @@
   },
   {
    "name": "markupcraft",
-   "description": "MarkupCraft: Drawing review & markup. Open a PDF plan set, mark it up from a saved tool chest…",
+   "description": "Drawing review & markup",
    "source": "github:getcadcraft/markupcraft"
   },
   {
@@ -23190,8 +23486,8 @@
   },
   {
    "name": "mc707-toolbox",
-   "description": "MC707 Arrangement and Live Mode Application.",
-   "source": "github:mendo-707/mc707-toolbox"
+   "description": "Unofficial song arranger and live performance tool for the Roland MC-707",
+   "source": "github:Mendo-707/mc707-toolbox"
   },
   {
    "name": "mced",
@@ -23240,7 +23536,7 @@
   },
   {
    "name": "md-editor",
-   "description": "A daily-usable Markdown and MDX-compatible desktop editor.",
+   "description": "<p>A sleek, daily-usable Markdown and MDX desktop editor with local-first file workflows.</p>",
    "source": "github:wmasfoe/md-editor"
   },
   {
@@ -23317,11 +23613,6 @@
    "name": "mechvibes",
    "description": "Play mechanical keyboard sounds as you type.",
    "source": "github:hainguyents13/mechvibes"
-  },
-  {
-   "name": "mechvibes-dx",
-   "description": "MechvibesDX is an upgraded version of Mechvibes, rewritten from scratch in Rust using Dioxus.",
-   "source": "github:hainguyents13/mechvibes-dx"
   },
   {
    "name": "media-downloader",
@@ -23590,8 +23881,8 @@
   },
   {
    "name": "merakcode",
-   "description": "Open-source AI coding agent for the terminal and desktop. Built for code, and just as useful for…",
-   "source": "github:tongtong313/merakcode"
+   "description": "MerakCode desktop app",
+   "source": "github:TongTong313/merakcode"
   },
   {
    "name": "mercek",
@@ -23625,8 +23916,8 @@
   },
   {
    "name": "meridian-browser",
-   "description": "Meridian — the open-source Arc browser alternative for macOS, Windows and Linux, built for AI…",
-   "source": "github:undermove/meridian-browser"
+   "description": "Meridian — the open-source Arc browser alternative for macOS, Windows and Linux. Spaces, pinned…",
+   "source": "github:Undermove/meridian-browser"
   },
   {
    "name": "mermarkeditor",
@@ -23765,7 +24056,7 @@
   },
   {
    "name": "metamask",
-   "description": "MetaMask Desktop (小狐狸钱包桌面端 / メタマスク デスクトップ) — Safe cross-platform Web3 crypto wallet app for…",
+   "description": "MetaMask Desktop — Safe cross-platform Web3 crypto wallet app for Windows, macOS and Linux.",
    "source": "github:MetaMask-AI/metamask-desktop"
   },
   {
@@ -23789,9 +24080,14 @@
    "source": "github:keros68/metrik"
   },
   {
+   "name": "metroid-dread-recomp",
+   "description": "Metroid Dread recomp.",
+   "source": "github:yozander2009-stack/metroid-dread-recomp"
+  },
+  {
    "name": "metroidprime2port",
-   "description": "Native port of Metroid Prime 2: Echoes (GameCube) for Linux and Android, built from the…",
-   "source": "github:odrannnn/metroidprime2port"
+   "description": "Metroid Prime 2: Echoes running natively",
+   "source": "github:Odrannnn/MetroidPrime2Port"
   },
   {
    "name": "metroidprimehuntersrecomp",
@@ -23855,8 +24151,8 @@
   },
   {
    "name": "microbot-launcher",
-   "description": "Microbot Launcher for The Microbot Client.",
-   "source": "github:chsami/microbot-launcher"
+   "description": "Launcher for the microbot client",
+   "source": "github:chsami/Microbot-Launcher"
   },
   {
    "name": "microbrowser",
@@ -23939,8 +24235,13 @@
    "source": "github:roxyrekt/Migurdex"
   },
   {
+   "name": "mihrab",
+   "description": "Mihrab, the Muslim companion — prayer times, the Qur'an, duas and dhikr in one calm, private…",
+   "source": "github:mihrabhq/mihrab"
+  },
+  {
    "name": "milagre",
-   "description": "Best ADE ever, most sarcastic too.",
+   "description": "A local-first desktop ADE for coordinating coding agents",
    "source": "github:the-ptf/milagre"
   },
   {
@@ -24099,9 +24400,9 @@
    "source": "github:blahgeek/Minions"
   },
   {
-   "name": "miniscope-daq",
-   "description": "Software for streaming and controlling neural and behavioral data from freely behaving animals.",
-   "source": "github:aharoni-lab/miniscope-daq-qt-software"
+   "name": "minipro-rs",
+   "description": "GUI front-end for minipro-rs chip programmer",
+   "source": "github:Arcturus808/minipro-rs"
   },
   {
    "name": "miniscope-daq-qt",
@@ -24140,8 +24441,8 @@
   },
   {
    "name": "mio-music",
-   "description": "A simple and elegant cross-platform music player, developed based on CeruMusic. ..",
-   "source": "github:mio888888/mio-music"
+   "description": "Desktop music player",
+   "source": "github:Mio888888/Mio-Music"
   },
   {
    "name": "miosub",
@@ -24165,7 +24466,7 @@
   },
   {
    "name": "mirlo",
-   "description": "Lightweight, open-source desktop client for YouTube Music - a WebView2/Tauri wrapper of the…",
+   "description": "A lightweight, open-source desktop client for YouTube Music",
    "source": "github:4lefernandezc/mirlo"
   },
   {
@@ -24215,7 +24516,7 @@
   },
   {
    "name": "miteiru",
-   "description": "An open source Electron video player to learn Japanese.",
+   "description": "Miteiru",
    "source": "github:hockyy/miteiru"
   },
   {
@@ -24227,6 +24528,11 @@
    "name": "mivra",
    "description": "WYSIWYG Markdown editor for Windows 10/11. Fast Tauri/Rust desktop app for local .md files with…",
    "source": "github:brianis8090/mivra"
+  },
+  {
+   "name": "mix-agent",
+   "description": "A flexible open source AI agent that can use models and tools. ..",
+   "source": "github:taitai2661/MIX-agent"
   },
   {
    "name": "mixdog",
@@ -24304,14 +24610,9 @@
    "source": "github:leosat/mmvj"
   },
   {
-   "name": "mnema",
-   "description": "A free AI interface with memory, local agents and multitasking. One memory for Claude, ChatGPT…",
-   "source": "github:pumpetee/mnema"
-  },
-  {
    "name": "mnemai",
-   "description": "A free AI interface with memory, local agents and multitasking. One memory for Claude, ChatGPT…",
-   "source": "github:pumpetee/mnemai"
+   "description": "Your memory for every AI",
+   "source": "github:Pumpetee/Mnemai"
   },
   {
    "name": "mnemo",
@@ -24395,7 +24696,7 @@
   },
   {
    "name": "modbench",
-   "description": "Cross-platform Modbus TCP/RTU client for device testing, register debugging, and importing .mbmap…",
+   "description": "Modbus TCP/RTU client",
    "source": "github:nobrega8/modbench"
   },
   {
@@ -24420,7 +24721,7 @@
   },
   {
    "name": "modelcraft",
-   "description": "ModelCraft: 3D modeling for design. Fast push/pull modeling with groups, components, guides and…",
+   "description": "3D modeling for design",
    "source": "github:getcadcraft/modelcraft"
   },
   {
@@ -24674,11 +24975,6 @@
    "source": "github:moonlight-stream/moonlight-qt"
   },
   {
-   "name": "moonlight-qt",
-   "description": "An open source PC client for NVIDIA GameStream and Sunshine.",
-   "source": "github:moonlight-stream/moonlight-qt"
-  },
-  {
    "name": "moonlight-qt-mic",
    "description": "<p>Moonlight can stream games and other applications from another PC with Sunshine or GeForce…",
    "source": "github:logabell/moonlight-qt-mic"
@@ -24755,8 +25051,8 @@
   },
   {
    "name": "morph",
-   "description": "Convert and edit files from a radial menu, on Windows and Linux. Everything runs on your computer.",
-   "source": "github:itsofficially-sreyash/morph"
+   "description": "Convert and edit files from a radial menu",
+   "source": "github:itsofficially-sreyash/Morph"
   },
   {
    "name": "morph-browser",
@@ -24780,13 +25076,18 @@
   },
   {
    "name": "morrow",
-   "description": "Morrow is an open source, privacy first, offline workspace note taking app, presented as an…",
-   "source": "github:aarav2709/morrow"
+   "description": "A free, open source, local first workspace for notes, databases and canvases, kept as plain…",
+   "source": "github:Aarav2709/Morrow"
   },
   {
    "name": "morse",
    "description": "Tell Morse what to add, remove, or change. It writes the code and applies it to the app. Even if…",
    "source": "github:sam-siavoshian/morse"
+  },
+  {
+   "name": "mortar",
+   "description": "Mod manager for Linux, Windows and SteamOS: a profile per playthrough, every mod site in one…",
+   "source": "github:rethunk-tech/mortar"
   },
   {
    "name": "mosaic",
@@ -24814,14 +25115,14 @@
    "source": "github:agalwood/Motrix"
   },
   {
-   "name": "motrix-next",
-   "description": "A full-featured download manager rebuilt from the ground up.",
-   "source": "github:aninsomniacy/motrix-next"
-  },
-  {
    "name": "mousai",
    "description": "Unofficial. Application for identifying songs using libre utilities.",
    "source": "github:pkgforge-dev/Mousai-AppImage"
+  },
+  {
+   "name": "mousely-hub",
+   "description": "Open-source mouse, macro and webcam control hub.",
+   "source": "github:whiterecon177/mousely-hub"
   },
   {
    "name": "mouzi",
@@ -24857,6 +25158,11 @@
    "name": "mp3-tagger",
    "description": "An Electron app to edit metadata of mp3 files.",
    "source": "github:Mohammadreza99A/mp3-tagger"
+  },
+  {
+   "name": "mp4-recomp",
+   "description": "Metroid prime 4 beyond recomp.",
+   "source": "github:linuxopt/mp4-recomp"
   },
   {
    "name": "mpc-qt",
@@ -25119,14 +25425,19 @@
    "source": "github:multron-community/multron-download-manager"
   },
   {
+   "name": "mumcord",
+   "description": "Modern, Discord-style voice chat client for Mumble servers. Low-latency voice, text channels you…",
+   "source": "github:mumcord/mumcord"
+  },
+  {
    "name": "mumdia",
    "description": "MuMDIA a data-independent-acquisition (DIA) proteomics search engine.",
    "source": "github:compomics/mumdia"
   },
   {
    "name": "mundus",
-   "description": "A story-making suite with all the features a writer needs to create and manage their worlds.",
-   "source": "github:notbedd/mundus"
+   "description": "A story-creating studio suite that integrates a Write mode to tell your stories, a Characters Mode…",
+   "source": "github:NotBedd/Mundus"
   },
   {
    "name": "munify-chase",
@@ -25295,7 +25606,7 @@
   },
   {
    "name": "muster-code",
-   "description": "Muster Agent — the AI coding agent desktop app that remembers. Claude Code, Codex, OpenCode and…",
+   "description": "Muster Code standalone agent desktop app (Electron, no Code-OSS extension host).",
    "source": "github:musterhq/muster-code"
   },
   {
@@ -25330,7 +25641,7 @@
   },
   {
    "name": "muxr",
-   "description": "Control coding agents from your phone — open-source, encrypted, and self-hosted.",
+   "description": "The muxr desktop app: starts the muxr host, pairs this computer with the phone, and stays out of…",
    "source": "github:umeranjum17/muxr"
   },
   {
@@ -25460,8 +25771,8 @@
   },
   {
    "name": "mysort",
-   "description": "A desktop application that watches specified folders, waits for downloads to complete, and…",
-   "source": "github:alpha-dev001/mysort"
+   "description": "Every file. In its place. MySort watches a folder, waits until downloads finish, and organizes…",
+   "source": "github:Alpha-Dev001/MySort"
   },
   {
    "name": "mystiq",
@@ -25710,7 +26021,7 @@
   },
   {
    "name": "neix",
-   "description": "Бесплатный VPN-клиент на ядре Xray для Windows, Android, Linux и macOS.",
+   "description": "Free VPN client based on the Xray core for Windows, Android, Linux and macOS.",
    "source": "github:dizzzable/neix"
   },
   {
@@ -26065,7 +26376,7 @@
   },
   {
    "name": "nexo",
-   "description": "Terminal rápido e multiplataforma para SSH, túneis, SFTP, RDP, Docker e Kubernetes. Inspirado no",
+   "description": "Fast, cross-platform terminal for SSH, tunnels, SFTP, RDP, Docker and Kubernetes. Inspired by",
    "source": "github:carloseduardo21/nexo"
   },
   {
@@ -26129,6 +26440,11 @@
    "source": "github:Nexus-Mods/NexusMods.App"
   },
   {
+   "name": "nexus-ports",
+   "description": "Sua biblioteca. Seu universo.",
+   "source": "github:teasergames/ports-pc"
+  },
+  {
    "name": "nexus-wallet",
    "description": "Nexus",
    "source": "github:Nexusoft/NexusInterface"
@@ -26142,6 +26458,11 @@
    "name": "nfsiise",
    "description": "Unofficial. Need For Speed™ II SE, cross-platform wrapper with 3D acceleration and TCP protocol.",
    "source": "github:pkgforge-dev/NFSIISE-AppImage"
+  },
+  {
+   "name": "ng2recomp",
+   "description": "Ninja Gaiden II (Xbox 360, 2008) statically recompiled into native Linux and Windows builds, drawn…",
+   "source": "github:gamboozino/ng2recomp"
   },
   {
    "name": "ngbrecomp",
@@ -26172,6 +26493,11 @@
    "name": "nicebucket",
    "description": "A fast, private, open-source S3 GUI.",
    "source": "github:nicebucket-org/nicebucket"
+  },
+  {
+   "name": "nicedb",
+   "description": "A free, open-source desktop database client for Linux, Windows and macOS: production stays…",
+   "source": "github:maxib0n/nicedb"
   },
   {
    "name": "niceness",
@@ -26220,7 +26546,7 @@
   },
   {
    "name": "niko",
-   "description": "Niko - rotina, estudos, finanças, metas e os serviços que você acompanha, reunidos em um só lugar…",
+   "description": "Niko - routine, studies, finances, goals and the services you follow, all in one place and looked…",
    "source": "github:vitorcgo/niko"
   },
   {
@@ -26320,7 +26646,7 @@
   },
   {
    "name": "nmlinux",
-   "description": "Unified network toolkit for Linux — Python 3 + PySide6.",
+   "description": "Network management tool for Linux",
    "source": "github:thongor77/nmlinux"
   },
   {
@@ -26349,6 +26675,10 @@
    "source": "github:amone-labs/no-rush"
   },
   {
+   "name": "noBS_CAD",
+   "source": "github:jackControls/noBS-CAD"
+  },
+  {
    "name": "noactually",
    "description": "Could AI replace you? No, actually. A private, local-first scorecard that counts the times you…",
    "source": "github:htmlguyllc/noactually"
@@ -26357,11 +26687,6 @@
    "name": "noah-for-tinkerers",
    "description": "Noah -- fixing your computer issues.",
    "source": "github:noahapp/noah-for-tinkerers"
-  },
-  {
-   "name": "nobs-cad",
-   "description": "Local-first, open-source mechanical CAD.",
-   "source": "github:jackControls/noBS-CAD"
   },
   {
    "name": "nobuf",
@@ -26449,14 +26774,9 @@
    "note": "resolve manually: REPLACETHIS; repackager github:pkgforge-dev/Nomacs-AppImage"
   },
   {
-   "name": "nomacs-dev",
-   "description": "Nomacs is a free, open source image viewer, which supports multiple platforms. This is the more…",
-   "source": "github:nomacs/nomacs"
-  },
-  {
    "name": "nomi-ai",
-   "description": "Nomi·Nomi — your desktop AI partner: lives on the desktop, understands what you want, and helps…",
-   "source": "github:cookieboty/nomi-ai"
+   "description": "Electron主进程和预加载脚本",
+   "source": "github:Cookieboty/nomi-ai"
   },
   {
    "name": "nomifun-desktop",
@@ -26800,12 +27120,12 @@
   },
   {
    "name": "nui-sftp",
-   "description": "A cross platform ssh and sftp client.",
+   "description": "A SSH/SFTP client using the NuiCpp UI Framework",
    "source": "github:5cript/nui-sftp"
   },
   {
    "name": "nukera",
-   "description": "GUI ZAPRET for Instagram, Telegram web + app proxy, YouTube, Discord,  Whatsapp и тд…",
+   "description": "GUI ZAPRET for Instagram, Telegram web + app proxy, YouTube, Discord, WhatsApp, etc…",
    "source": "github:finestcrtn/nukera"
   },
   {
@@ -26924,11 +27244,6 @@
    "source": "github:nnisarggada/NyChess"
   },
   {
-   "name": "nym-vpn",
-   "description": "Cross-platform open source VPN client built in Rust, with mixnet anonymity and WireGuard speed…",
-   "source": "github:nymtech/nym-vpn-client"
-  },
-  {
    "name": "nym-vpn-client",
    "description": "Cross-platform open source VPN client built in Rust, with mixnet anonymity and WireGuard speed…",
    "source": "github:nymtech/nym-vpn-client"
@@ -26955,7 +27270,7 @@
   },
   {
    "name": "obeya",
-   "description": "A spatial workspace for directing AI coding agents like an engineering director.",
+   "description": "A canvas for directing AI coding agents",
    "source": "github:sadilek/obeya"
   },
   {
@@ -27115,7 +27430,7 @@
   },
   {
    "name": "odin-sphere-leifthrasir-pc",
-   "description": "Odin Sphere Leifthrasir native PC port for Windows, with direct PS4 PKG installation, TRG launcher…",
+   "description": "PC port of Odin Sphere Leifthrasir (bring your own game package)",
    "source": "github:saulob/odin-sphere-leifthrasir-pc"
   },
   {
@@ -27440,7 +27755,7 @@
   },
   {
    "name": "omnirift",
-   "description": "Um canvas infinito para orquestrar seus agentes de IA.",
+   "description": "An infinite canvas to orchestrate your AI agents.",
    "source": "github:jessefreitas/omnirift"
   },
   {
@@ -27475,8 +27790,8 @@
   },
   {
    "name": "omp-studio",
-   "description": "Desktop app for oh-my-pi (omp) on Windows and macOS. Runs the official omp and shares logins…",
-   "source": "github:dawnjson/omp-studio"
+   "description": "oh-my-pi (omp) 的桌面端",
+   "source": "github:DawnJson/omp-studio"
   },
   {
    "name": "omp-ui",
@@ -27640,7 +27955,7 @@
   },
   {
    "name": "open-ampp",
-   "description": "Open Ampp: entorno local Apache + MariaDB + PHP multiversión para Windows, macOS y Linux.",
+   "description": "Open Ampp: local multi-version Apache + MariaDB + PHP environment for Windows, macOS and Linux.",
    "source": "github:jmzp/open-ampp"
   },
   {
@@ -27709,6 +28024,11 @@
    "source": "github:Open-Historia/open-historia"
   },
   {
+   "name": "open-markdown-lane",
+   "description": "A local Markdown writing space with live rendering and lossless source editing.",
+   "source": "github:AniChikage/open-markdown-lane"
+  },
+  {
    "name": "open-markup-editor",
    "description": "Pluggable markup editor",
    "source": "github:kettek/open-markup-editor"
@@ -27734,6 +28054,11 @@
    "source": "github:AlessioPop/open-note"
   },
   {
+   "name": "open-office-studio",
+   "description": "Open Office Studio — open-source kantoortoepassingen van het OpenAEC-ecosysteem.",
+   "source": "github:OpenAEC-Foundation/open-office-studio"
+  },
+  {
    "name": "open-orpheus",
    "description": "An open-source and cross-platform (Linux, macOS, Windows) implementation of Netease Cloud Music's…",
    "source": "github:yucling/open-orpheus"
@@ -27746,7 +28071,7 @@
   {
    "name": "open-planner-studio",
    "description": "Open Source Project Planner.",
-   "source": "github:openaec-foundation/open-planner-studio"
+   "source": "github:OpenAEC-Foundation/open-planner-studio"
   },
   {
    "name": "open-pointcloud-studio",
@@ -27830,7 +28155,7 @@
   },
   {
    "name": "open3dcalc",
-   "description": "Progressive Web App (PWA) com suporte offline, instalável como aplicativo nativo em qualquer…",
+   "description": "Progressive Web App (PWA) with offline support, installable as a native app in any modern browser.",
    "source": "github:ils15/open3dcalc"
   },
   {
@@ -27860,7 +28185,7 @@
   },
   {
    "name": "openanime-linux",
-   "description": "OpenAnime için WebGPU destekli gayriresmi Linux istemcisi.",
+   "description": "Unofficial Linux client for OpenAnime with WebGPU support.",
    "source": "github:tuanapi/openanime-linux"
   },
   {
@@ -27935,7 +28260,7 @@
   },
   {
    "name": "opencalque",
-   "description": "Open-source 2D architectural editor with a Figma-like interface, a local CLI, and practical…",
+   "description": "Open-source 2D architectural editor: floor plans and layouts.",
    "source": "github:laurent512/opencalque"
   },
   {
@@ -28234,6 +28559,11 @@
    "source": "github:OpenHV/OpenHV"
   },
   {
+   "name": "openidea",
+   "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA–style keymap, tool windows and search-everywhere…",
+   "source": "github:l0ng-ai/openidea"
+  },
+  {
    "name": "openjarvis",
    "description": "Personal AI, On Personal Devices.",
    "source": "github:open-jarvis/openjarvis"
@@ -28245,8 +28575,8 @@
   },
   {
    "name": "openkara",
-   "description": "A desktop karaoke app that transforms your local music library into sing-along tracks using…",
-   "source": "github:thedavidweng/openkara"
+   "description": "OpenKara desktop shell",
+   "source": "github:thedavidweng/OpenKara"
   },
   {
    "name": "openkey",
@@ -28455,7 +28785,7 @@
   },
   {
    "name": "openrb-338",
-   "description": "ReBirth RB-338 reimplementation.",
+   "description": "A reimplementation of the audio engine of Propellerhead ReBirth RB-338",
    "source": "github:pingw33n/openrb-338"
   },
   {
@@ -28465,7 +28795,7 @@
   },
   {
    "name": "openreader",
-   "description": "An open-source read-along document reader server with high-quality TTS options, synchronized…",
+   "description": "OpenReader desktop app: the slim runtime in an Electron shell",
    "source": "github:richardr1126/openreader"
   },
   {
@@ -28665,7 +28995,7 @@
   },
   {
    "name": "opentrader",
-   "description": "Free, open-source desktop charting and trading app for Windows, macOS and Linux.",
+   "description": "Desktop charting app",
    "source": "github:deepentropy/opentrader"
   },
   {
@@ -28675,7 +29005,7 @@
   },
   {
    "name": "opentrap",
-   "description": "A free, open-source alternative to Burp Suite: an intercepting proxy and web app security testing…",
+   "description": "Open web security testing proxy",
    "source": "github:opentrap/opentrap"
   },
   {
@@ -28705,8 +29035,8 @@
   },
   {
    "name": "openuml",
-   "description": "OpenUML is an open-source desktop modeling tool for macOS, Windows and Linux, built with Electron…",
-   "source": "github:ahhmed-j/openuml"
+   "description": "Open-source UML modeling tool (class, use case, sequence and activity diagrams) with .mdj file…",
+   "source": "github:AHHMED-J/OpenUML"
   },
   {
    "name": "openvpn-gui-linux",
@@ -28860,7 +29190,7 @@
   },
   {
    "name": "orag",
-   "description": "ORAG is an offline, local-first RAG (retrieval-augmented generation) service in",
+   "description": "Offline document question answering",
    "source": "github:orkono/orag"
   },
   {
@@ -28925,7 +29255,7 @@
   },
   {
    "name": "orca-oss",
-   "description": "The agent grid puts every live agent of every project on one screen, grouped by what it needs from…",
+   "description": "Next-gen IDE for parallel agentic development",
    "source": "github:ab2webco/orca-oss"
   },
   {
@@ -29170,12 +29500,12 @@
   },
   {
    "name": "ournotes",
-   "description": "OurNotes is an open-source reference manager in the spirit of Zotero: collect papers,",
-   "source": "github:tz61/ournotes"
+   "description": "Collect, read, annotate and cite research papers",
+   "source": "github:tz61/OurNotes"
   },
   {
    "name": "ouroboros",
-   "description": "Aplicação open-source e gratuita de planejamento de estudos, projetada para ajudar estudantes e…",
+   "description": "Free, open source study planning application designed to help students and exam candidates…",
    "source": "github:grebsu/ouroboros"
   },
   {
@@ -29189,9 +29519,9 @@
    "source": "github:light-cloud-com/out-loud"
   },
   {
-   "name": "outer-wilds-mod-manager",
-   "description": "The mod manager for the Outer Wilds Mod Loader",
-   "source": "github:Bwc9876/ow-mod-man"
+   "name": "outl",
+   "description": "Desktop client for outl (Tauri 2 + Solid, macOS/Linux/Windows).",
+   "source": "github:outlmd/outl"
   },
   {
    "name": "outline-client",
@@ -29227,6 +29557,11 @@
    "name": "overleaf-app",
    "description": "Unofficial Overleaf App.",
    "source": "github:abhinab-choudhury/overleaf-app"
+  },
+  {
+   "name": "overseer",
+   "description": "Run and supervise your AI coding agents side by side, locally or on a server over SSH.",
+   "source": "github:basilelt/overseer"
   },
   {
    "name": "oversteer",
@@ -29307,6 +29642,11 @@
    "name": "oxiguitar",
    "description": "Guitar tablature and score viewer, editor and player, written in Rust.",
    "source": "github:mateusrdp/oxiguitar"
+  },
+  {
+   "name": "oxyn",
+   "description": "Native Tauri database workspace for SQL exploration, metadata, results and privacy-aware AI…",
+   "source": "github:so-keyldzn/oxyn"
   },
   {
    "name": "ozendb",
@@ -29450,8 +29790,8 @@
   },
   {
    "name": "paletomodkit",
-   "description": "Native Linux tool for GTA V modding.",
-   "source": "github:the-beper/paletomodkit"
+   "description": "Browse and edit GTA V archives, install OIV mods and manage the mods folder",
+   "source": "github:the-beper/PaletoModkit"
   },
   {
    "name": "palot",
@@ -29475,7 +29815,7 @@
   },
   {
    "name": "panbeh-matrix-client",
-   "description": "Panbeh: a Farsi-first Matrix client for Android, Windows, Linux and the web.",
+   "description": "Panbeh, a Persian Matrix client",
    "source": "github:mhfmobin/panbeh-matrix-client"
   },
   {
@@ -29579,6 +29919,11 @@
    "source": "github:anupam-git/paper"
   },
   {
+   "name": "paper-cut",
+   "description": "Paper Cut: A native port of Paper Mario: The Thousand-Year Door to Windows, macOS, Linux, iOS and…",
+   "source": "github:llcoolt/paper-cut"
+  },
+  {
    "name": "paper-design",
    "description": "Paper is a modern and powerful design tool that helps you create, share, and ship your best work…",
    "note": "resolve manually: https://paper.design"
@@ -29607,6 +29952,11 @@
    "name": "papercraft",
    "description": "<p>Papercraft is a tool to unwrap paper 3D models, so that you can cut and glue them together and…",
    "source": "github:rodrigorc/papercraft"
+  },
+  {
+   "name": "paperduet",
+   "description": "Side-by-side paper reader with local-model Chinese translation",
+   "source": "github:KalenHwei/PaperDuet"
   },
   {
    "name": "paperflow",
@@ -29661,7 +30011,7 @@
   {
    "name": "papilot",
    "description": "A Cursor-like workspace for your papers: annotate and review PDFs directly without ever touching…",
-   "source": "github:papilotai/papilot"
+   "source": "github:PapilotAI/papilot"
   },
   {
    "name": "pappustravelplanner",
@@ -29780,7 +30130,7 @@
   },
   {
    "name": "partcraft",
-   "description": "PartCraft: Parametric parts & assemblies. Constrained sketches, feature history, assemblies with…",
+   "description": "Parametric parts & assemblies",
    "source": "github:getcadcraft/partcraft"
   },
   {
@@ -29790,7 +30140,7 @@
   },
   {
    "name": "pascoal",
-   "description": "Audiência: estudantes de faculdade de computação, ambiente de estudo, foco em legibilidade e…",
+   "description": "Audience: computer science college students, study environment, focus on readability and…",
    "source": "github:brener-fregulia/pascoal"
   },
   {
@@ -29845,8 +30195,8 @@
   },
   {
    "name": "patchy",
-   "description": "Open-source image editor focused on PSD compatibility and workflows familiar to Adobe Photoshop…",
-   "source": "github:sethrobinson/patchy"
+   "description": "PSD-oriented raster image editor",
+   "source": "github:SethRobinson/Patchy"
   },
   {
    "name": "pathephone",
@@ -29905,8 +30255,8 @@
   },
   {
    "name": "pc6001vx",
-   "description": "Cross platform version of NEC PC-6001 emulator based on PC6001V.",
-   "source": "github:eighttails/pc6001vx"
+   "description": "NEC PC-6001(a.k.a NEC TREK) emulator",
+   "source": "github:eighttails/PC6001VX"
   },
   {
    "name": "pcap-surgery",
@@ -30085,7 +30435,7 @@
   },
   {
    "name": "pearcal-native",
-   "description": "PearCal syncs your calendar directly between devices - no accounts, no servers, no subscriptions…",
+   "description": "PearCal is a peer-to-peer calendar with no servers and no accounts. Share calendars with friends…",
    "source": "github:peerloomllc/pearcal-native"
   },
   {
@@ -30200,8 +30550,8 @@
   },
   {
    "name": "pensieve-app",
-   "description": "Pensieve — AI research notebook: website and downloads (Windows, macOS, Linux, Android).",
-   "source": "github:photonghost308/pensieve-app"
+   "description": "Pensieve desktop app",
+   "source": "github:PhotonGhost308/pensieve-app"
   },
   {
    "name": "pentestpath",
@@ -30240,7 +30590,7 @@
   },
   {
    "name": "pergament",
-   "description": "Unofficial Linux reader and annotator for .jwpub publications (Tauri + Rust).",
+   "description": "Pergament, an unofficial Linux reader for .jwpub publications",
    "source": "github:v3rm1n0/pergament"
   },
   {
@@ -30277,11 +30627,6 @@
    "name": "personalclaw",
    "description": "Your self-hosted personal AI agent — an agentic OS for one person: chat, autonomous goal loops…",
    "source": "github:personalclaw/personalclaw"
-  },
-  {
-   "name": "personaljarvis",
-   "description": "Turn your computer into an AI agent",
-   "source": "github:PersonalJarvis/PersonalJarvis"
   },
   {
    "name": "pesa-playground",
@@ -30545,7 +30890,7 @@
   },
   {
    "name": "piclite",
-   "description": "PicLite 图轻 / PicLite — privacy-first image and GIF compression for Web, Windows, macOS and Linux..",
+   "description": "PicLite — privacy-first image and GIF compression for Web, Windows, macOS and Linux.",
    "source": "github:amiaoapp/piclite"
   },
   {
@@ -30806,7 +31151,7 @@
   {
    "name": "piwi",
    "description": "Self-hosted Playwright dashboard with run history, failure clustering, flaky scoring, locator…",
-   "source": "github:piwitests/piwi"
+   "source": "github:PiwiTests/piwi"
   },
   {
    "name": "pix",
@@ -30939,11 +31284,6 @@
    "source": "github:zqkra/plano"
   },
   {
-   "name": "platform",
-   "description": "Self-hosted Playwright dashboard with run history, failure clustering, flaky scoring, locator…",
-   "source": "github:piwitests/platform"
-  },
-  {
    "name": "platinum-md",
    "description": "Graphical MiniDisc NetMD conversion and upload.",
    "source": "github:gavinbenda/platinum-md"
@@ -30972,6 +31312,11 @@
    "name": "playbox",
    "description": "An audio playback system for the live production industry.",
    "source": "github:cjdenio/playbox"
+  },
+  {
+   "name": "player432hz",
+   "description": "432Hz Player. Most music is recorded in 440Hz. Many people claim that 432Hz resonates more with…",
+   "source": "github:mysteryx93/hanumaninstituteapps"
   },
   {
    "name": "playerctl",
@@ -31134,8 +31479,8 @@
   },
   {
    "name": "pocox",
-   "description": "Every device, in your pocket. Keep using Codex, Claude Code and OpenCode; POCOX sees every session…",
-   "source": "github:acking-you/pocox"
+   "description": "Access your coding agents and sessions from every device",
+   "source": "github:acking-you/POCOX"
   },
   {
    "name": "podcaster",
@@ -31274,8 +31619,8 @@
   },
   {
    "name": "pollymc-continued",
-   "description": "Revival of PollyMC. Free Minecraft launcher with offline account support, custom skins, quick…",
-   "source": "github:corecommit/pollymc-continued"
+   "description": "Discover, manage, and play Minecraft instances",
+   "source": "github:corecommit/PollyMC-Continued"
   },
   {
    "name": "poltertype",
@@ -31374,7 +31719,7 @@
   },
   {
    "name": "pomodoroz",
-   "description": "Foco flexível. Pausa inteligente. Progresso real.",
+   "description": "Flexible focus. Smart breaks. Real progress.",
    "source": "github:cjdduarte/pomodoroz"
   },
   {
@@ -31574,8 +31919,8 @@
   },
   {
    "name": "powerliminals-player",
-   "description": "Powerliminal audios in the background, Audio player.",
-   "source": "github:mysteryx93/NaturalGroundingPlayer"
+   "description": "Powerliminals Player. Plays Powerliminal audios, which are nearly-silent audios containing very…",
+   "source": "github:mysteryx93/hanumaninstituteapps"
   },
   {
    "name": "powermanga",
@@ -31634,8 +31979,8 @@
   },
   {
    "name": "praw",
-   "description": "AI-Powered Terminal (terminal optimized for vibecoding)..",
-   "source": "github:freecodetiger/praw"
+   "description": "PRAW intelligent terminal for Ubuntu",
+   "source": "github:freecodetiger/PRAW"
   },
   {
    "name": "predict-fun-marketmaker",
@@ -31729,8 +32074,8 @@
   },
   {
    "name": "printview3d",
-   "description": "Fast cross-platform viewer for STL, 3MF, G-code and FreeCAD files, with one-click open in your…",
-   "source": "github:sevagjb/printview3d"
+   "description": "View 3D models and G-code files and open them in your slicer",
+   "source": "github:sevagjb/PrintView3D"
   },
   {
    "name": "prism",
@@ -31749,7 +32094,7 @@
   },
   {
    "name": "prisma-desk",
-   "description": "Десктоп приложение.",
+   "description": "Desktop application.",
    "source": "github:sheinices/prisma-desk"
   },
   {
@@ -31843,6 +32188,11 @@
    "source": "github:yessGlory17/programmer-browser"
   },
   {
+   "name": "project-blue-moon",
+   "description": "A native PC port of TSUKIHIME -A piece of blue glass moon- (PlayStation 4, CUSA47999, version…",
+   "source": "github:waffle631/project-blue-moon"
+  },
+  {
    "name": "project-carminium",
    "description": "Carminium",
    "source": "github:Seirai-Haraguchi/Project-Carminium"
@@ -31884,7 +32234,7 @@
   },
   {
    "name": "prometeu",
-   "description": "Sessões de agentes organizadas por workspace e worktree.",
+   "description": "Agent sessions organized by workspace and worktree.",
    "source": "github:prometeucorp/prometeu"
   },
   {
@@ -31969,7 +32319,7 @@
   },
   {
    "name": "prosvet-antizapret-app",
-   "description": "Prosvet — открытое приложение для обхода DPI-блокировок на базе zapret/zapret2: само подбирает…",
+   "description": "Prosvet — an open application for bypassing DPI blocking based on zapret/zapret2: it picks a…",
    "source": "github:ivantech123/prosvet_antizapret_app"
   },
   {
@@ -32124,7 +32474,7 @@
   },
   {
    "name": "ps5-usb-formatierer",
-   "description": "Format, check and manage USB sticks and drives directly on the PS5 – web UI, app tile and programs…",
+   "description": "USB-Laufwerke formatieren, prüfen und sichern",
    "source": "github:strongt1me/ps5-usb-formatierer"
   },
   {
@@ -32136,6 +32486,11 @@
    "name": "ps5pcem",
    "description": "Experimental PlayStation 5 emulator",
    "source": "github:iStark/PS5PCEM"
+  },
+  {
+   "name": "ps5upload",
+   "description": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer…",
+   "source": "github:phantomptr/ps5upload"
   },
   {
    "name": "psf-guard",
@@ -32378,6 +32733,11 @@
    "source": "github:Zannael/PyQuark"
   },
   {
+   "name": "pyrocade",
+   "description": "3D carousel front-end for emulators with box art, manuals, disc/cartridge animations and a…",
+   "source": "github:pyrodrifter/pyrocade"
+  },
+  {
    "name": "pyrowave-streaming",
    "description": "PyroWave low-latency codec for Vibepollo + Moonlight (Steam Deck/SteamOS, Android): overview…",
    "source": "github:joemossjr16/pyrowave-streaming"
@@ -32402,8 +32762,8 @@
   },
   {
    "name": "pz-mod-manager",
-   "description": "PZMM, a free mod manager for Project Zomboid (B41/B42). Workshop browser, load order, profiles…",
-   "source": "github:sevnc3/pz-mod-manager"
+   "description": "Project Zomboid mod manager",
+   "source": "github:SEVNC3/pz-mod-manager"
   },
   {
    "name": "qBittorrent_Enhanced_Edition",
@@ -32652,8 +33012,8 @@
   },
   {
    "name": "qriff",
-   "description": "A small desktop companion for QR codes on your screen and in the real world.",
-   "source": "github:wattos/qriff"
+   "description": "Read QR codes locally",
+   "source": "github:Wattos/qriff"
   },
   {
    "name": "qrl-wallet",
@@ -32704,11 +33064,6 @@
    "name": "qt-dab",
    "description": "Software for listening to terrestrial Digital Audio Broadcasting (DAB and DAB+)",
    "source": "github:JvanKatwijk/qt-dab"
-  },
-  {
-   "name": "qt-raster-lines",
-   "description": "Lines between points using rasterization, DDA, Bresenham.",
-   "source": "github:humble-barnacle001/qt-raster-lines"
   },
   {
    "name": "qtads",
@@ -32867,8 +33222,8 @@
   },
   {
    "name": "querybird",
-   "description": "Free, open-source database client for PostgreSQL, MySQL and SQLite. A fast native desktop app…",
-   "source": "github:ztudio/querybird"
+   "description": "Free, open-source database client",
+   "source": "github:Ztudio/Querybird"
   },
   {
    "name": "querycraft",
@@ -32986,11 +33341,6 @@
    "source": "github:quobi-ai/quobi"
   },
   {
-   "name": "quobi-dictation",
-   "description": "Private, on-device dictation for desktop. NVIDIA Parakeet speech-to-text + a fine-tuned cleanup…",
-   "source": "github:quobi-ai/quobi-dictation"
-  },
-  {
    "name": "quokkagit",
    "description": "<p>quokkagit is a TortoiseGit inspired git log viewer for linux, which provides basic repository…",
    "source": "github:ballessay/quokkagit"
@@ -33032,7 +33382,7 @@
   },
   {
    "name": "qurioso",
-   "description": "Interactive Multiplayer & Video Quiz Studio.",
+   "description": "Qurioso: classroom activities and local network quizzes",
    "source": "github:napo/qurioso"
   },
   {
@@ -33101,11 +33451,6 @@
    "source": "github:ebkr/r2modmanPlus"
   },
   {
-   "name": "r3play",
-   "description": "High-value third-party Netease cloud player, chinese.",
-   "source": "github:qier222/YesPlayMusic"
-  },
-  {
    "name": "r3x",
    "description": "The speed of k9s. The visuals of Lens. None of the bloat.",
    "source": "github:rebash-rebash/r3x"
@@ -33172,8 +33517,8 @@
   },
   {
    "name": "ragnarokoffline-app",
-   "description": "Self-contained crossplatform app for playing Ragnarok Online offline — rAthena server +…",
-   "source": "github:flux159/ragnarokoffline.app"
+   "description": "Ragnarok Online, offline, in one app",
+   "source": "github:Flux159/ragnarokoffline.app"
   },
   {
    "name": "rai-pal",
@@ -33232,8 +33577,8 @@
   },
   {
    "name": "randmatqugea",
-   "description": "Free open-source random math question generator for algebra, calculus, trigonometry & more. Web +…",
-   "source": "github:richie-rich90454/randmatqugea"
+   "description": "Random math question generator made with HTML, CSS, and JS.",
+   "source": "github:richie-rich90454/RandMatQuGeA"
   },
   {
    "name": "random-ai-prompt",
@@ -33262,7 +33607,7 @@
   },
   {
    "name": "rapidraw",
-   "description": "A beautiful, non-destructive, and GPU-accelerated RAW image editor built with performance in mind.",
+   "description": "A blazingly-fast, non-destructive, and GPU-accelerated RAW image editor built with performance in…",
    "source": "github:CyberTimon/RapidRAW"
   },
   {
@@ -33371,6 +33716,11 @@
    "source": "github:pch/rawmakase"
   },
   {
+   "name": "rawtonic",
+   "description": "A free, open-source RAW developer for photographers: ingest, select, develop, retouch and deliver…",
+   "source": "github:rawtonic-app/rawtonic"
+  },
+  {
    "name": "rayburst",
    "description": "Redefining the open-source download manager.",
    "source": "github:aninsomniacy/rayburst"
@@ -33472,7 +33822,7 @@
   },
   {
    "name": "readm3",
-   "description": "A terminal markdown reader: file browser on the left, rendered markdown on the right. Bun and…",
+   "description": "readm3 is a quiet text editor: line numbers, multiple cursors, find and replace, folding, quick…",
    "source": "github:profullstack/readm3"
   },
   {
@@ -33494,6 +33844,11 @@
    "name": "real-video-enhancer",
    "description": "Interpolate and Upscale easily.",
    "source": "github:TNTwise/REAL-Video-Enhancer"
+  },
+  {
+   "name": "realm",
+   "description": "Local-first agentic development and work environment.",
+   "source": "github:31Carlton7/realm"
   },
   {
    "name": "realm-studio",
@@ -33527,7 +33882,7 @@
   },
   {
    "name": "rechnungsfee",
-   "description": "Open-Source Buchhaltungssoftware für Freiberufler, Selbstständige und Vereine. Offline-first…",
+   "description": "Open source accounting software for freelancers, self-employed people and associations…",
    "source": "github:nicolettas-muggelbude/rechnungsfee"
   },
   {
@@ -33547,7 +33902,7 @@
   },
   {
    "name": "recodex",
-   "description": "Chọn màn hình, cửa sổ hoặc vùng cần ghi; thêm âm thanh và webcam; rồi xem lại, chỉnh sửa và xuất…",
+   "description": "Choose a screen, window or area to record; add audio and webcam; then review, edit and export the…",
    "source": "github:duongonix/recodex"
   },
   {
@@ -33584,6 +33939,11 @@
    "name": "red",
    "description": "A fast, native database explorer, featuring an AI assistant that understands your schema, drafts…",
    "source": "github:vojir-mikulas/red"
+  },
+  {
+   "name": "red-app",
+   "description": "open-source YouTube desktop app for Linux, native Qt 6, C++20, no Electron. TV mode, YouTube…",
+   "source": "github:keshavbhatt/red"
   },
   {
    "name": "red-request",
@@ -33701,11 +34061,6 @@
    "source": "github:jillsandwich1998/regh2"
   },
   {
-   "name": "regrid-unit",
-   "description": "Resgrid Unit Application which is a tablet and laptop optimized application for Apparatuses…",
-   "source": "github:resgrid/unit"
-  },
-  {
    "name": "rehex",
    "description": "Reverse Engineers' Hex Editor.",
    "source": "github:solemnwarning/rehex"
@@ -33782,8 +34137,8 @@
   },
   {
    "name": "remindme",
-   "description": "A lightweight executable that schedules and triggers custom, recurring reminders via pop‑up…",
-   "source": "github:dennisturco/remindme"
+   "description": "A lightweight, cross-platform app to schedule and manage custom periodic reminders.",
+   "source": "github:DennisTurco/RemindMe"
   },
   {
    "name": "remix-desktop",
@@ -33812,8 +34167,8 @@
   },
   {
    "name": "remotedesktop",
-   "description": "A fast, lightweight app to manage your Remote Connections.",
-   "source": "github:lovaszcc/remotedesktop"
+   "description": "RDP, SSH, web and MikroTik connection manager",
+   "source": "github:LovaszCC/RemoteDesktop"
   },
   {
    "name": "remoteplaywhatever",
@@ -33832,7 +34187,7 @@
   },
   {
    "name": "removebg-app",
-   "description": "App desktop para GNU/Linux que remove o fundo de imagens usando inteligência artificial — tudo…",
+   "description": "Desktop app for GNU/Linux that removes image backgrounds using artificial intelligence…",
    "source": "github:marcellodesouza/removebg-app"
   },
   {
@@ -33934,6 +34289,11 @@
    "name": "reright",
    "description": "Rewrite text snippets directly on your desktop without alt-tabbing to ChatGPT.",
    "source": "github:jmacedoit/reright"
+  },
+  {
+   "name": "researchloom",
+   "description": "ResearchLoom (Samhita) is an autonomous academic literature synthesis engine, dual-lineage…",
+   "source": "github:sohamsans/researchloom"
   },
   {
    "name": "resgrid-unit",
@@ -34162,8 +34522,8 @@
   },
   {
    "name": "rgs-iso-flasher",
-   "description": "A modern Linux GUI utility for creating bootable USB drives from ISO files.",
-   "source": "github:rahnrazamai/rgs-iso-flasher-appimage"
+   "description": "Create bootable USB drives from ISO files",
+   "source": "github:RahnRazamai/rgs-iso-flasher-appimage"
   },
   {
    "name": "rhb",
@@ -34461,11 +34821,6 @@
    "source": "github:evtest-hash/rockchip-flash-tool"
   },
   {
-   "name": "rocket-chat-electron",
-   "description": "The Secure CommsOS™ for mission-critical operations.",
-   "source": "github:rocketchat/rocket.chat.electron"
-  },
-  {
    "name": "rocket-r",
    "description": "Rocket: Robot on Wheels - Recompiled by ThatGuyMcd.",
    "source": "github:thatguymcd/rocket-r"
@@ -34572,8 +34927,8 @@
   },
   {
    "name": "romp",
-   "description": "Natively run your RomM library games!",
-   "source": "github:rompemu/romp"
+   "description": "Play retro games from your RomM library",
+   "source": "github:RompEmu/RomP"
   },
   {
    "name": "rompemu",
@@ -34846,11 +35201,6 @@
    "source": "github:rustdesk/rustdesk"
   },
   {
-   "name": "rustfox",
-   "description": "A high-performance, local-first API client & Postman alternative built with Rust, Tauri 2, and Vue…",
-   "source": "github:weihubeats/rustfox"
-  },
-  {
    "name": "rustle",
    "description": "Cross-platform music player with Apple Music-style lyrics, GPU-accelerated rendering, built in Rust.",
    "source": "github:fei-xiangshi/rustle"
@@ -34887,7 +35237,7 @@
   },
   {
    "name": "rusty-inbox",
-   "description": "Fast, native email client for Linux, Windows and macOS: Rust mail engine, Qt 6/QML interface…",
+   "description": "Fast native email client built with Rust and Qt/QML",
    "source": "github:karem505/rusty-inbox"
   },
   {
@@ -34972,7 +35322,7 @@
   },
   {
    "name": "safe-box",
-   "description": "Una app para gestionar contraseñas, desarrollada con Electron, React y SQLite.",
+   "description": "An app to manage passwords, built with Electron, React and SQLite.",
    "source": "github:adriantaf/safe-box"
   },
   {
@@ -34984,6 +35334,11 @@
    "name": "safe-multisig",
    "description": "Allowing crypto users manage funds in a safer way",
    "source": "github:gnosis/safe-react"
+  },
+  {
+   "name": "safehouse",
+   "description": "SafeHouse is a launcher and PC port project for all the Sly Cooper games.",
+   "source": "github:fridinator1/safehouse"
   },
   {
    "name": "safelight",
@@ -35107,7 +35462,7 @@
   },
   {
    "name": "sarala",
-   "description": "A minimal writing app that renders Markdown the moment you type it — no split panes, no preview…",
+   "description": "A seamless WYSIWYG Markdown editor",
    "source": "github:solancer/sarala"
   },
   {
@@ -35356,11 +35711,6 @@
    "source": "github:SimonAKing/scrcpy-gui"
   },
   {
-   "name": "scrcpy-webcam",
-   "description": "Scrcpy-Webcam is a rust-based wrapper that turns your android phone into a professional Linux…",
-   "source": "github:broly1/scrcpy-webcam-appimage"
-  },
-  {
    "name": "scrcpygui",
    "description": "A user-friendly GUI for scrcpy with added functionalities.",
    "source": "github:pizi-0/flutter-scrcpygui"
@@ -35397,7 +35747,7 @@
   },
   {
    "name": "scribble",
-   "description": "Ứng dụng ghi chú cuộc họp thông minh — ghi âm, phiên dịch realtime, realtime dịch đa ngôn ngữ và…",
+   "description": "Smart meeting notes app — record, real-time transcription, multi-language cabin translation, and…",
    "source": "github:luongndcoder/scribble"
   },
   {
@@ -35457,7 +35807,7 @@
   },
   {
    "name": "sdf-flash-gui",
-   "description": "Cross-platform GUI for optical drive firmware dump/flash on MT1959 drives.",
+   "description": "A cross-platform GUI for flashing optical drives.",
    "source": "github:thedavidweng/sdf-flash-gui"
   },
   {
@@ -35566,6 +35916,11 @@
    "source": "github:vaccfr/sector-files"
   },
   {
+   "name": "sectorforge",
+   "description": "Rescue data from failing drives: ddrescue-style imaging, partition detection, NTFS recovery incl…",
+   "source": "github:terraseraph/sectorforge"
+  },
+  {
    "name": "secure-file-vault",
    "description": "Client side encrypted cloud storage with BYOK support.",
    "source": "github:jeerovan/secure_file_vault"
@@ -35574,6 +35929,11 @@
    "name": "securevault",
    "description": "A highly secure, offline-first personal credentials manager built with Rust & Tauri",
    "source": "github:NovanJex/SecureVault"
+  },
+  {
+   "name": "sedotdeck",
+   "description": "Obtainium for Steam Deck: keep recomps, PC ports and emulators updated and in your Steam library.",
+   "source": "github:intermission88/sedotdeck"
   },
   {
    "name": "seed",
@@ -35587,8 +35947,8 @@
   },
   {
    "name": "seeksy",
-   "description": "Crossplatform, invokable search tool for files, apps, etc.",
-   "source": "github:andreasjhagen/seeksy"
+   "description": "A fast, invokable desktop search for files, folders and applications",
+   "source": "github:andreasjhagen/Seeksy"
   },
   {
    "name": "seeky",
@@ -35721,6 +36081,11 @@
    "source": "github:Serial-Studio/Serial-Studio"
   },
   {
+   "name": "serialarm-core",
+   "description": "The C++17 dynamics kernel for serial robotic arms decouples the robot model, hardware interface…",
+   "source": "github:kaede-rei/serialarm-core"
+  },
+  {
    "name": "serialgui-rs",
    "description": "A lightweight serial terminal monitor written in Rust.",
    "source": "github:opentronika/serialgui-rs"
@@ -35802,7 +36167,7 @@
   },
   {
    "name": "seshboard",
-   "description": "Run and track all your Claude Code sessions, across several Claude accounts, in one window. Mac…",
+   "description": "A fast desktop app for managing Claude Code sessions",
    "source": "github:estruyf/seshboard"
   },
   {
@@ -35822,7 +36187,7 @@
   },
   {
    "name": "sessionpipe",
-   "description": "The local GUI for sessionpipe. One process shows every coding-agent session on your machines as it…",
+   "description": "sessionpipe for macOS, Windows and Linux: a thin Tauri 2 shell around the bundled web UI.",
    "source": "github:spacesheep-dev/sessionpipe-gui"
   },
   {
@@ -35847,18 +36212,13 @@
   },
   {
    "name": "sextant",
-   "description": "Desktop Kubernetes client in Rust (Tauri 2), an alternative to Lens: live resources, logs, shells…",
-   "source": "github:friendsofkubernetes/sextant"
+   "description": "Desktop Kubernetes client",
+   "source": "github:FriendsOfKubernetes/sextant"
   },
   {
    "name": "sf-devkit",
    "description": "Salesforce developer desktop toolkit built with Tauri 2.",
    "source": "github:windwoke/sf-devkit"
-  },
-  {
-   "name": "sf-tube",
-   "description": "<p>Youtube client made using flutter</p> <p>Features:</p> <ul>   <li>Beautiful user interface</li>…",
-   "source": "github:prateekmedia/sftube"
   },
   {
    "name": "sfbrename-cli",
@@ -35977,7 +36337,7 @@
   },
   {
    "name": "sheetbro",
-   "description": "Sheetbro - spreadsheet alternative.",
+   "description": "Spreadsheet app built with Tauri",
    "source": "github:jetorbitdev/sheetbro"
   },
   {
@@ -36047,8 +36407,8 @@
   },
   {
    "name": "shiny-egg",
-   "description": "A Yoshi's Island (SNES) level editor.",
-   "source": "github:yorikv/shiny-egg"
+   "description": "A Yoshi’s Island (SNES) level editor",
+   "source": "github:YoriKv/shiny-egg"
   },
   {
    "name": "shioaji-pro-app",
@@ -36092,8 +36452,8 @@
   },
   {
    "name": "shoggoth",
-   "description": "Shoggoth is a peer-to-peer network for publishing and distributing open-source Artificial…",
-   "source": "github:shog-ai/shoggoth"
+   "description": "A friendly console for Lemonade Server: chat, models, GPUs and backends",
+   "note": "resolve manually: AM shog-ai/shoggoth; AppImageHub yudhanjaya/Shoggoth"
   },
   {
    "name": "shoopdaloop",
@@ -36127,7 +36487,7 @@
   },
   {
    "name": "shrewnut",
-   "description": "A desktop GUI application for downloading local backups of your GOG.com game library.",
+   "description": "GOG library backup tool",
    "source": "github:preppie22/shrewnut"
   },
   {
@@ -36152,8 +36512,8 @@
   },
   {
    "name": "shuttercove",
-   "description": "Shutter Cove — RAW Photo Organizer & Creative Studio. Pair Canon CR3 + JPEG, curate favorites, and…",
-   "source": "github:undefeated-man/shuttercove"
+   "description": "时光杂货店 · 摄影回忆时光机 — a local-first DSLR photo library",
+   "source": "github:Undefeated-man/ShutterCove"
   },
   {
    "name": "shuttle",
@@ -36242,8 +36602,8 @@
   },
   {
    "name": "signa",
-   "description": "Aplicación de escritorio de código abierto para gestionar calificaciones, rúbricas de evaluación y…",
-   "source": "github:danielpose1996-stack/signa"
+   "description": "SIGNA 1.6.1",
+   "source": "github:danielpose1996-stack/SIGNA"
   },
   {
    "name": "signal",
@@ -36276,11 +36636,6 @@
    "source": "github:nodelike/sikemux"
   },
   {
-   "name": "silent-tiangong",
-   "description": "Desktop-level personal AI smart terminal based on Rust + Tauri: built-in embedded browser for…",
-   "source": "github:silent-rs/silent-tiangong"
-  },
-  {
    "name": "silex-desktop",
    "description": "This is the official Silex desktop version.",
    "source": "github:silexlabs/silex-desktop"
@@ -36292,8 +36647,8 @@
   },
   {
    "name": "sillage",
-   "description": "Self-hosted, multi-CLI platform for agentic development (Claude Code, Codex).",
-   "source": "github:marlburrow/sillage"
+   "description": "Sillage as a desktop app: the server and its interface on your own machine.",
+   "source": "github:MarlBurroW/sillage"
   },
   {
    "name": "sillytavern-launcher",
@@ -36347,7 +36702,6 @@
   },
   {
    "name": "simple-s3-uploader",
-   "description": "Copyright © 2018 Ryan Burgett",
    "source": "github:rBurgett/simple-uploader"
   },
   {
@@ -36572,8 +36926,8 @@
   },
   {
    "name": "skiesofarcadialegends-recomp",
-   "description": "Native port of Skies of Arcadia Legends (GameCube) via static recompilation. Bring your own disc.",
-   "source": "github:ogdanimal/skiesofarcadialegends-recomp"
+   "description": "Skies of Arcadia Legends, recompiled",
+   "source": "github:ogdanimal/SkiesOfArcadiaLegends-Recomp"
   },
   {
    "name": "skiff",
@@ -36731,6 +37085,16 @@
    "source": "github:remcostoeten/skriuw"
   },
   {
+   "name": "skwir",
+   "description": "Browse, find and organize your files",
+   "source": "github:skwir-org/skwir"
+  },
+  {
+   "name": "skykeep",
+   "description": "Your iCloud, on this computer",
+   "source": "github:YashwanthKamireddi/Skykeep"
+  },
+  {
    "name": "skylerx",
    "description": "Cross-platform desktop database management tool (Navicat, DBeaver alternative), built with…",
    "source": "github:duhbbx/skylerx"
@@ -36748,7 +37112,7 @@
   {
    "name": "skyport",
    "description": "A multi-platform serial debugging assistant built with Flutter + Rust.",
-   "source": "github:starsphere-1024/skyport"
+   "source": "github:StarSphere-1024/SkyPort"
   },
   {
    "name": "skyrecomp",
@@ -36832,7 +37196,7 @@
   },
   {
    "name": "slojka",
-   "description": "Слойка — AI-first графический редактор (Photoshop-style, WebGL2, SAM 2.1, polza.ai, Claude…",
+   "description": "Slojka — AI-first graphics editor (Photoshop-style, WebGL2, SAM 2.1, polza.ai, Claude Code/MCP).",
    "source": "github:helpfreedom/slojka"
   },
   {
@@ -36852,8 +37216,8 @@
   },
   {
    "name": "slpm",
-   "description": "Simple Linux Package Manager.",
-   "source": "github:parsasafaie/slpm"
+   "description": "Install, launch and remove Linux applications through a local web interface",
+   "source": "github:parsasafaie/SLPM"
   },
   {
    "name": "smallbasic",
@@ -37036,8 +37400,8 @@
   },
   {
    "name": "snitch",
-   "description": "Real-time network monitor + outbound firewall — see & block every connection. Privacy-first…",
-   "source": "github:aixisstudio/snitch"
+   "description": "Snitch is a local-first network traffic visualizer: live map of outbound connections, per-process…",
+   "source": "github:aixisstudio/Snitch"
   },
   {
    "name": "snomcontrol",
@@ -37058,11 +37422,6 @@
    "name": "snowball",
    "description": "Find and filter literature, fast.",
    "source": "github:shaunabanana/snowball"
-  },
-  {
-   "name": "snowboardkids2-recomp",
-   "description": "Unofficial. Static recompiled PC port of Snowboard Kids 2.",
-   "source": "github:pkgforge-dev/SnowboardKids2Recomp-AppImage"
   },
   {
    "name": "snowboardkids2recomp",
@@ -37130,11 +37489,6 @@
    "source": "github:RaymonDev/soil"
   },
   {
-   "name": "soil-editor",
-   "description": "A tool to edit the soil properties, CRITERIA1D.",
-   "source": "github:ARPA-SIMC/CRITERIA1D"
-  },
-  {
    "name": "solaar",
    "description": "Unofficial. Device manager for Logitech wireless keyboards, mice, and trackballs.",
    "source": "github:pkgforge-dev/solaar-appimage"
@@ -37176,8 +37530,8 @@
   },
   {
    "name": "soma",
-   "description": "Desktop app for designing parametric 3D models in CadQuery together with the coding agent of your…",
-   "source": "github:kai-jungsthoefel/soma"
+   "description": "SOMA (Solid Object Modeling with Agents): design 3D models in CadQuery with an AI agent of your…",
+   "source": "github:Kai-Jungsthoefel/SOMA"
   },
   {
    "name": "sonami",
@@ -37191,8 +37545,8 @@
   },
   {
    "name": "sonawave",
-   "description": "SonaWave: a cross-platform multi-source music player for Android, Windows, macOS, Linux, and…",
-   "source": "github:tlntin/sonawave-release"
+   "description": "Music player for Navidrome, Emby, Jellyfin, WebDAV, SMB and local files",
+   "source": "github:Tlntin/SonaWave-Release"
   },
   {
    "name": "songloft-desktop",
@@ -37396,7 +37750,7 @@
   },
   {
    "name": "spacescan",
-   "description": "Fast disk-usage explorer for Linux: sunburst chart, keyboard-driven table, and text/CSV/JSON…",
+   "description": "Sunburst chart of drive and folder disk usage",
    "source": "github:a-kurczyn/spacescan"
   },
   {
@@ -37433,11 +37787,6 @@
    "name": "sparkymk2",
    "description": "Feature matched cross-platform app for the Roland SP404-MKII.",
    "source": "github:tuscanpl/sparkymk2"
-  },
-  {
-   "name": "speak-to-ai",
-   "description": "Speak to AI - native Linux voice-to-text app.",
-   "source": "github:AshBuk/speak-to-ai"
   },
   {
    "name": "speakoflow",
@@ -37606,7 +37955,7 @@
   },
   {
    "name": "splitlane",
-   "description": "Native desktop workspace for running several CLI coding agents side by side, with live status for…",
+   "description": "Native terminal workspace for coding agents",
    "source": "github:ivkan/splitlane"
   },
   {
@@ -37721,7 +38070,7 @@
   },
   {
    "name": "sqlshelf",
-   "description": "Gerenciador desktop open-source de consultas SQL: organize, descreva, categorize e encontre suas…",
+   "description": "Open source desktop SQL query manager: organize, describe, categorize and find your queries by…",
    "source": "github:raphamaster/sqlshelf"
   },
   {
@@ -37771,7 +38120,7 @@
   },
   {
    "name": "srs-sysinfo",
-   "description": "System information viewer for Linux, shows hardware, sensors, drive health and more.",
+   "description": "System information viewer for Linux, inspired by SIV64X (independent, not affiliated with SIV or…",
    "source": "github:eugenesflanagin-spec/srs-sysinfo"
   },
   {
@@ -37810,6 +38159,11 @@
    "source": "github:baerwang/ssh-at"
   },
   {
+   "name": "ssh-key-manager",
+   "description": "For macOS, Windows and Linux · in English, Russian and Uzbek.",
+   "source": "github:nuriddin2468/ssh-key-manager"
+  },
+  {
    "name": "ssh-mitm",
    "description": "Server for security audits supporting public key authentication.",
    "source": "github:ssh-mitm/ssh-mitm"
@@ -37821,7 +38175,7 @@
   },
   {
    "name": "sshfire",
-   "description": "A fast, lightweight desktop SSH client in the spirit of MobaXterm: saved servers, tabbed…",
+   "description": "A Tauri App",
    "source": "github:aralozaltin/sshfire"
   },
   {
@@ -37946,7 +38300,7 @@
   },
   {
    "name": "starclx",
-   "description": "StarCLX ist ein freier Desktop-Client für STARFACE-Telefonanlagen, mit Linux als Hauptplattform.",
+   "description": "StarCLX is a free desktop client for STARFACE telephone systems, with Linux as the main platform.",
    "source": "github:crazmoe/starclx"
   },
   {
@@ -38125,6 +38479,11 @@
    "source": "github:kindness-kismet/stelliberty"
   },
   {
+   "name": "stellio",
+   "description": "Modern desktop application built with Python to seamlessly manage and run your local media and…",
+   "source": "github:stellio-app/stellio"
+  },
+  {
    "name": "stem",
    "description": "An isolated, pi-backed personal assistant with rich MDX output, app-scoped skills, MCP, and Stem…",
    "source": "github:join3r/stem"
@@ -38246,7 +38605,7 @@
   },
   {
    "name": "story-studio",
-   "description": "Story Studio pour Lunii — éditeur desktop open source Windows, Linux et macOS pour créer…",
+   "description": "Story Studio for Lunii — open source desktop editor for Windows, Linux and macOS to create…",
    "source": "github:hugs11/story-studio"
   },
   {
@@ -38372,7 +38731,7 @@
   {
    "name": "streetsofrageproject",
    "description": "Streets of Rage recompilation project.",
-   "source": "github:ruinelson/streetsofrageproject"
+   "source": "github:RuiNelson/StreetsOfRageProject"
   },
   {
    "name": "stremio-enhanced",
@@ -38468,6 +38827,11 @@
    "name": "stunts-hd",
    "description": "Stunts (1990) in HD: the website’s game, as a desktop app",
    "source": "github:mr-finster/stunts-hd"
+  },
+  {
+   "name": "stviewer",
+   "description": "Fast local viewer and search for email archives",
+   "source": "github:RandyAybar/STViewer"
   },
   {
    "name": "styr",
@@ -38632,7 +38996,7 @@
   {
    "name": "super-one",
    "description": "SuperOne brings Claude Code, Codex, Cursor, OpenCode, DeepSeek and Grok into one desktop app…",
-   "source": "github:whq25/super-one"
+   "source": "github:WHQ25/super-one"
   },
   {
    "name": "super-pads",
@@ -38715,19 +39079,9 @@
    "source": "github:hhannine/superpaper"
   },
   {
-   "name": "superproductivity",
-   "description": "Personal Task Management App to help you with your daily struggle with JIRA etc.",
-   "source": "github:johannesjo/super-productivity"
-  },
-  {
    "name": "superpunto",
    "description": "A fast particle visualizator. Using SDL2 and  OpenGL 4.5.",
    "source": "github:raulppelaez/superpunto"
-  },
-  {
-   "name": "superset",
-   "description": "The last developer tool you’ll ever need",
-   "source": "github:superset-sh/superset"
   },
   {
    "name": "superslicer-bin",
@@ -38875,11 +39229,6 @@
    "source": "github:ehrishirajsharma/SwiftnessX"
   },
   {
-   "name": "swifty",
-   "description": "Free Offline-first Password Manager.",
-   "source": "github:swiftyapp/swifty"
-  },
-  {
    "name": "swifty-notes-gtk",
    "description": "Native GTK markdown notes for Linux and macOS, written in Swift.",
    "source": "github:makoni/swifty-notes-gtk"
@@ -38986,12 +39335,12 @@
   },
   {
    "name": "syncative",
-   "description": "Proton Drive and Google Drive sync client for Linux and Android.",
-   "source": "github:santuzius/syncative"
+   "description": "Sync local folders with Google Drive or Proton Drive",
+   "source": "github:Santuzius/syncative"
   },
   {
    "name": "syncclipboard",
-   "description": "A Clibpoard Syncing Tool",
+   "description": "A clipboard syncing tool",
    "source": "github:Jeric-X/SyncClipboard"
   },
   {
@@ -39081,8 +39430,8 @@
   },
   {
    "name": "system-sl",
-   "description": "SL is a personal progression system inspired by Solo Leveling. You define your daily quests, and…",
-   "source": "github:sproutcake23/system-sl"
+   "description": "Arise, Player.",
+   "source": "github:sproutcake23/System-SL"
   },
   {
    "name": "systemd-pilot",
@@ -39106,13 +39455,8 @@
   },
   {
    "name": "t2decode",
-   "description": "T2DECODE — plateforme locale d’apprentissage technique et cybersécurité, offline-first, sans…",
+   "description": "T2DECODE — local platform for technical learning and cybersecurity, offline-first, no cloud, with…",
    "source": "github:tutodecode-fr/t2decode"
-  },
-  {
-   "name": "t3-code",
-   "description": "T3 Code is a minimal GUI for coding agents.",
-   "source": "github:pingdotgg/t3code"
   },
   {
    "name": "t3code",
@@ -39141,7 +39485,7 @@
   },
   {
    "name": "table-craft",
-   "description": "A desktop database IDE in the spirit of DataGrip.",
+   "description": "The table-craft Electron app",
    "source": "github:tranphucbol/table-craft"
   },
   {
@@ -39158,6 +39502,11 @@
    "name": "tabless",
    "description": "Just makes your day easier. An offline, keyboard-driven desktop planner for developers: tasks from…",
    "source": "github:sectapunterx/tabless"
+  },
+  {
+   "name": "tabletist",
+   "description": "A fast, native database client for PostgreSQL, MySQL and SQLite. Written in Rust with egui; runs…",
+   "source": "github:igor-alexandrov/tabletist"
   },
   {
    "name": "tablexplore",
@@ -39191,7 +39540,7 @@
   },
   {
    "name": "tada",
-   "description": "A fast, lightweight Todo CLI built with Go.",
+   "description": "A simple command-line task manager written in Go",
    "source": "github:callmekriztal/tada"
   },
   {
@@ -39266,17 +39615,17 @@
   },
   {
    "name": "takeoffcraft",
-   "description": "TakeoffCraft: Quantity takeoff & estimating. Calibrated linear, area and count takeoff from PDF…",
+   "description": "Quantity takeoff & estimating",
    "source": "github:getcadcraft/takeoffcraft"
   },
   {
    "name": "taksim",
-   "description": "A live canvas for coding agents, on the subscriptions you already have.",
+   "description": "A live canvas for coding agents on your own subscriptions.",
    "source": "github:0xhalil/taksim"
   },
   {
    "name": "talearchitect",
-   "description": "TaleArchitect é uma ferramenta de construção de mundos (worldbuilding) focada em conexões e…",
+   "description": "TaleArchitect is a worldbuilding tool focused on connections and chronology. Built for writers…",
    "source": "github:mateusrnm/talearchitect"
   },
   {
@@ -39450,6 +39799,11 @@
    "source": "github:tuna-os/tavern"
   },
   {
+   "name": "taxonero",
+   "description": "Self-hosted AI species identification for your photos: Immich, local folders or photo apps. Never…",
+   "source": "github:adn-dan/taxonero"
+  },
+  {
    "name": "tbc-video-export",
    "description": "Tool for exporting S-Video and CVBS-type TBCs to video files.",
    "source": "github:JuniorIsAJitterbug/tbc-video-export"
@@ -39591,7 +39945,7 @@
   },
   {
    "name": "tennoworth",
-   "description": "Cross-platform Windows + Linux Warframe inventory + market dashboard - what should I sell right…",
+   "description": "Warframe inventory + market dashboard - see what's worth selling right now",
    "source": "github:tennoworth/tennoworth"
   },
   {
@@ -39658,6 +40012,11 @@
    "name": "termimus-ssh",
    "description": "Termimus - Self-hosted SSH & Server Manager",
    "source": "github:termimus/termimus-ssh"
+  },
+  {
+   "name": "terminal-delight",
+   "description": "Style-first native terminal for Linux and Omarchy, in Rust on gpui + rio-vt. Tiling panes, tabs…",
+   "source": "github:parker-brown-family/terminal-delight"
   },
   {
    "name": "terminalos-sim",
@@ -39876,7 +40235,7 @@
   },
   {
    "name": "tglock",
-   "description": "🔓 Telegram unblock в один клик — обход блокировки через WebSocket-туннель. Без VPN, без серверов…",
+   "description": "🔓 Telegram unblock in one click — bypasses blocking via a WebSocket tunnel. No VPN, no servers, no…",
    "source": "github:by-sonic/tglock"
   },
   {
@@ -40230,8 +40589,8 @@
   },
   {
    "name": "tilesmith",
-   "description": "Pre production software for LED walls. Engineering specs, cable labels, pixel maps and test…",
-   "source": "github:kingof9x/tilesmith"
+   "description": "TileSmith - LED Wall Builder: pixel mapping, engineering layout and live NDI®, Spout and Syphon…",
+   "source": "github:kingof9x/TileSmith"
   },
   {
    "name": "tilinggenerator",
@@ -40330,7 +40689,7 @@
   },
   {
    "name": "tizen-sim",
-   "description": "Open-source simulator for Samsung Tizen TV web apps: runs your App on the Chromium its TV ships…",
+   "description": "Samsung Tizen TV web app simulator",
    "source": "github:lucaskfp/tizen-sim"
   },
   {
@@ -40350,8 +40709,8 @@
   },
   {
    "name": "tlkrecomp",
-   "description": "TLKRecomp is a static recompilation of The Lion King (SNES), built with snesrecomp.",
-   "source": "github:kinduff/tlkrecomp"
+   "description": "<p>Disney&apos;s The Lion King (SNES, 1994) as a native PC program: a static recompilation of the…",
+   "source": "github:kinduff/TLKRecomp"
   },
   {
    "name": "tlum",
@@ -40370,7 +40729,7 @@
   },
   {
    "name": "tmop",
-   "description": "TMOP – Task Manager OverPowered: a skinnable Windows system monitor in Rust (egui), with every…",
+   "description": "Task Manager OverPowered: a skinnable system monitor",
    "source": "github:tekikaito/tmop"
   },
   {
@@ -40405,7 +40764,7 @@
   },
   {
    "name": "tocky-voice",
-   "description": "Don't type. Just talk - bớt gõ đi và tâm sự bằng giọng nói của bạn.",
+   "description": "Don't type. Just talk - type less and confide in your voice.",
    "source": "github:dangngocbinh/tocky-voice"
   },
   {
@@ -40575,8 +40934,8 @@
   },
   {
    "name": "tootawersrecomp",
-   "description": "A native Windows PC port of The Lord of the Rings: The Two Towers (Xbox, USA, 2002), made by…",
-   "source": "github:gumpolas/tootawersrecomp"
+   "description": "The Lord of the Rings: The Two Towers, recompiled for the PC",
+   "source": "github:Gumpolas/TooTawersRecomp"
   },
   {
    "name": "top-player-linux",
@@ -40607,6 +40966,11 @@
    "name": "torchat",
    "description": "Anonymous P2P Chat over Tor",
    "source": "github:blackXploit-404/torchat"
+  },
+  {
+   "name": "torchlight-recomp",
+   "description": "Torchlight (Xbox Live Arcade), recompiled",
+   "source": "github:YaPeL/torchlight-recomp"
   },
   {
    "name": "torcs",
@@ -40675,7 +41039,7 @@
   },
   {
    "name": "totk-pc-recomp",
-   "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows x86-64, with a…",
+   "description": "Builds Tears of the Kingdom for this PC from your own game files",
    "source": "github:valentderah/totk-pc-recomp"
   },
   {
@@ -40715,7 +41079,7 @@
   },
   {
    "name": "traceroost",
-   "description": "Agentic AI monitoring and observability — OTEL traces and local log files from Copilot, Claude…",
+   "description": "See what your coding agents did, what it cost, and what landed — recorded and shown on this machine.",
    "source": "github:traceroost/core"
   },
   {
@@ -40765,7 +41129,7 @@
   },
   {
    "name": "transcritorio",
-   "description": "App desktop local para transcricao automatica de entrevistas em portugues brasileiro.",
+   "description": "Local desktop app for automatic transcription of interviews in Brazilian Portuguese.",
    "source": "github:antrologos/transcritorio"
   },
   {
@@ -41049,6 +41413,11 @@
    "source": "github:aechXIII/Tuck"
   },
   {
+   "name": "tuck-filemanager",
+   "description": "File manager for linux.",
+   "source": "github:anuzdhk/tuck-filemanager"
+  },
+  {
    "name": "tuff",
    "description": "The command bar, reimagined for those who build. Tuff is an open-source core for your OS, built on…",
    "source": "github:talex-touch/tuff"
@@ -41074,6 +41443,16 @@
    "source": "github:lluisrojass/tumblr-scraper"
   },
   {
+   "name": "tunarrtube",
+   "description": "Self-hosted YouTube companion for building and maintaining Tunarr channels.",
+   "source": "github:augustosc-eu/tunarrtube"
+  },
+  {
+   "name": "tunelle",
+   "description": "<p>Tunelle plays your own music library and internet radio, and shows the format of everything it…",
+   "source": "github:Koeroesi86/tunelle"
+  },
+  {
    "name": "tunepack",
    "description": "Finding and download HQ audio files.",
    "source": "github:tunepack/tunepack-desktop"
@@ -41085,7 +41464,7 @@
   },
   {
    "name": "tunor",
-   "description": "Tunor (ранее Nyx) — Windows GUI for sing-box with AmneziaWG (1.0, 2.0, 3.x): service control…",
+   "description": "Tunor (formerly Nyx) — Windows GUI for sing-box with AmneziaWG (1.0, 2.0, 3.x): service control…",
    "source": "github:vexorter42/tunor"
   },
   {
@@ -41100,7 +41479,7 @@
   },
   {
    "name": "turbo-decky-",
-   "description": "Script de otimização do SteamOs.",
+   "description": "SteamOS optimization script.",
    "source": "github:zarpon/turbo-decky-"
   },
   {
@@ -41185,7 +41564,7 @@
   },
   {
    "name": "tuxrgb",
-   "description": "Tout l'éclairage RGB du PC, la ventilation et les afficheurs, dans une seule application pour…",
+   "description": "All of the PC's RGB lighting, fans and displays in a single application for Linux (Wayland) and…",
    "source": "github:aurelienchartier29-netizen/tuxrgb"
   },
   {
@@ -41197,6 +41576,11 @@
    "name": "tuzi-switch",
    "description": "Recommended download method:.",
    "source": "github:tuziapi/tuzi-switch"
+  },
+  {
+   "name": "tvhplayer",
+   "description": "Cross-platform desktop client for Tvheadend. Watch and record live TV on your PC.",
+   "source": "github:mfat/tvhplayer"
   },
   {
    "name": "twake",
@@ -41259,6 +41643,11 @@
    "source": "github:ohne-b/twitch-drops-miner"
   },
   {
+   "name": "twitch-miner",
+   "description": "Mine Twitch Drops and channel points on several accounts, with no browser and no Twitch tab open…",
+   "source": "github:sunkwibot/twitch-miner"
+  },
+  {
    "name": "twitch-retold",
    "description": "Ultra-clean, ad-free Twitch desktop client with Sub-Only VOD unlocker, 7TV/BTTV emotes, custom…",
    "source": "github:HyperFinal/Twitch-Retold-Desktop-Android"
@@ -41295,8 +41684,8 @@
   },
   {
    "name": "typewriter-nocturne",
-   "description": "Typewriter Nocturne is a cross-platform terminal with the soul of a writing desk: paper and ink…",
-   "source": "github:chaosnap/typewriter-nocturne"
+   "description": "A literary, typewriter-inspired terminal based on Hyper",
+   "source": "github:Chaosnap/Typewriter-Nocturne"
   },
   {
    "name": "typos",
@@ -41306,7 +41695,7 @@
   {
    "name": "typsastra",
    "description": "A complex-script-first Typst environment for research and long-form multilingual writing. Built…",
-   "source": "github:sovichea/typsastra"
+   "source": "github:Sovichea/typsastra"
   },
   {
    "name": "typst-ide",
@@ -41358,6 +41747,11 @@
    "name": "ubports-installer",
    "description": "A simple tool to install Ubuntu Touch on UBports devices",
    "source": "github:ubports/ubports-installer"
+  },
+  {
+   "name": "ubuntu-macos-theme",
+   "description": "Make Ubuntu look like macOS — MacTahoe theme, Dock & Widgets for Ubuntu. Double-click AppImage…",
+   "source": "github:manguonmocom/ubuntu-macos-theme"
   },
   {
    "name": "udcalc",
@@ -41426,7 +41820,7 @@
   },
   {
    "name": "ultimatter",
-   "description": "Universal Mobile Gateway SDK — wrap any local web service or AI agent with encrypted mobile…",
+   "description": "Universal AI Agent Gateway for Antigravity and OpenCode",
    "source": "github:saifmukhtar/ultimatter"
   },
   {
@@ -41546,7 +41940,7 @@
   },
   {
    "name": "unicorn-overlord",
-   "description": "Unicorn Overlord (PS4) native PC port.",
+   "description": "Native PC port",
    "source": "github:hachi23/unicorn_overlord_pc"
   },
   {
@@ -41701,8 +42095,8 @@
   },
   {
    "name": "unsub",
-   "description": "Cancel your subscription. Keep your music. A 2005-style music player that syncs your iPod and…",
-   "source": "github:halfwoods/unsub"
+   "description": "A music player for people who own their music",
+   "source": "github:halfwoods/Unsub"
   },
   {
    "name": "unterm",
@@ -41720,11 +42114,6 @@
    "source": "github:K3vinb5/Unyo"
   },
   {
-   "name": "unyo-app",
-   "description": "🐙 Anime streaming and Manga reader desktop app without ads.",
-   "source": "github:k3vinb5/unyo-app"
-  },
-  {
    "name": "uo-outlands",
    "description": "A Linux AppImage for UO Outlands, a free Ultima Online shard.",
    "source": "github:hezkore/uo-outlands-appimage"
@@ -41736,8 +42125,8 @@
   },
   {
    "name": "updainium",
-   "description": "Get desktop app updates straight from the source.",
-   "source": "github:livrasand/updainium"
+   "description": "Get desktop app updates straight from the source",
+   "source": "github:livrasand/Updainium"
   },
   {
    "name": "updatedeployqt",
@@ -41746,7 +42135,7 @@
   },
   {
    "name": "upload-iasd",
-   "description": "O Upload IASD é um aplicativo criado para facilitar o upload e download de arquivos!.",
+   "description": "Upload IASD is an application created to make uploading and downloading files easier!",
    "source": "github:gabrielkramermota/upload-iasd"
   },
   {
@@ -41916,8 +42305,8 @@
   },
   {
    "name": "vapourbox",
-   "description": "Cross-platform video processing, restoration and conversion application.",
-   "source": "github:stuartcameroncode/vapourbox"
+   "description": "<p>VapourBox is a desktop app for archiving and converting video: tape       captures, camcorder…",
+   "source": "github:StuartCameronCode/VapourBox"
   },
   {
    "name": "vapourkit-nightly",
@@ -41946,8 +42335,8 @@
   },
   {
    "name": "varve",
-   "description": "Local-first, cross-platform design suite for vector graphics, layout, typography, motion…",
-   "source": "github:k-arthur/varve"
+   "description": "Local-first design suite",
+   "note": "resolve manually: AM k-arthur/varve; AppImageHub varvedesign/varve"
   },
   {
    "name": "vasya-go-to-home",
@@ -42276,7 +42665,7 @@
   },
   {
    "name": "vi-ime",
-   "description": "Bộ gõ tiếng Việt cho Wayland (niri/Hyprland/Sway/COSMIC) — zero-config, không qua IBus/Fcitx.",
+   "description": "Vietnamese input method for Wayland (niri/Hyprland/Sway/COSMIC) — zero-config, without IBus/Fcitx.",
    "source": "github:nhanth87/vi-ime"
   },
   {
@@ -42331,8 +42720,8 @@
   },
   {
    "name": "vibebasic",
-   "description": "A Visual Basic 6 clone for macOS, Windows and Linux: Windows 98 look, form designer, VB6 language…",
-   "source": "github:stigern/vibebasic"
+   "description": "VibeBasic",
+   "source": "github:Stigern/VibeBasic"
   },
   {
    "name": "vibecad",
@@ -42498,11 +42887,6 @@
    "name": "viewskater",
    "description": "A fast image viewer for browsing large collections of images.",
    "source": "github:ggand0/viewskater"
-  },
-  {
-   "name": "viewskater-egui",
-   "description": "A fast image viewer for browsing large collections of images.",
-   "source": "github:ggand0/viewskater-egui"
   },
   {
    "name": "vifm",
@@ -42735,6 +43119,11 @@
    "source": "github:rootLocalGhost/ViveStream-Revived"
   },
   {
+   "name": "vivi",
+   "description": "Fast, lightweight Rust media player (Slint + libmpv) inspired by Juxtopposed's VLC redesign.",
+   "source": "github:loafer19/vivi"
+  },
+  {
    "name": "vivi-music-de",
    "description": "Expressive YouTube Music client for desktop",
    "source": "github:PiBOH/vivi-music-de"
@@ -42781,12 +43170,12 @@
   },
   {
    "name": "vkn",
-   "description": "VKN — неофициальный музыкальный плеер для ВКонтакте на Windows и Linux. Релизы, скачивание и…",
+   "description": "VK Music client on Electron",
    "source": "github:gr4shin/vkn"
   },
   {
    "name": "vkomic",
-   "description": "Une application qui ce branche sur https://vk.com/board203785966 ,et permet de télécharger les bd…",
+   "description": "An application that connects to https://vk.com/board203785966 and lets you download the available…",
    "source": "github:g-kylexy/vkomic"
   },
   {
@@ -42826,8 +43215,8 @@
   },
   {
    "name": "vltn-tone-studio",
-   "description": "VLTN Tone Studio: desktop editor and librarian for Valeton multi-effects. Live tone editing over…",
-   "source": "github:grzmol/vltn-tone-studio"
+   "description": "Desktop editor and librarian for the Valeton GP-5, GP-50 and GP-200 family",
+   "source": "github:grzmol/VLTN-Tone-Studio"
   },
   {
    "name": "vm-curator",
@@ -42851,7 +43240,7 @@
   },
   {
    "name": "vocabmaster",
-   "description": "Ứng dụng học từ vựng tiếng Anh đa nền tảng (Windows & Mobile) với Spaced Repetition.",
+   "description": "Cross-platform app (Windows & Mobile) for learning English vocabulary with Spaced Repetition.",
    "source": "github:vodailocz/vocabmaster"
   },
   {
@@ -42901,7 +43290,7 @@
   },
   {
    "name": "voicecut",
-   "description": "VoiceCut automatically turns raw narration recordings into clean, natural, production-ready audio…",
+   "description": "Edits retake-heavy narration automatically",
    "source": "github:vectozavr/voicecut"
   },
   {
@@ -43195,6 +43584,11 @@
    "source": "github:lucasilva-r/waddamburo-public"
   },
   {
+   "name": "wage-slave-motivator",
+   "description": "Cow and Horse Encourage · Real-time wages and focused timing. Watch your salary grow in real time…",
+   "source": "github:muimi272/wage_slave_motivator"
+  },
+  {
    "name": "waifudownloaderqt",
    "description": "A Qt application that downloads images of waifus/nekos based on https://waifu.im and…",
    "source": "github:kairabegudiri/waifudownloaderqt"
@@ -43316,7 +43710,7 @@
   },
   {
    "name": "waterball",
-   "description": "跨平台 BBS 連線軟體。極致輕量、無損畫質、支援圖文好讀版與 ANSI 發文調色盤。.",
+   "description": "Cross-platform BBS client. Extremely lightweight, lossless image quality, supports the rich-text…",
    "source": "github:cerebellum92/waterball"
   },
   {
@@ -43358,6 +43752,11 @@
    "name": "waveterm",
    "description": "An open-source, AI-integrated, cross-platform terminal for seamless workflows.",
    "source": "github:wavetermdev/waveterm"
+  },
+  {
+   "name": "wavo-app",
+   "description": "Local dictation: hold a hotkey, speak, and the text lands where you were typing",
+   "source": "github:vladkens/wavo-app"
   },
   {
    "name": "waydir",
@@ -43540,6 +43939,11 @@
    "source": "github:manuelernestog/weektodo"
   },
   {
+   "name": "weft",
+   "description": "Weft is a voxel sandbox engine written in Rust, Weft is not a Minecraft clone and does not read…",
+   "source": "github:weft-rust/weft"
+  },
+  {
    "name": "weft-studio",
    "description": "Design interfaces with your AI agent on a live canvas. Desktop app for Linux and Windows that…",
    "source": "github:willi005/weft-studio-releases"
@@ -43556,7 +43960,7 @@
   },
   {
    "name": "wello-code",
-   "description": "Десктопный агент, который пишет код в ваших проектах.",
+   "description": "A desktop agent that writes code in your projects.",
    "source": "github:wello-code/wello-code"
   },
   {
@@ -43601,7 +44005,7 @@
   },
   {
    "name": "wevir",
-   "description": "One local-first desktop workspace for every AI coding agent — Codex, Claude, OpenCode and your own…",
+   "description": "Open-source desktop workspace for AI coding agents",
    "source": "github:marvinli001/wevir"
   },
   {
@@ -43671,12 +44075,12 @@
   },
   {
    "name": "whatsapp-lite",
-   "description": "WhatsApp Desktop só que bom.",
+   "description": "WhatsApp Desktop, but good.",
    "source": "github:kadenai/whatsapp-lite"
   },
   {
    "name": "whatsapp-mcp-local",
-   "description": "WhatsApp MCP Local: o seu WhatsApp no Claude, num app para macOS, Windows e Linux que roda no seu…",
+   "description": "WhatsApp MCP Local: your WhatsApp in Claude, in an app for macOS, Windows and Linux that runs on…",
    "source": "github:brorlandi/whatsapp-mcp-local"
   },
   {
@@ -43771,13 +44175,13 @@
   },
   {
    "name": "whisperio",
-   "description": "Global dictation app for Windows, macOS, and Linux. Press a hotkey, speak, auto-paste. Cloud or…",
+   "description": "Whisperio — Global dictation with hotkey, overlay, and auto-paste. Press hotkey to record, press…",
    "source": "github:draenger/whisperio"
   },
   {
    "name": "whispernow",
-   "description": "Push to Talk speech transcription app.",
-   "source": "github:stephan271c/whispernow"
+   "description": "Private local-first desktop dictation",
+   "source": "github:stephan271c/WhisperNow"
   },
   {
    "name": "whisply",
@@ -43885,6 +44289,11 @@
    "source": "github:TibixDev/winboat"
   },
   {
+   "name": "winc",
+   "description": "Winc is built with Rust and its own rendering engine: it starts in 0.1 seconds and uses just 52 MB…",
+   "source": "github:deeix-ai/winc"
+  },
+  {
    "name": "window-pet",
    "description": "Pet overlay app that lets you have adorable companion such as pets, anime characters on your screen.",
    "source": "github:SeakMengs/WindowPet"
@@ -43971,7 +44380,7 @@
   },
   {
    "name": "wingsv-dex",
-   "description": "VPN клиент WINGS V для Linux/Windows с поддержкой Xray и VK TURN, встроенным ByeDPI и автопоиском…",
+   "description": "WINGS V VPN client for Linux/Windows with Xray and VK TURN support, built-in ByeDPI and automatic…",
    "source": "github:wings-n/wingsv_dex"
   },
   {
@@ -44016,12 +44425,12 @@
   },
   {
    "name": "wirely",
-   "description": "Free, open-source circuit design and simulation app. Draw a circuit, press play, watch it work…",
-   "source": "github:richiewillmott/wirely"
+   "description": "Draw a circuit, press play, watch it work",
+   "source": "github:richiewillmott/Wirely"
   },
   {
-   "name": "wirely-app",
-   "description": "Free, open-source circuit design and simulation app. Draw a circuit, press play, watch it work…",
+   "name": "wirely-.github.io",
+   "description": "Draw a circuit, press play, watch it work",
    "source": "github:wirely-app/wirely-app.github.io"
   },
   {
@@ -44048,6 +44457,11 @@
    "name": "wishtoken-desktop",
    "description": "WishToken desktop companion for Codex: local accounts, explicit BPS/native channels, isolated…",
    "source": "github:xxx-holic/wishtoken-desktop"
+  },
+  {
+   "name": "wisp",
+   "description": "Run Claude Code, Codex, Cursor and other coding agents in parallel, in the background, on any of…",
+   "source": "github:M0xoo/wisp"
   },
   {
    "name": "wisp-science",
@@ -44128,11 +44542,6 @@
    "name": "wljs-notebook",
    "description": "A computational notebook IDE for Wolfram Language",
    "source": "github:WLJSTeam/wljs-notebook"
-  },
-  {
-   "name": "wlx-overlay-s",
-   "description": "Access your Wayland/X11 desktop from Monado/WiVRn/SteamVR.",
-   "source": "github:galister/wlx-overlay-s"
   },
   {
    "name": "wmux",
@@ -44456,7 +44865,7 @@
   },
   {
    "name": "x-markdown",
-   "description": "Markdown editor, built on Electron + Vue 3 + TipTap + TypeScript..",
+   "description": "A Typora-like Markdown editor built with Electron + Vue 3 + TipTap",
    "source": "github:mr-dadong/x-markdown"
   },
   {
@@ -44490,14 +44899,19 @@
    "source": "github:nikp123/xava"
   },
   {
+   "name": "xbased",
+   "description": "Original Xbox emulator for PC: crazyriddler's Windows and Linux edition of hakuX by rfandango.",
+   "source": "github:crazyriddler/xbased"
+  },
+  {
    "name": "xbox360-game-scraper",
    "description": "Browse, search, and download Xbox 360 games with cover art, multiple download mirrors, and a…",
    "source": "github:nookieai/xbox360-game-scraper"
   },
   {
-   "name": "xbydriver",
-   "description": "Xiaobaiyang Cloud Drive - Powered by Alibaba Cloud Drive.",
-   "source": "github:gaozhangmin/aliyunpan"
+   "name": "xc2-recomp",
+   "description": "Builds Tears of the Kingdom for this PC from your own game files",
+   "source": "github:AksharDP/xc2-recomp"
   },
   {
    "name": "xchat",
@@ -44546,8 +44960,8 @@
   },
   {
    "name": "xemu",
-   "description": "Original Xbox Emulator.",
-   "note": "resolve manually: REPLACETHIS; repackager github:pkgforge-dev/xemu-AppImage-Enhanced"
+   "description": "Emulator for the original Xbox console",
+   "source": "github:xemu-project/xemu"
   },
   {
    "name": "xenia-canary",
@@ -44691,7 +45105,7 @@
   },
   {
    "name": "xmsgi-studio",
-   "description": "XMSGi Studio объединяет планирование встреч и публикацию в Telegram в одном удобном и безопасном…",
+   "description": "XMSGi Studio combines meeting scheduling and Telegram publishing in one convenient and secure…",
    "source": "github:molodoy01/XMSGi-Studio"
   },
   {
@@ -44701,7 +45115,7 @@
   },
   {
    "name": "xodus-nexus",
-   "description": "Open-source Xbox-inspired desktop launcher for Xodus on Linux.",
+   "description": "Xbox-inspired Microsoft Store game launcher for Linux",
    "source": "github:domsvoboda/xodus-nexus"
   },
   {
@@ -44820,6 +45234,11 @@
    "source": "github:Geocld/XStreamingDesktop"
   },
   {
+   "name": "xtermium",
+   "description": "Terminal and session manager for Windows, Linux and Mac: SSH, SFTP, RDP, VNC, telnet, serial…",
+   "source": "github:xtermium/xtermium"
+  },
+  {
    "name": "xtomarkdown",
    "description": "<p>XtoMarkdown is a simple drag-and-drop application for converting documents to Markdown format…",
    "source": "github:tx2z/xtomarkdown"
@@ -44881,7 +45300,7 @@
   },
   {
    "name": "yagua-image-processor",
-   "description": "Procesador de imágenes gratuito. Comprime, convierte, remueve el fondo, extrae paleta de colores…",
+   "description": "Free image processor. Compress, convert, remove the background, extract a color palette, and more…",
    "source": "github:guillebouix/yagua-image-processor"
   },
   {
@@ -44946,7 +45365,7 @@
   },
   {
    "name": "yamusic",
-   "description": "Для поддержки работы.",
+   "description": "Unofficial desktop client for Yandex Music.",
    "source": "github:andfriden/yamusic"
   },
   {
@@ -45081,7 +45500,7 @@
   },
   {
    "name": "yh-launcher",
-   "description": "YazılımHub topluluğunun Windows ve Linux için eklentilerle genişleyen uygulama başlatıcısı…",
+   "description": "Application launcher (Alt+Space) of the YazılımHub community, extensible with plugins, for Windows…",
    "source": "github:aytcode/yh-launcher"
   },
   {
@@ -45130,18 +45549,13 @@
    "source": "github:Xheldon/Yoke-Calendar"
   },
   {
-   "name": "yolo-lab",
-   "description": "YOLO model training and inference toolkit — GUI and CLI workflows.",
-   "source": "github:liujingze11/yolo-lab"
-  },
-  {
    "name": "yolo-label",
    "description": "YOLO format image labeling tool",
    "source": "github:developer0hye/Yolo_Label"
   },
   {
    "name": "yolo-label-tool",
-   "description": "A fully functional YOLO dataset annotation tool that provides an intuitive GUI for creating and…",
+   "description": "<p>YOLO Label Tool (YOLOTxtMaker) draws rectangles, oriented boxes, and polygons on images and…",
    "source": "github:evilmordy/yolo-label-tool"
   },
   {
@@ -45475,6 +45889,11 @@
    "source": "github:AdelKS/ZeGrapher"
   },
   {
+   "name": "zelda-totk-port",
+   "description": "Builds Tears of the Kingdom for this PC from your own game files",
+   "source": "github:ZuanCrisp/Zelda-TOTK-Port"
+  },
+  {
    "name": "zelda64-recompiled",
    "description": "Unofficial. A native port of the N64 Legend of Zelda games, statically recompiled.",
    "source": "github:pkgforge-dev/Zelda64-Recompiled-AppImage"
@@ -45508,11 +45927,6 @@
    "name": "zen-profile",
    "description": "A beautiful native Zen Browser profile launcher built with Tauri, React and Rust.",
    "source": "github:dhanush-devx/zen-profile"
-  },
-  {
-   "name": "zenity",
-   "description": "Unofficial. A CLI utility that creates dialog boxes, GTK3 version.",
-   "source": "github:Samueru-sama/Zenity-GTK3-AppImage"
   },
   {
    "name": "zenity-gtk3",
@@ -45561,8 +45975,8 @@
   },
   {
    "name": "zeroed",
-   "description": "Free crosshair overlay for any game, with per-game profiles and experimental cheat hints. By…",
-   "source": "github:minvt-dev/zeroed"
+   "description": "Zeroed - a free crosshair overlay. Developed and maintained by Solvra Development.",
+   "source": "github:MinVT-dev/Zeroed"
   },
   {
    "name": "zeronet",
@@ -45811,7 +46225,7 @@
   },
   {
    "name": "zwyka",
-   "description": "Zwyka - open source code platform-agnostic habits tracker application.",
+   "description": "Open-source cross-platform habits tracking application",
    "source": "github:lyskouski/app-tracker"
   },
   {
